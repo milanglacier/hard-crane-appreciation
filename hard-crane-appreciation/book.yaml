@@ -11,5 +11,4 @@ tts:
   pause_ms:
     paragraph: 550
     heading: 900
-    line: 250
     rule: 1500

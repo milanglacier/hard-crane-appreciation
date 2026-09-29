@@ -10,6 +10,9 @@ Two rendering choices worth knowing about:
   so that each segment is a self-contained, independently highlightable block
   (the player inserts segments one by one; a bare ``<li>`` outside a list is
   awkward). Nesting survives as ``data-depth``.
+* a blockquote paragraph (a stanza, or a quoted prose passage) is one segment,
+  so the TTS engine reads it with the whole sentence in view. The source line
+  breaks are kept on screen as ``<br>`` inside ``<p class="verse">``.
 * inline and display math is passed through untouched (only ``&`` / ``<`` are
   HTML-escaped) so client-side KaTeX sees the original LaTeX.
 """
@@ -24,7 +27,7 @@ from typing import Iterable, Literal
 from markdown_it import MarkdownIt
 from markdown_it.token import Token
 
-Kind = Literal["heading", "para", "item", "line", "display", "rule"]
+Kind = Literal["heading", "para", "item", "stanza", "display", "rule"]
 
 CJK_PER_SEC = 4.0
 LATIN_WORDS_PER_SEC = 2.5
@@ -299,8 +302,11 @@ class _Builder:
         split = split_overrides(source)
         if kind == "heading":
             html = f"<h{level}>{_render_inline(self.md, split.shown)}</h{level}>"
-        elif kind == "line":
-            html = f'<p class="line">{_render_inline(self.md, split.shown)}</p>'
+        elif kind == "stanza":
+            lines = [ln for ln in split.shown.split("\n") if ln.strip()]
+            html = '<p class="verse">' + "<br>".join(
+                _render_inline(self.md, ln) for ln in lines
+            ) + "</p>"
         else:
             html = f"<p>{_render_inline(self.md, split.shown)}</p>"
         self.add(kind, html, spoken, level, warns)
@@ -347,9 +353,7 @@ def _walk(b: _Builder, tokens: list[Token], i: int, end: int, depth: int, in_quo
             elif _ONLY_IMAGE_RE.match(stripped):
                 b.add("display", f"<p>{_render_inline(b.md, stripped)}</p>", None)
             elif in_quote:
-                for line in src.split("\n"):
-                    if line.strip():
-                        b.spoken_block("line", line)
+                b.spoken_block("stanza", src)
             else:
                 b.spoken_block("para", src)
             i = _matching_close(tokens, i) + 1

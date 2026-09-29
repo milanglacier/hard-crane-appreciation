@@ -400,14 +400,14 @@ button { font: inherit; color: inherit; }
 }
 .seg-item.active::before { color: var(--accent); }
 
-/* stanza (blockquote lines) */
-.stanza {
+/* blockquote: consecutive stanza segments share one box */
+.quote {
   margin: 1.6em 0;
   padding: 1.15em 1.3em;
   border-radius: 12px;
   background: var(--bg-soft);
 }
-.stanza .seg {
+.quote .seg {
   margin-bottom: .1em;
   padding-top: .12em;
   padding-bottom: .12em;
@@ -415,8 +415,9 @@ button { font: inherit; color: inherit; }
   color: var(--text-soft);
   letter-spacing: .02em;
 }
-.stanza .seg p { margin: 0; }
-.stanza .seg.active { color: var(--text); }
+.quote .seg p { margin: 0; }
+.quote .seg + .seg { margin-top: .9em; }
+.quote .seg.active { color: var(--text); }
 
 /* rule */
 .seg-rule {

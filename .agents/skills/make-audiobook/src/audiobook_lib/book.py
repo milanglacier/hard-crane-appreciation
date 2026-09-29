@@ -17,7 +17,6 @@ from .segmenter import Segment, segment_markdown, strip_frontmatter
 DEFAULT_PAUSE_MS: dict[str, int] = {
     "paragraph": 550,
     "heading": 900,
-    "line": 250,
     "rule": 1500,
 }
 
@@ -214,7 +213,7 @@ def pause_for(kind: str, pause_ms: dict[str, int]) -> int:
         "heading": pause_ms.get("heading", DEFAULT_PAUSE_MS["heading"]),
         "para": pause_ms.get("paragraph", DEFAULT_PAUSE_MS["paragraph"]),
         "item": pause_ms.get("paragraph", DEFAULT_PAUSE_MS["paragraph"]),
-        "line": pause_ms.get("line", DEFAULT_PAUSE_MS["line"]),
+        "stanza": pause_ms.get("stanza", pause_ms.get("paragraph", DEFAULT_PAUSE_MS["paragraph"])),
         "rule": pause_ms.get("rule", DEFAULT_PAUSE_MS["rule"]),
         "display": 0,
     }.get(kind, 0)

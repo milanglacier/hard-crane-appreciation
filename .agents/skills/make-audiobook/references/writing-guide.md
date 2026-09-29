@@ -97,8 +97,10 @@ are in `math-and-code.md`. The short version:
   fifteen seconds; split longer ones into named pieces.
 - Never dictate code. Describe what it does, name the two or three identifiers
   that matter, and show the snippet in a fenced block.
-- Quotations (poems, passages) go in a blockquote so they are read line by line
-  with a breath between lines. Say who is speaking before the quote begins.
+- Quotations (poems, passages) go in a blockquote. Each blockquote paragraph
+  (one stanza, or one quoted passage) is read as a single utterance, so the
+  narrator carries a sentence across line breaks. Separate stanzas with a bare
+  `>` line. Say who is speaking before the quote begins.
 
 ## 5. Language policy
 
@@ -134,7 +136,7 @@ sound like a good Chinese lecturer, not like a translated textbook.
 
 Same craft. Choose one variety of spelling. Spell out symbols and short
 initialisms in the spoken text where an engine would guess ("S-Q-L" vs
-"sequel" — pick one, map it). Read poetry line by line in a blockquote.
+"sequel" — pick one, map it). Quote poetry in a blockquote, one blockquote paragraph per stanza.
 
 ## 6. Length and pace estimation
 
@@ -155,7 +157,7 @@ padding.
 Treat a literary chapter like a seminar led by a well-read friend, not a
 summary.
 
-- **Let the text speak first.** Read the lines (blockquote, line by line),
+- **Let the text speak first.** Read the lines (blockquote, stanza by stanza),
   then unpack them. For a Chinese audiobook about an English-language poem,
   read the original lines in English and then give a Chinese rendering or
   close paraphrase; ask the user whether they want originals read at all if the

@@ -380,12 +380,12 @@
     var root = document.createElement('div');
     root.className = 'transcript';
     root.id = 'transcript';
-    var list = null, stanza = null;
+    var list = null, quote = null;
 
     segments.forEach(function (seg) {
       var kind = seg.kind || 'para';
       if (kind !== 'item') list = null;
-      if (kind !== 'line') stanza = null;
+      if (kind !== 'stanza') quote = null;
 
       var el = segElement(seg, kind);
       if (kind === 'item') {
@@ -395,13 +395,13 @@
           root.appendChild(list);
         }
         list.appendChild(el);
-      } else if (kind === 'line') {
-        if (!stanza) {
-          stanza = document.createElement('blockquote');
-          stanza.className = 'stanza';
-          root.appendChild(stanza);
+      } else if (kind === 'stanza') {
+        if (!quote) {
+          quote = document.createElement('blockquote');
+          quote.className = 'quote';
+          root.appendChild(quote);
         }
-        stanza.appendChild(el);
+        quote.appendChild(el);
       } else {
         root.appendChild(el);
       }

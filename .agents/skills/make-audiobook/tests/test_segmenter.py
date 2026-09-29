@@ -78,16 +78,22 @@ def test_nested_and_ordered_lists():
     ] == ["1.", "2."]
 
 
-def test_blockquote_is_one_line_segment_per_source_line():
-    src = """> 第一行
-> 第二行
+def test_blockquote_is_one_stanza_segment_per_paragraph():
+    src = """> For we
+> Are *overtaken*.
 >
-> 第三行
+> Now no
 """
     segs = segment_markdown(src)
-    assert [s.kind for s in segs] == ["line", "line", "line"]
-    assert [s.spoken for s in segs] == ["第一行", "第二行", "第三行"]
-    assert segs[0].html == '<p class="line">第一行</p>'
+    assert [s.kind for s in segs] == ["stanza", "stanza"]
+    assert [s.spoken for s in segs] == ["For we Are overtaken.", "Now no"]
+    assert segs[0].html == '<p class="verse">For we<br>Are <em>overtaken</em>.</p>'
+
+
+def test_stanza_override_keeps_line_breaks_on_screen():
+    segs = segment_markdown("> {{O||Oh}} rivers\n> mingling\n")
+    assert segs[0].spoken == "Oh rivers mingling"
+    assert segs[0].html == '<p class="verse">O rivers<br>mingling</p>'
 
 
 def test_comment_rule_math_block_and_image():

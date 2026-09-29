@@ -73,7 +73,7 @@ tts:
   loudnorm: true           # EBU R128 to -16 LUFS; `false` leaves levels alone
   bitrate_kbps: 96         # mono; the default follows the format (opus: 48)
   concurrency: 4
-  pause_ms: {paragraph: 550, heading: 900, line: 250, rule: 1500}
+  pause_ms: {paragraph: 550, heading: 900, stanza: 550, rule: 1500}
   extra: {}                # merged into the provider request body verbatim
 ```
 

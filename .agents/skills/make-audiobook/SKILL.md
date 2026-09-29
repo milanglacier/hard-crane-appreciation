@@ -65,7 +65,7 @@ Read `references/writing-guide.md` in full and `references/math-and-code.md`
 when the topic has any math or code. Follow the block conventions in
 `references/transcript-format.md`: spoken text is ordinary paragraphs, exact
 formulas and code go in `$$` / fenced blocks (shown, never narrated), poems
-and quotations in blockquotes (read line by line), `{{shown||spoken}}` when the
+and quotations in blockquotes (read stanza by stanza), `{{shown||spoken}}` when the
 screen and the narrator must differ, `pronunciations` in `book.yaml` for
 recurring symbols and acronyms.
 

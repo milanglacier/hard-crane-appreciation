@@ -7,7 +7,7 @@ of three classes:
 
 | class          | what it means                                    | blocks                                              |
 | -------------- | ------------------------------------------------ | --------------------------------------------------- |
-| spoken + shown | narrated, highlighted on screen while it plays   | headings, paragraphs, list items, blockquote lines  |
+| spoken + shown | narrated, highlighted on screen while it plays   | headings, paragraphs, list items, blockquote stanzas|
 | shown only     | rendered on screen, never narrated                | fenced code, `$$ … $$` math, tables, images, raw HTML |
 | neither        | notes to yourself or the reviewer                 | `<!-- HTML comments -->`, YAML frontmatter          |
 
@@ -57,7 +57,7 @@ tts:
   pause_ms:                 # silence inserted between segments; all optional
     paragraph: 550
     heading: 900
-    line: 250               # between blockquote / poem lines
+    stanza: 550             # after a blockquote paragraph; defaults to `paragraph`
     rule: 1500              # at a --- horizontal rule
 pronunciations:             # optional: spoken replacements applied to every chapter
   "$\\bar\\alpha_t$": "alpha bar t"
@@ -103,7 +103,8 @@ segment to seek to it.
 | paragraph                      | `para`       | yes      | `pause_ms.paragraph`|
 | `- item` / `1. item`           | `item`       | yes      | `pause_ms.paragraph`|
 |   (rendered as `<p class="item" data-depth="1" data-marker="•">`, one per item, depth 2+ for nested) | | | |
-| each line of a `>` blockquote  | `line`       | yes      | `pause_ms.line`     |
+| each paragraph of a `>` blockquote | `stanza` | yes      | `pause_ms.stanza`   |
+|   (rendered as `<p class="verse">` with a `<br>` at each source line break) | | | |
 | fenced code, `$$…$$`, table, image, raw HTML | `display` | no | none (attached to the previous spoken segment) |
 | `---`                          | `rule`       | no       | `pause_ms.rule`     |
 | `<!-- … -->`                   | —            | no       | not shown either    |
@@ -115,9 +116,14 @@ paragraphs are re-synthesized thanks to the cache), and a paragraph of 60–150
 paragraphs short for this reason; a 400-character paragraph makes both the
 prosody and the highlighting worse.
 
-Blockquote lines are separate segments so that a poem can be read line by line
-with a short breath between lines, and so the reader sees exactly which line is
-being read.
+A blockquote paragraph is one segment, whether it is a stanza or a quoted prose
+passage. The TTS engine reads it in one request, so it sees each sentence whole:
+a sentence that runs across a line break keeps its rising or suspended pitch,
+and the pauses fall where the punctuation puts them. The line breaks stay on
+screen. A bare `>` line starts a new paragraph, so put one between stanzas, and
+between quotes that should be read as separate utterances. The whole stanza is
+highlighted while it plays; keep quoted stanzas short for the same reasons as
+paragraphs.
 
 ## Shown-vs-spoken overrides
 

@@ -34,6 +34,20 @@ abbreviated subject lines that drop the words that carry the actual intent.
 Write the subject as a full, clear sentence. It may be long — that is fine —
 but it must name the real outcome, not a compressed label for it.
 
+## Appreciation depth and language
+
+- Target depth: university literature major. Assume the listener has basic
+  literary-theory vocabulary but has not studied Crane before.
+- The audiobook is in Chinese (Mandarin). Crane's original poetry lines must
+  be quoted in English.
+- When discussing imagery during appreciation:
+  - If the word or phrase is quoted directly from Crane's original text, keep
+    it in English.
+  - Otherwise use Chinese and provide a translation.
+- For Crane's more obscure English imagery, give a brief Chinese gloss in
+  parentheses on first use. If the meaning is straightforward, a direct
+  translation is enough; do not over-explain.
+
 ## Serving
 
 - When serving the audiobook site, bind to `0.0.0.0` (not `127.0.0.1`).

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16171b" media="(prefers-color-scheme: dark)">
+<title>Audiobook</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="app.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="topbar" id="topbar" hidden>
+  <a class="topbar-back" id="backLink" href="#/">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg>
+    <span id="backLabel">目录</span>
+  </a>
+  <div class="topbar-title" id="topTitle"></div>
+</header>
+
+<main class="view" id="view" tabindex="-1"></main>
+
+<button class="pill" id="pill" hidden>
+  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5.5v13"/><path d="M6.5 13 12 18.5 17.5 13"/></svg>
+  <span id="pillLabel">回到当前位置</span>
+</button>
+
+<footer class="player" id="player" hidden>
+  <div class="player-inner">
+
+    <div class="scrub-row">
+      <span class="tnum" id="tCur">0:00</span>
+      <div class="scrub" id="scrub">
+        <div class="scrub-track" aria-hidden="true">
+          <div class="scrub-buf" id="scrubBuf"></div>
+          <div class="scrub-played" id="scrubPlayed"></div>
+        </div>
+        <input type="range" id="seek" min="0" max="0" step="0.1" value="0" aria-label="播放进度">
+      </div>
+      <span class="tnum" id="tDur">0:00</span>
+    </div>
+
+    <div class="controls">
+      <button class="btn ctl" id="btnPrev" type="button">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 6.2v11.6a.6.6 0 0 1-.93.5l-8.2-5.8a.6.6 0 0 1 0-1l8.2-5.8a.6.6 0 0 1 .93.5z" fill="currentColor" stroke-linejoin="round"/><path d="M6.4 5.6v12.8"/></svg>
+      </button>
+      <button class="btn ctl" id="btnBack15" type="button">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.46 6.03A7.2 7.2 0 1 1 9.54 6.03"/><path d="M12.3 3.4 9.1 6.1l3.2 2.7"/><text x="12" y="16" text-anchor="middle">15</text></svg>
+      </button>
+      <button class="btn play" id="btnPlay" type="button">
+        <svg class="icon ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 5.4v13.2a.6.6 0 0 0 .92.5l10.1-6.6a.6.6 0 0 0 0-1l-10.1-6.6a.6.6 0 0 0-.92.5z" fill="currentColor" stroke-linejoin="round"/></svg>
+        <svg class="icon ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5.5v13M15 5.5v13" stroke-width="2.6"/></svg>
+      </button>
+      <button class="btn ctl" id="btnFwd30" type="button">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.54 6.03A7.2 7.2 0 1 0 14.46 6.03"/><path d="M11.7 3.4l3.2 2.7-3.2 2.7"/><text x="12" y="16" text-anchor="middle">30</text></svg>
+      </button>
+      <button class="btn ctl" id="btnNext" type="button">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 6.2v11.6a.6.6 0 0 0 .93.5l8.2-5.8a.6.6 0 0 0 0-1l-8.2-5.8a.6.6 0 0 0-.93.5z" fill="currentColor" stroke-linejoin="round"/><path d="M17.6 5.6v12.8"/></svg>
+      </button>
+    </div>
+
+    <div class="meta">
+      <div class="meta-title" id="barTitle"></div>
+      <div class="chips">
+        <button class="chip" id="btnSpeed" type="button">1.0×</button>
+        <button class="chip" id="btnAuto" type="button" aria-pressed="true">连播</button>
+        <button class="chip" id="btnSleep" type="button">定时</button>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<audio id="audio" preload="metadata"></audio>
+
+<noscript>
+  <p style="padding:2rem;text-align:center">This audiobook player needs JavaScript. / 这个播放器需要 JavaScript。</p>
+</noscript>
+
+</body>
+</html>

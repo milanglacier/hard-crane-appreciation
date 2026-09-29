@@ -1,0 +1,5 @@
+.env
+.vercel/
+/references/
+hard-crane-appreciation/.cache/
+hard-crane-appreciation/site/

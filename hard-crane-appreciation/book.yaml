@@ -1,0 +1,15 @@
+title: 哈特·克莱恩诗歌赏析
+author: Milan Glacier
+language: zh-Hans
+tts:
+  provider: minimax
+  model: speech-2.8-turbo
+  voice: "Chinese (Mandarin)_Warm_Bestie"
+  speed: 1.0
+  format: mp3
+  loudnorm: true
+  pause_ms:
+    paragraph: 550
+    heading: 900
+    line: 250
+    rule: 1500

@@ -1,0 +1,11 @@
+# This applies to Git deploys too, not just `vercel deploy`. Anything listed here is
+# absent from the build context.
+.env
+.vercel/
+references/
+.claude/
+AGENTS.md
+CLAUDE.md
+README.md
+hard-crane-appreciation/.cache/
+hard-crane-appreciation/outline.md

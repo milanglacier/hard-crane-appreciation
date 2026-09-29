@@ -1,0 +1,614 @@
+{
+ "id": "02-voyages-part1",
+ "title": "第二章 Voyages：航程（上）",
+ "audio": "02-voyages-part1.mp3",
+ "duration": 1107.607,
+ "language": "zh-Hans",
+ "provider": "minimax",
+ "voice": "Chinese (Mandarin)_Warm_Bestie",
+ "source_hash": "e9b90143d756c9bf55d82d4ff7b867964add3e69e1a52ff83a7cf1f93f556ef8",
+ "generated_at": "2026-09-29T04:26:47+00:00",
+ "segments": [
+  {
+   "i": 0,
+   "kind": "heading",
+   "html": "<h1>第二章 Voyages：航程（上）</h1>",
+   "level": 1,
+   "start": 0.0,
+   "end": 3.193,
+   "spoken": "第二章 Voyages：航程（上）"
+  },
+  {
+   "i": 1,
+   "kind": "para",
+   "html": "<p>&quot;The bottom of the sea is cruel.&quot;</p>",
+   "start": 4.093,
+   "end": 6.136,
+   "spoken": "\"The bottom of the sea is cruel.\""
+  },
+  {
+   "i": 2,
+   "kind": "para",
+   "html": "<p>海底是残酷的。这是 Voyages 组诗第一首的最后一句话。一个诗人站在沙滩上，看着孩子们嬉戏，想要警告他们关于大海的真相，却知道他们听不见。</p>",
+   "start": 6.686,
+   "end": 20.119,
+   "spoken": "海底是残酷的。这是 Voyages 组诗第一首的最后一句话。一个诗人站在沙滩上，看着孩子们嬉戏，想要警告他们关于大海的真相，却知道他们听不见。"
+  },
+  {
+   "i": 3,
+   "kind": "para",
+   "html": "<p>六首诗，写于 1924 到 1925 年间。克莱恩刚搬进布鲁克林大桥建筑师罗布林曾住过的房间，窗户正对大桥。那个夏天，他爱上了丹麦水手艾米尔·奥普弗。这组诗是那段恋情的产物，也是它的墓碑。</p>",
+   "start": 20.669,
+   "end": 39.96,
+   "spoken": "六首诗，写于 1924 到 1925 年间。克莱恩刚搬进布鲁克林大桥建筑师罗布林曾住过的房间，窗户正对大桥。那个夏天，他爱上了丹麦水手艾米尔·奥普弗。这组诗是那段恋情的产物，也是它的墓碑。"
+  },
+  {
+   "i": 4,
+   "kind": "para",
+   "html": "<p>这一章我们读前三首。从岸上的天真，到海上的狂喜，到夜海中死亡与爱情的交缠。下一章接着读后三首：沉思、分离，以及最终那个&quot;不可背叛的回答&quot;。</p>",
+   "start": 40.51,
+   "end": 55.41,
+   "spoken": "这一章我们读前三首。从岸上的天真，到海上的狂喜，到夜海中死亡与爱情的交缠。下一章接着读后三首：沉思、分离，以及最终那个\"不可背叛的回答\"。"
+  },
+  {
+   "i": 5,
+   "kind": "rule",
+   "html": "<hr>",
+   "start": 55.96,
+   "end": 57.46
+  },
+  {
+   "i": 6,
+   "kind": "heading",
+   "html": "<h2>Voyages I：无法传达的警告</h2>",
+   "level": 2,
+   "start": 57.46,
+   "end": 60.27,
+   "spoken": "Voyages I：无法传达的警告"
+  },
+  {
+   "i": 7,
+   "kind": "para",
+   "html": "<p>第一首最初是一首独立的诗，写于 1921 年，原题 Poster——海报。克莱恩说他把这首诗当作对&quot;广告&quot;形式的探索。这个出发点很重要：广告是一种强烈的视觉画面配上一句文字说明。</p>",
+   "start": 61.17,
+   "end": 77.679,
+   "spoken": "第一首最初是一首独立的诗，写于 1921 年，原题 Poster——海报。克莱恩说他把这首诗当作对\"广告\"形式的探索。这个出发点很重要：广告是一种强烈的视觉画面配上一句文字说明。"
+  },
+  {
+   "i": 8,
+   "kind": "para",
+   "html": "<p>诗的第一节完全是视觉的。孩子们在沙滩上玩耍，挖沙子，捡贝壳。没有声音，只有画面。声音在第二节才进入——这时一个声音开始说话。画面加说明，广告的结构。</p>",
+   "start": 78.229,
+   "end": 92.939,
+   "spoken": "诗的第一节完全是视觉的。孩子们在沙滩上玩耍，挖沙子，捡贝壳。没有声音，只有画面。声音在第二节才进入——这时一个声音开始说话。画面加说明，广告的结构。"
+  },
+  {
+   "i": 9,
+   "kind": "para",
+   "html": "<p>围绕他们的自然并不温柔。太阳 &quot;beats lightning on the waves&quot;——在波浪上击打闪电。波浪 &quot;fold thunder on the sand&quot;——把雷声折叠到沙滩上。注意这两行的对称：太阳向下击打（beats）闪电到波浪上，波浪向内折叠（fold）雷声到沙滩上。光和声互换了位置——闪电本该有声，雷声本该无形，但在这里它们都变成了动词的宾语，被自然力量像物质一样搬运和塑形。这些孩子身处一种暴力的美之中，却浑然不觉。</p>",
+   "start": 93.489,
+   "end": 131.616,
+   "spoken": "围绕他们的自然并不温柔。太阳 \"beats lightning on the waves\"——在波浪上击打闪电。波浪 \"fold thunder on the sand\"——把雷声折叠到沙滩上。注意这两行的对称：太阳向下击打（beats）闪电到波浪上，波浪向内折叠（fold）雷声到沙滩上。光和声互换了位置——闪电本该有声，雷声本该无形，但在这里它们都变成了动词的宾语，被自然力量像物质一样搬运和塑形。这些孩子身处一种暴力的美之中，却浑然不觉。"
+  },
+  {
+   "i": 10,
+   "kind": "para",
+   "html": "<p>诗人看着他们，想要告诉他们一些事情：</p>",
+   "start": 132.166,
+   "end": 135.15,
+   "spoken": "诗人看着他们，想要告诉他们一些事情："
+  },
+  {
+   "i": 11,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">And could they hear me I would tell them</p>",
+   "start": 135.7,
+   "end": 137.918,
+   "spoken": "And could they hear me I would tell them"
+  },
+  {
+   "i": 12,
+   "kind": "para",
+   "html": "<p>如果他们能听到我，我会告诉他们。但他们听不到。</p>",
+   "start": 138.468,
+   "end": 142.903,
+   "spoken": "如果他们能听到我，我会告诉他们。但他们听不到。"
+  },
+  {
+   "i": 13,
+   "kind": "para",
+   "html": "<p>批评家 Hinz 提出了一个改变整首诗面貌的解读。她认为这首诗的核心不是大海的残酷，而是沟通的不可能。&quot;And could they hear me I would tell them&quot;——这一行才是全诗的关键。</p>",
+   "start": 143.453,
+   "end": 158.511,
+   "spoken": "批评家 Hinz 提出了一个改变整首诗面貌的解读。她认为这首诗的核心不是大海的残酷，而是沟通的不可能。\"And could they hear me I would tell them\"——这一行才是全诗的关键。"
+  },
+  {
+   "i": 14,
+   "kind": "para",
+   "html": "<p>Hinz 的论证值得展开。如果我们按照克莱恩自己说的，把这首诗当作一种&quot;广告&quot;来读——一幅强烈的画面配上一句说明——那么要追问的问题就不是说明的内容是什么（海底是残酷的），而是这个说明有没有抵达它的受众。答案是没有。画面和说明之间存在一条无法跨越的鸿沟。诗人拥有一个至关重要的信息，却找不到传达的途径。</p>",
+   "start": 159.061,
+   "end": 186.53,
+   "spoken": "Hinz 的论证值得展开。如果我们按照克莱恩自己说的，把这首诗当作一种\"广告\"来读——一幅强烈的画面配上一句说明——那么要追问的问题就不是说明的内容是什么（海底是残酷的），而是这个说明有没有抵达它的受众。答案是没有。画面和说明之间存在一条无法跨越的鸿沟。诗人拥有一个至关重要的信息，却找不到传达的途径。"
+  },
+  {
+   "i": 15,
+   "kind": "para",
+   "html": "<p>但这里有一个精妙的悖论。诗人无法对孩子们说的话，他却对读者说了。读者听到了那个警告。这意味着诗歌能够完成日常沟通无法完成的传达。这个矛盾贯穿整组诗：诗歌存在的理由，恰恰是因为有些东西只能通过诗歌来说出。</p>",
+   "start": 187.08,
+   "end": 206.016,
+   "spoken": "但这里有一个精妙的悖论。诗人无法对孩子们说的话，他却对读者说了。读者听到了那个警告。这意味着诗歌能够完成日常沟通无法完成的传达。这个矛盾贯穿整组诗：诗歌存在的理由，恰恰是因为有些东西只能通过诗歌来说出。"
+  },
+  {
+   "i": 16,
+   "kind": "para",
+   "html": "<p>诗以那句冰冷的断言收尾：</p>",
+   "start": 206.566,
+   "end": 209.039,
+   "spoken": "诗以那句冰冷的断言收尾："
+  },
+  {
+   "i": 17,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">The bottom of the sea is cruel.</p>",
+   "start": 209.589,
+   "end": 211.807,
+   "spoken": "The bottom of the sea is cruel."
+  },
+  {
+   "i": 18,
+   "kind": "para",
+   "html": "<p>对孩子们来说，这只是一句他们听不见的话。对读者来说，它是一个预言——Voyages 接下来五首诗将要证实的预言。</p>",
+   "start": 212.357,
+   "end": 222.933,
+   "spoken": "对孩子们来说，这只是一句他们听不见的话。对读者来说，它是一个预言——Voyages 接下来五首诗将要证实的预言。"
+  },
+  {
+   "i": 19,
+   "kind": "rule",
+   "html": "<hr>",
+   "start": 223.483,
+   "end": 224.983
+  },
+  {
+   "i": 20,
+   "kind": "heading",
+   "html": "<h2>Voyages II：大海的梦与隐喻的逻辑</h2>",
+   "level": 2,
+   "start": 224.983,
+   "end": 228.78,
+   "spoken": "Voyages II：大海的梦与隐喻的逻辑"
+  },
+  {
+   "i": 21,
+   "kind": "para",
+   "html": "<p>第二首被公认为克莱恩最伟大的单首抒情诗。批评家 Yvor Winters 说它是&quot;过去两百年中最有力量、最完美的诗作之一&quot;。</p>",
+   "start": 229.68,
+   "end": 240.976,
+   "spoken": "第二首被公认为克莱恩最伟大的单首抒情诗。批评家 Yvor Winters 说它是\"过去两百年中最有力量、最完美的诗作之一\"。"
+  },
+  {
+   "i": 22,
+   "kind": "para",
+   "html": "<p>Richman 对这首诗的本质做了最准确的描述：它是一个梦，一次通过感受力对世界的重新排列。它只能通过自身的内在逻辑来理解，不能用外部世界的逻辑去衡量。而这种内在逻辑，就是克莱恩所说的 the logic of metaphor——隐喻的逻辑。Richman 指出，这首诗最惊人的特征是&quot;控制与表面混乱的共存&quot;——意象狂野到几乎无法解析，但情感的推进却是严格有序的：从渴望到行动，从行动的完成到对后果的预见。</p>",
+   "start": 241.526,
+   "end": 276.67,
+   "spoken": "Richman 对这首诗的本质做了最准确的描述：它是一个梦，一次通过感受力对世界的重新排列。它只能通过自身的内在逻辑来理解，不能用外部世界的逻辑去衡量。而这种内在逻辑，就是克莱恩所说的 the logic of metaphor——隐喻的逻辑。Richman 指出，这首诗最惊人的特征是\"控制与表面混乱的共存\"——意象狂野到几乎无法解析，但情感的推进却是严格有序的：从渴望到行动，从行动的完成到对后果的预见。"
+  },
+  {
+   "i": 23,
+   "kind": "para",
+   "html": "<p>现在让我们沉入这首诗的开篇，一个意象一个意象地走。</p>",
+   "start": 277.22,
+   "end": 281.783,
+   "spoken": "现在让我们沉入这首诗的开篇，一个意象一个意象地走。"
+  },
+  {
+   "i": 24,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">—And yet this great wink of eternity,<br>Of rimless floods, unfettered leewardings,</p>",
+   "start": 282.333,
+   "end": 290.181,
+   "spoken": "—And yet this great wink of eternity, Of rimless floods, unfettered leewardings,"
+  },
+  {
+   "i": 25,
+   "kind": "para",
+   "html": "<p>大海被呼唤为 &quot;great wink of eternity&quot;——永恒的巨大眨眼。这个短语的每个词都在工作。&quot;Wink&quot; 不只是&quot;眨眼&quot;，它暗示共谋、调情——永恒在向你使眼色，好像它知道一个你不知道的秘密。&quot;Great&quot; 把这个私密的动作放大到宇宙尺度。大海是永恒的，但它不是静止的永恒——它在一睁一闭之间，暗示着某种即将发生的事情。</p>",
+   "start": 290.731,
+   "end": 318.665,
+   "spoken": "大海被呼唤为 \"great wink of eternity\"——永恒的巨大眨眼。这个短语的每个词都在工作。\"Wink\" 不只是\"眨眼\"，它暗示共谋、调情——永恒在向你使眼色，好像它知道一个你不知道的秘密。\"Great\" 把这个私密的动作放大到宇宙尺度。大海是永恒的，但它不是静止的永恒——它在一睁一闭之间，暗示着某种即将发生的事情。"
+  },
+  {
+   "i": 26,
+   "kind": "para",
+   "html": "<p>然后是 &quot;rimless floods&quot;——无边的洪流。&quot;Rimless&quot; 意味着没有边缘、没有容器。这些洪流溢出了一切框架。紧接着 &quot;unfettered leewardings&quot;——不受束缚的顺风航行。批评家 Beach 追溯了 &quot;leewardings&quot; 的出处：《白鲸》第 135 章，亚哈船长站在桅顶俯瞰大海，说了一句 &quot;Such lovely leewardings!&quot;——多么迷人的顺风景致！</p>",
+   "start": 319.215,
+   "end": 346.382,
+   "spoken": "然后是 \"rimless floods\"——无边的洪流。\"Rimless\" 意味着没有边缘、没有容器。这些洪流溢出了一切框架。紧接着 \"unfettered leewardings\"——不受束缚的顺风航行。批评家 Beach 追溯了 \"leewardings\" 的出处：《白鲸》第 135 章，亚哈船长站在桅顶俯瞰大海，说了一句 \"Such lovely leewardings!\"——多么迷人的顺风景致！"
+  },
+  {
+   "i": 27,
+   "kind": "para",
+   "html": "<p>梅尔维尔笔下的亚哈是在感叹海面的永恒不变——&quot;not changed a wink since first I saw it&quot;，自从我第一次看到它就没变过一眨眼。Beach 注意到梅尔维尔这里也用了 &quot;wink&quot; 这个词。克莱恩是否从这一段中同时借走了 &quot;wink&quot; 和 &quot;leewardings&quot;？没人能确定，但诗人的想象力就是这样工作的——一段散文中的浮木被捞起，在另一首诗中被锤炼成黄金。</p>",
+   "start": 346.932,
+   "end": 375.899,
+   "spoken": "梅尔维尔笔下的亚哈是在感叹海面的永恒不变——\"not changed a wink since first I saw it\"，自从我第一次看到它就没变过一眨眼。Beach 注意到梅尔维尔这里也用了 \"wink\" 这个词。克莱恩是否从这一段中同时借走了 \"wink\" 和 \"leewardings\"？没人能确定，但诗人的想象力就是这样工作的——一段散文中的浮木被捞起，在另一首诗中被锤炼成黄金。"
+  },
+  {
+   "i": 28,
+   "kind": "para",
+   "html": "<p>克莱恩加上了 &quot;unfettered&quot;（不受束缚的），让 &quot;leewardings&quot; 承载双重含义：大海上不受约束的风向，同时也是血液中不受约束的涌动。</p>",
+   "start": 376.449,
+   "end": 387.873,
+   "spoken": "克莱恩加上了 \"unfettered\"（不受束缚的），让 \"leewardings\" 承载双重含义：大海上不受约束的风向，同时也是血液中不受约束的涌动。"
+  },
+  {
+   "i": 29,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">Samite sheeted and processioned where<br>Her undinal vast belly moonward bends,<br>Laughing the wrapt inflections of our love;</p>",
+   "start": 388.423,
+   "end": 396.306,
+   "spoken": "Samite sheeted and processioned where Her undinal vast belly moonward bends, Laughing the wrapt inflections of our love;"
+  },
+  {
+   "i": 30,
+   "kind": "para",
+   "html": "<p>大海穿着 samite（中世纪的丝缎）做的床单，以行列的方式行进。她——大海在这里是女性的——弯曲着巨大的水精般的腹部朝向月亮。&quot;Undinal&quot;（水精的）来自水精灵 Undine——德国浪漫主义文学中一个为了获得人类灵魂而爱上凡人的水中精灵。大海笑着，把我们爱情的弯曲的语调包裹起来。</p>",
+   "start": 396.856,
+   "end": 424.07,
+   "spoken": "大海穿着 samite（中世纪的丝缎）做的床单，以行列的方式行进。她——大海在这里是女性的——弯曲着巨大的水精般的腹部朝向月亮。\"Undinal\"（水精的）来自水精灵 Undine——德国浪漫主义文学中一个为了获得人类灵魂而爱上凡人的水中精灵。大海笑着，把我们爱情的弯曲的语调包裹起来。"
+  },
+  {
+   "i": 31,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">Take this Sea, whose diapason knells<br>On scrolls of silver snowy sentences,</p>",
+   "start": 424.62,
+   "end": 430.797,
+   "spoken": "Take this Sea, whose diapason knells On scrolls of silver snowy sentences,"
+  },
+  {
+   "i": 32,
+   "kind": "para",
+   "html": "<p>大海的 diapason（全音域的共鸣）在银色雪白的判词卷轴上敲响丧钟。Beach 再次找到了梅尔维尔的出处：《白鲸》第 51 章描写月夜中的波浪如 &quot;scrolls of silver&quot;——银色的卷轴。但在克莱恩这里，银色卷轴上写着 &quot;sentences&quot;——既是句子，也是判决。大海不仅仅是美丽的，它在审判。</p>",
+   "start": 431.347,
+   "end": 457.017,
+   "spoken": "大海的 diapason（全音域的共鸣）在银色雪白的判词卷轴上敲响丧钟。Beach 再次找到了梅尔维尔的出处：《白鲸》第 51 章描写月夜中的波浪如 \"scrolls of silver\"——银色的卷轴。但在克莱恩这里，银色卷轴上写着 \"sentences\"——既是句子，也是判决。大海不仅仅是美丽的，它在审判。"
+  },
+  {
+   "i": 33,
+   "kind": "para",
+   "html": "<p>这些判决由 &quot;sceptred terror&quot;（执笏的恐怖）宣布——恐怖本身坐上了审判席，手持权杖。但克莱恩紧接着说，&quot;this is also her&quot;——这也是她，也就是大海。恐怖与美是同一个存在。然后是关键的一句：这位执笏的恐怖 &quot;rends / All but the pieties of lovers' hands&quot;——撕碎一切，唯独留下恋人之手的虔诚。大海的审判撕碎万物，但恋人的虔诚不在其管辖之内。</p>",
+   "start": 457.567,
+   "end": 487.335,
+   "spoken": "这些判决由 \"sceptred terror\"（执笏的恐怖）宣布——恐怖本身坐上了审判席，手持权杖。但克莱恩紧接着说，\"this is also her\"——这也是她，也就是大海。恐怖与美是同一个存在。然后是关键的一句：这位执笏的恐怖 \"rends / All but the pieties of lovers' hands\"——撕碎一切，唯独留下恋人之手的虔诚。大海的审判撕碎万物，但恋人的虔诚不在其管辖之内。"
+  },
+  {
+   "i": 34,
+   "kind": "rule",
+   "html": "<hr>",
+   "start": 487.885,
+   "end": 489.385
+  },
+  {
+   "i": 35,
+   "kind": "heading",
+   "html": "<h2>第三节：&quot;adagios of islands&quot;</h2>",
+   "level": 2,
+   "start": 489.385,
+   "end": 492.322,
+   "spoken": "第三节：\"adagios of islands\""
+  },
+  {
+   "i": 36,
+   "kind": "para",
+   "html": "<p>上一章我们讲过 Irwin 对这个短语的分析。现在让我们看看它在诗中的位置，体会隐喻如何在上下文中层层叠加。</p>",
+   "start": 493.222,
+   "end": 502.822,
+   "spoken": "上一章我们讲过 Irwin 对这个短语的分析。现在让我们看看它在诗中的位置，体会隐喻如何在上下文中层层叠加。"
+  },
+  {
+   "i": 37,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">And onward, as bells off San Salvador<br>Salute the crocus lustres of the stars,<br>In these poinsettia meadows of her tides,—<br>Adagios of islands, O my Prodigal,<br>Complete the dark confessions her veins spell.</p>",
+   "start": 503.372,
+   "end": 517.443,
+   "spoken": "And onward, as bells off San Salvador Salute the crocus lustres of the stars, In these poinsettia meadows of her tides,— Adagios of islands, O my Prodigal, Complete the dark confessions her veins spell."
+  },
+  {
+   "i": 38,
+   "kind": "para",
+   "html": "<p>&quot;Bells off San Salvador&quot;——圣萨尔瓦多附近的钟声。San Salvador 是哥伦布登陆新大陆的第一个岛屿。名字本身就意味着&quot;圣救世主&quot;。钟声在向星辰的 &quot;crocus lustres&quot;（番红花光辉）致敬。Crocus 是春天最早开放的花，颜色从金黄到紫红——星光被赋予了花朵的颜色和春天的希望。</p>",
+   "start": 517.993,
+   "end": 543.036,
+   "spoken": "\"Bells off San Salvador\"——圣萨尔瓦多附近的钟声。San Salvador 是哥伦布登陆新大陆的第一个岛屿。名字本身就意味着\"圣救世主\"。钟声在向星辰的 \"crocus lustres\"（番红花光辉）致敬。Crocus 是春天最早开放的花，颜色从金黄到紫红——星光被赋予了花朵的颜色和春天的希望。"
+  },
+  {
+   "i": 39,
+   "kind": "para",
+   "html": "<p>大海的潮汐变成了 &quot;poinsettia meadows&quot;——一品红的草甸。一品红是深红色的花，与前面番红花的金黄形成对比。大海的颜色在这一节里不断变化——银色、金黄、深红——像一幅印象派绘画。</p>",
+   "start": 543.586,
+   "end": 561.124,
+   "spoken": "大海的潮汐变成了 \"poinsettia meadows\"——一品红的草甸。一品红是深红色的花，与前面番红花的金黄形成对比。大海的颜色在这一节里不断变化——银色、金黄、深红——像一幅印象派绘画。"
+  },
+  {
+   "i": 40,
+   "kind": "para",
+   "html": "<p>然后是 &quot;Adagios of islands, O my Prodigal&quot;。克莱恩自己在《一般目的与理论》中解释过这个短语：它指的是&quot;一艘船在密集的群岛之间穿行时的运动，那种节奏&quot;。但正如 Irwin 指出的，这远不止于一个视觉印象。&quot;Adagio&quot; 是音乐中的慢板乐章——快速乐章之间的对比性段落。从摇晃的船上看去，岛屿以慢板的节奏移动。但在诗的语境中，&quot;adagios of islands&quot; 同时激活了水、性爱、诗歌想象力与道成肉身之间的深层关联。</p>",
+   "start": 561.674,
+   "end": 598.524,
+   "spoken": "然后是 \"Adagios of islands, O my Prodigal\"。克莱恩自己在《一般目的与理论》中解释过这个短语：它指的是\"一艘船在密集的群岛之间穿行时的运动，那种节奏\"。但正如 Irwin 指出的，这远不止于一个视觉印象。\"Adagio\" 是音乐中的慢板乐章——快速乐章之间的对比性段落。从摇晃的船上看去，岛屿以慢板的节奏移动。但在诗的语境中，\"adagios of islands\" 同时激活了水、性爱、诗歌想象力与道成肉身之间的深层关联。"
+  },
+  {
+   "i": 41,
+   "kind": "para",
+   "html": "<p>&quot;O my Prodigal&quot;（哦我的浪子）——对情人的呼唤。Prodigal 是《圣经》中浪子的形象——那个挥霍了父亲财产、远走他乡的儿子。克莱恩的水手情人就是这样一个浪子：漂泊在海上，把自己交给了远方。</p>",
+   "start": 599.074,
+   "end": 614.852,
+   "spoken": "\"O my Prodigal\"（哦我的浪子）——对情人的呼唤。Prodigal 是《圣经》中浪子的形象——那个挥霍了父亲财产、远走他乡的儿子。克莱恩的水手情人就是这样一个浪子：漂泊在海上，把自己交给了远方。"
+  },
+  {
+   "i": 42,
+   "kind": "para",
+   "html": "<p>这些慢板的岛屿 &quot;complete the dark confessions her veins spell&quot;——完成大海的血管拼写出的黑暗告白。大海有血管，有告白，有审判，有笑声——她是一个完整的、活的存在。Irwin 的关键论点在这里变得清晰：性爱与诗歌创造都是一种&quot;使道成为肉身&quot;的行为。爱情的后代就是承载它的诗歌本身。</p>",
+   "start": 615.402,
+   "end": 638.982,
+   "spoken": "这些慢板的岛屿 \"complete the dark confessions her veins spell\"——完成大海的血管拼写出的黑暗告白。大海有血管，有告白，有审判，有笑声——她是一个完整的、活的存在。Irwin 的关键论点在这里变得清晰：性爱与诗歌创造都是一种\"使道成为肉身\"的行为。爱情的后代就是承载它的诗歌本身。"
+  },
+  {
+   "i": 43,
+   "kind": "rule",
+   "html": "<hr>",
+   "start": 639.532,
+   "end": 641.032
+  },
+  {
+   "i": 44,
+   "kind": "heading",
+   "html": "<h2>最后的祈祷</h2>",
+   "level": 2,
+   "start": 641.032,
+   "end": 642.437,
+   "spoken": "最后的祈祷"
+  },
+  {
+   "i": 45,
+   "kind": "para",
+   "html": "<p>全诗的最后一节是克莱恩写过的最伟大的段落之一，值得我们逐行停留。</p>",
+   "start": 643.337,
+   "end": 648.84,
+   "spoken": "全诗的最后一节是克莱恩写过的最伟大的段落之一，值得我们逐行停留。"
+  },
+  {
+   "i": 46,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">Bind us in time, O Seasons clear, and awe.</p>",
+   "start": 649.39,
+   "end": 652.838,
+   "spoken": "Bind us in time, O Seasons clear, and awe."
+  },
+  {
+   "i": 47,
+   "kind": "para",
+   "html": "<p>把我们束缚在时间中吧，清澈而庄严的季节。这一行有一个惊人的悖论：恋人们不是请求逃离时间，而是请求被束缚在时间之中。&quot;Bind&quot;（束缚）是一个限制性的动词——恋人们请求的不是自由，而是被允许留在此刻。&quot;Seasons clear&quot; 不只是&quot;清澈的季节&quot;——clear 意味着透明，意味着这些季节是可以被看穿的，它们的本质是敞开的。最后一个词 &quot;awe&quot;（庄严/敬畏）既是形容季节的品质，也独立地悬挂在行尾——一种无法归类的情感。</p>",
+   "start": 653.388,
+   "end": 691.495,
+   "spoken": "把我们束缚在时间中吧，清澈而庄严的季节。这一行有一个惊人的悖论：恋人们不是请求逃离时间，而是请求被束缚在时间之中。\"Bind\"（束缚）是一个限制性的动词——恋人们请求的不是自由，而是被允许留在此刻。\"Seasons clear\" 不只是\"清澈的季节\"——clear 意味着透明，意味着这些季节是可以被看穿的，它们的本质是敞开的。最后一个词 \"awe\"（庄严/敬畏）既是形容季节的品质，也独立地悬挂在行尾——一种无法归类的情感。"
+  },
+  {
+   "i": 48,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">O minstrel galleons of Carib fire,</p>",
+   "start": 692.045,
+   "end": 695.192,
+   "spoken": "O minstrel galleons of Carib fire,"
+  },
+  {
+   "i": 49,
+   "kind": "para",
+   "html": "<p>哦，加勒比火焰的吟游诗人般的大帆船。这个短语的密度是典型的克莱恩。&quot;Galleons&quot;（大帆船）是十六世纪西班牙探险时代的船只——哥伦布的船队，载着黄金和香料穿越大西洋。&quot;Minstrel&quot;（吟游诗人）——这些船不只运载货物，它们在歌唱。它们是诗人化的船，是带着音乐穿越加勒比海的存在。&quot;Carib fire&quot;（加勒比的火焰）——热带的火，肉体的火，也是落日把海面烧成金红色的那种火。一个短语同时唤起了历史（大航海时代）、音乐（吟游诗人）和肉身（火焰）。</p>",
+   "start": 695.742,
+   "end": 736.679,
+   "spoken": "哦，加勒比火焰的吟游诗人般的大帆船。这个短语的密度是典型的克莱恩。\"Galleons\"（大帆船）是十六世纪西班牙探险时代的船只——哥伦布的船队，载着黄金和香料穿越大西洋。\"Minstrel\"（吟游诗人）——这些船不只运载货物，它们在歌唱。它们是诗人化的船，是带着音乐穿越加勒比海的存在。\"Carib fire\"（加勒比的火焰）——热带的火，肉体的火，也是落日把海面烧成金红色的那种火。一个短语同时唤起了历史（大航海时代）、音乐（吟游诗人）和肉身（火焰）。"
+  },
+  {
+   "i": 50,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">Bequeath us to no earthly shore until<br>Is answered in the vortex of our grave<br>The seal's wide spindrift gaze toward paradise.</p>",
+   "start": 737.229,
+   "end": 744.694,
+   "spoken": "Bequeath us to no earthly shore until Is answered in the vortex of our grave The seal's wide spindrift gaze toward paradise."
+  },
+  {
+   "i": 51,
+   "kind": "para",
+   "html": "<p>不要把我们遗赠给尘世的岸边，除非在我们坟墓的漩涡中，海豹朝向天堂的浪花凝视得到了回答。</p>",
+   "start": 745.244,
+   "end": 754.067,
+   "spoken": "不要把我们遗赠给尘世的岸边，除非在我们坟墓的漩涡中，海豹朝向天堂的浪花凝视得到了回答。"
+  },
+  {
+   "i": 52,
+   "kind": "para",
+   "html": "<p>这三行的句法故意倒装，几乎需要拆解才能读通。&quot;Bequeath us to no earthly shore&quot;——不要让我们回到陆地，回到庸常。&quot;Until / Is answered&quot;——要等到一个回答出现——但什么样的回答？&quot;In the vortex of our grave&quot;——在我们坟墓的漩涡中。回答不在陆地上，而在死亡的旋涡里。</p>",
+   "start": 754.617,
+   "end": 777.257,
+   "spoken": "这三行的句法故意倒装，几乎需要拆解才能读通。\"Bequeath us to no earthly shore\"——不要让我们回到陆地，回到庸常。\"Until / Is answered\"——要等到一个回答出现——但什么样的回答？\"In the vortex of our grave\"——在我们坟墓的漩涡中。回答不在陆地上，而在死亡的旋涡里。"
+  },
+  {
+   "i": 53,
+   "kind": "para",
+   "html": "<p>最后是全诗最神秘的意象：&quot;the seal's wide spindrift gaze toward paradise&quot;。&quot;Seal&quot; 是海豹——一种用巨大的黑色眼睛从水面凝视的生物。&quot;Spindrift&quot; 是浪花——被风从浪尖吹起的水沫。海豹透过浪花凝视天堂。但 &quot;seal&quot; 同时也是封印——一种官方的、不可撤销的印记。这个凝视是被封印的，它有终极的权威性。</p>",
+   "start": 777.807,
+   "end": 803.395,
+   "spoken": "最后是全诗最神秘的意象：\"the seal's wide spindrift gaze toward paradise\"。\"Seal\" 是海豹——一种用巨大的黑色眼睛从水面凝视的生物。\"Spindrift\" 是浪花——被风从浪尖吹起的水沫。海豹透过浪花凝视天堂。但 \"seal\" 同时也是封印——一种官方的、不可撤销的印记。这个凝视是被封印的，它有终极的权威性。"
+  },
+  {
+   "i": 54,
+   "kind": "para",
+   "html": "<p>恋人们请求：留在海上，留在激情中，直到这个凝视——这个透过死亡的浪花朝向天堂的凝视——得到回答。什么样的回答？诗没有说。它只是以这个悬而未决的姿态结束了第二首。</p>",
+   "start": 803.945,
+   "end": 819.723,
+   "spoken": "恋人们请求：留在海上，留在激情中，直到这个凝视——这个透过死亡的浪花朝向天堂的凝视——得到回答。什么样的回答？诗没有说。它只是以这个悬而未决的姿态结束了第二首。"
+  },
+  {
+   "i": 55,
+   "kind": "rule",
+   "html": "<hr>",
+   "start": 820.273,
+   "end": 821.773
+  },
+  {
+   "i": 56,
+   "kind": "heading",
+   "html": "<h2>Voyages III：夜海中的爱与死</h2>",
+   "level": 2,
+   "start": 821.773,
+   "end": 824.92,
+   "spoken": "Voyages III：夜海中的爱与死"
+  },
+  {
+   "i": 57,
+   "kind": "para",
+   "html": "<p>第三首把我们带入夜晚的大海。</p>",
+   "start": 825.82,
+   "end": 828.676,
+   "spoken": "第三首把我们带入夜晚的大海。"
+  },
+  {
+   "i": 58,
+   "kind": "para",
+   "html": "<p>批评家 Unterecker 提出了一个改变整首诗面貌的解读：这首诗应该在夜景中阅读，而非阳光下。在他之前，Empson 假设诗中的光是太阳打在海面上的碎光。但 Unterecker 说：如果星星真的就是星星呢？如果光不是被打碎的阳光而是被反射的星光呢？</p>",
+   "start": 829.226,
+   "end": 849.95,
+   "spoken": "批评家 Unterecker 提出了一个改变整首诗面貌的解读：这首诗应该在夜景中阅读，而非阳光下。在他之前，Empson 假设诗中的光是太阳打在海面上的碎光。但 Unterecker 说：如果星星真的就是星星呢？如果光不是被打碎的阳光而是被反射的星光呢？"
+  },
+  {
+   "i": 59,
+   "kind": "para",
+   "html": "<p>如果我们把场景设定在夜晚，许多困难的意象突然变得清晰——而且变得更加恐怖。</p>",
+   "start": 850.5,
+   "end": 856.978,
+   "spoken": "如果我们把场景设定在夜晚，许多困难的意象突然变得清晰——而且变得更加恐怖。"
+  },
+  {
+   "i": 60,
+   "kind": "para",
+   "html": "<p>诗的第一节：情人的主题——&quot;the theme of you&quot;——在夜海中被 &quot;retrieved&quot;（找回）。&quot;Retrieved&quot; 这个词同时暗示了死亡——人从黑暗中被找回，就像从失踪中被寻获。&quot;Reliquary hands&quot;（圣物匣般的手）不是抽象的比喻。Unterecker 的解读是：被星光镶嵌的黑色波浪就像圣物匣——中世纪用来存放圣人遗骨的珠宝匣子。波浪的手中包裹着一具神圣的遗体。圣物匣不仅暗示对神圣之人的崇拜，也提醒我们那个神圣之人已经死去。</p>",
+   "start": 857.528,
+   "end": 893.914,
+   "spoken": "诗的第一节：情人的主题——\"the theme of you\"——在夜海中被 \"retrieved\"（找回）。\"Retrieved\" 这个词同时暗示了死亡——人从黑暗中被找回，就像从失踪中被寻获。\"Reliquary hands\"（圣物匣般的手）不是抽象的比喻。Unterecker 的解读是：被星光镶嵌的黑色波浪就像圣物匣——中世纪用来存放圣人遗骨的珠宝匣子。波浪的手中包裹着一具神圣的遗体。圣物匣不仅暗示对神圣之人的崇拜，也提醒我们那个神圣之人已经死去。"
+  },
+  {
+   "i": 61,
+   "kind": "para",
+   "html": "<p>然后恋人们被允许穿过大海的门——</p>",
+   "start": 894.464,
+   "end": 897.355,
+   "spoken": "然后恋人们被允许穿过大海的门——"
+  },
+  {
+   "i": 62,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">admitted through black swollen gates</p>",
+   "start": 897.905,
+   "end": 900.761,
+   "spoken": "admitted through black swollen gates"
+  },
+  {
+   "i": 63,
+   "kind": "para",
+   "html": "<p>黑色膨胀的门。在夜景中，这些门就是黑色的、膨胀的浪头——同时也是通往死亡的入口。Unterecker 追问：那些 &quot;whirling pillars&quot;（旋转的柱子）是不是不应该被读成水龙卷——向上的——而是漩涡——向下的？因为漩涡是旋转着向下沉的柱子，把一切拖入深处。回头看 Voyages II 的结尾就有了验证：&quot;the vortex of our grave&quot;——我们坟墓的漩涡。如果第二首已经把坟墓描述为漩涡，第三首的旋转柱子就应该指向同一个方向——向下，向着死亡。</p>",
+   "start": 901.311,
+   "end": 939.994,
+   "spoken": "黑色膨胀的门。在夜景中，这些门就是黑色的、膨胀的浪头——同时也是通往死亡的入口。Unterecker 追问：那些 \"whirling pillars\"（旋转的柱子）是不是不应该被读成水龙卷——向上的——而是漩涡——向下的？因为漩涡是旋转着向下沉的柱子，把一切拖入深处。回头看 Voyages II 的结尾就有了验证：\"the vortex of our grave\"——我们坟墓的漩涡。如果第二首已经把坟墓描述为漩涡，第三首的旋转柱子就应该指向同一个方向——向下，向着死亡。"
+  },
+  {
+   "i": 64,
+   "kind": "para",
+   "html": "<p>在漩涡之下，是水下的世界。光与光确实在不停地角力——&quot;wrestling&quot;——以一种比海面上丰富得多的方式。交织的光线穿过一层又一层波浪，抵达那具摇晃的身体——&quot;Your body rocking!&quot;。如果场景在水下，这具摇晃的身体就是一具被水流晃动的死者的身体。</p>",
+   "start": 940.544,
+   "end": 962.766,
+   "spoken": "在漩涡之下，是水下的世界。光与光确实在不停地角力——\"wrestling\"——以一种比海面上丰富得多的方式。交织的光线穿过一层又一层波浪，抵达那具摇晃的身体——\"Your body rocking!\"。如果场景在水下，这具摇晃的身体就是一具被水流晃动的死者的身体。"
+  },
+  {
+   "i": 65,
+   "kind": "para",
+   "html": "<p>混乱达到顶点后，突然放慢。死亡如果被接纳——&quot;if shed&quot;——产生的不是屠杀（&quot;carnage&quot;），而是奇迹般的转化：</p>",
+   "start": 963.316,
+   "end": 973.765,
+   "spoken": "混乱达到顶点后，突然放慢。死亡如果被接纳——\"if shed\"——产生的不是屠杀（\"carnage\"），而是奇迹般的转化："
+  },
+  {
+   "i": 66,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">The silken skilled transmemberment of song.</p>",
+   "start": 974.315,
+   "end": 977.078,
+   "spoken": "The silken skilled transmemberment of song."
+  },
+  {
+   "i": 67,
+   "kind": "para",
+   "html": "<p>歌的丝滑而精巧的超越性变形。&quot;Transmemberment&quot; 是克莱恩的造词。它暗示 dismemberment（肢解）的反面——俄耳甫斯被撕碎后，通过歌声重新获得完整。不是修复，而是变形。不是回到原来的样子，而是成为一种新的、更高的存在。&quot;Silken&quot;（丝滑的）和 &quot;skilled&quot;（精巧的）——这种变形不是暴力的，而是柔软的、技艺精湛的。肢解是粗暴的，但超越性变形是丝绸般的。</p>",
+   "start": 977.628,
+   "end": 1009.521,
+   "spoken": "歌的丝滑而精巧的超越性变形。\"Transmemberment\" 是克莱恩的造词。它暗示 dismemberment（肢解）的反面——俄耳甫斯被撕碎后，通过歌声重新获得完整。不是修复，而是变形。不是回到原来的样子，而是成为一种新的、更高的存在。\"Silken\"（丝滑的）和 \"skilled\"（精巧的）——这种变形不是暴力的，而是柔软的、技艺精湛的。肢解是粗暴的，但超越性变形是丝绸般的。"
+  },
+  {
+   "i": 68,
+   "kind": "para",
+   "html": "<p>Schenck 将 Voyages 与惠特曼的 <em>Out of the Cradle Endlessly Rocking</em> 并置阅读。两首诗都有一个诗人——启蒙者——和一片身份暧昧的大海，既是母亲也是新娘。两首诗都追踪了从天真的童年到&quot;知晓&quot;的成年的过程。克莱恩的花朵意象——&quot;crocus lustres&quot;（番红花的光辉）、&quot;poinsettia meadows&quot;（一品红的草甸）、&quot;one floating flower&quot;（一朵漂浮的花）——同时承载着婚礼与葬礼的双重含义。在 Voyages 的世界里，一场婚礼和一场葬礼之间没有清晰的界限。</p>",
+   "start": 1010.071,
+   "end": 1049.865,
+   "spoken": "Schenck 将 Voyages 与惠特曼的 Out of the Cradle Endlessly Rocking 并置阅读。两首诗都有一个诗人——启蒙者——和一片身份暧昧的大海，既是母亲也是新娘。两首诗都追踪了从天真的童年到\"知晓\"的成年的过程。克莱恩的花朵意象——\"crocus lustres\"（番红花的光辉）、\"poinsettia meadows\"（一品红的草甸）、\"one floating flower\"（一朵漂浮的花）——同时承载着婚礼与葬礼的双重含义。在 Voyages 的世界里，一场婚礼和一场葬礼之间没有清晰的界限。"
+  },
+  {
+   "i": 69,
+   "kind": "rule",
+   "html": "<hr>",
+   "start": 1050.415,
+   "end": 1051.915
+  },
+  {
+   "i": 70,
+   "kind": "heading",
+   "html": "<h2>弧线的前半段</h2>",
+   "level": 2,
+   "start": 1051.915,
+   "end": 1053.32,
+   "spoken": "弧线的前半段"
+  },
+  {
+   "i": 71,
+   "kind": "para",
+   "html": "<p>这就是 Voyages 前三首的弧线：从岸上的无法沟通，到海上的狂喜与梦，到夜海中爱与死的交缠。</p>",
+   "start": 1054.22,
+   "end": 1062.52,
+   "spoken": "这就是 Voyages 前三首的弧线：从岸上的无法沟通，到海上的狂喜与梦，到夜海中爱与死的交缠。"
+  },
+  {
+   "i": 72,
+   "kind": "para",
+   "html": "<p>注意这三首诗中感官模式的变化。第一首几乎全是视觉——画面中的孩子，沙滩，闪电与雷声。第二首是一个彻底的梦——视觉、听觉、触觉在隐喻的逻辑中混合为一，无法分离。第三首把梦浸入黑暗——星光取代了阳光，漩涡取代了波浪，死者的身体取代了恋人的拥抱。</p>",
+   "start": 1063.07,
+   "end": 1087.927,
+   "spoken": "注意这三首诗中感官模式的变化。第一首几乎全是视觉——画面中的孩子，沙滩，闪电与雷声。第二首是一个彻底的梦——视觉、听觉、触觉在隐喻的逻辑中混合为一，无法分离。第三首把梦浸入黑暗——星光取代了阳光，漩涡取代了波浪，死者的身体取代了恋人的拥抱。"
+  },
+  {
+   "i": 73,
+   "kind": "para",
+   "html": "<p>诗人还不知道接下来会发生什么。但大海已经告诉了我们：它的底部是残酷的。</p>",
+   "start": 1088.477,
+   "end": 1095.339,
+   "spoken": "诗人还不知道接下来会发生什么。但大海已经告诉了我们：它的底部是残酷的。"
+  },
+  {
+   "i": 74,
+   "kind": "para",
+   "html": "<p>下一章，我们继续读后三首。诗人从经验者变成沉思者，然后是失去者，最后是——也许——找到了某种回答的人。</p>",
+   "start": 1095.889,
+   "end": 1107.057,
+   "spoken": "下一章，我们继续读后三首。诗人从经验者变成沉思者，然后是失去者，最后是——也许——找到了某种回答的人。"
+  }
+ ]
+}

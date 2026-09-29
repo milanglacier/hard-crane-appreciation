@@ -1,0 +1,590 @@
+{
+ "id": "03-voyages-part2",
+ "title": "第三章 Voyages：航程（下）",
+ "audio": "03-voyages-part2.mp3",
+ "duration": 1121.831,
+ "language": "zh-Hans",
+ "provider": "minimax",
+ "voice": "Chinese (Mandarin)_Warm_Bestie",
+ "source_hash": "52235076859245bd586d589397938a9ad19aaeff4c56cd09ada009662b4cff8b",
+ "generated_at": "2026-09-29T04:27:03+00:00",
+ "segments": [
+  {
+   "i": 0,
+   "kind": "heading",
+   "html": "<h1>第三章 Voyages：航程（下）</h1>",
+   "level": 1,
+   "start": 0.0,
+   "end": 2.763,
+   "spoken": "第三章 Voyages：航程（下）"
+  },
+  {
+   "i": 1,
+   "kind": "para",
+   "html": "<p>上一章我们跟着克莱恩从岸上走进了大海——从孩童的天真，到 Voyages II 的梦幻狂喜，到 Voyages III 夜海中爱与死的交缠。现在，诗人要从经验者变成沉思者。然后他会失去一切。然后他会找到一个答案——或者至少是一个答案的轮廓。</p>",
+   "start": 3.663,
+   "end": 23.957,
+   "spoken": "上一章我们跟着克莱恩从岸上走进了大海——从孩童的天真，到 Voyages II 的梦幻狂喜，到 Voyages III 夜海中爱与死的交缠。现在，诗人要从经验者变成沉思者。然后他会失去一切。然后他会找到一个答案——或者至少是一个答案的轮廓。"
+  },
+  {
+   "i": 2,
+   "kind": "para",
+   "html": "<p>这一章读后三首：Voyages IV、V 和 VI。</p>",
+   "start": 24.507,
+   "end": 29.662,
+   "spoken": "这一章读后三首：Voyages IV、V 和 VI。"
+  },
+  {
+   "i": 3,
+   "kind": "rule",
+   "html": "<hr>",
+   "start": 30.212,
+   "end": 31.712
+  },
+  {
+   "i": 4,
+   "kind": "heading",
+   "html": "<h2>Voyages IV：诗人的两难</h2>",
+   "level": 2,
+   "start": 31.712,
+   "end": 35.126,
+   "spoken": "Voyages IV：诗人的两难"
+  },
+  {
+   "i": 5,
+   "kind": "para",
+   "html": "<p>从第四首开始，诗的气质改变了。前面三首的危险、狂喜和恐惧现在被回顾、被审视。诗人不再是泡在海水里的经验者，而是坐在岸上思考的人。</p>",
+   "start": 36.026,
+   "end": 49.76,
+   "spoken": "从第四首开始，诗的气质改变了。前面三首的危险、狂喜和恐惧现在被回顾、被审视。诗人不再是泡在海水里的经验者，而是坐在岸上思考的人。"
+  },
+  {
+   "i": 6,
+   "kind": "para",
+   "html": "<p>爱情仍然存在，但它被放进了时间的框架里。整首诗中反复出现时间的标记——&quot;hours and days,&quot; &quot;advancing now,&quot; &quot;June,&quot; &quot;today,&quot; &quot;widening noon,&quot; &quot;my years.&quot; 这些词把爱情从永恒拉回了凡间。在 Voyages II 中，时间是不存在的——恋人请求季节把他们束缚在时间中，因为他们还活在时间之外。现在时间到场了，开始清点它的账单。</p>",
+   "start": 50.31,
+   "end": 79.742,
+   "spoken": "爱情仍然存在，但它被放进了时间的框架里。整首诗中反复出现时间的标记——\"hours and days,\" \"advancing now,\" \"June,\" \"today,\" \"widening noon,\" \"my years.\" 这些词把爱情从永恒拉回了凡间。在 Voyages II 中，时间是不存在的——恋人请求季节把他们束缚在时间中，因为他们还活在时间之外。现在时间到场了，开始清点它的账单。"
+  },
+  {
+   "i": 7,
+   "kind": "para",
+   "html": "<p>诗人面对一个结构性的矛盾——不是情感的犹豫，而是一个逻辑上无法解决的两难。他知道，如果自然中的一切都必须 &quot;close&quot;（凋谢），爱情不可能是例外。同时他又知道——</p>",
+   "start": 80.292,
+   "end": 93.55,
+   "spoken": "诗人面对一个结构性的矛盾——不是情感的犹豫，而是一个逻辑上无法解决的两难。他知道，如果自然中的一切都必须 \"close\"（凋谢），爱情不可能是例外。同时他又知道——"
+  },
+  {
+   "i": 8,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">first be lost in fatal tides to tell</p>",
+   "start": 94.1,
+   "end": 97.119,
+   "spoken": "first be lost in fatal tides to tell"
+  },
+  {
+   "i": 9,
+   "kind": "para",
+   "html": "<p>先在致命的潮汐中迷失，才能讲述。这一行是克莱恩整组诗中最残酷的自我认知。它说的是：要成为一个有价值的诗人，你必须先被摧毁。但被摧毁意味着离开爱人。所以诗人的使命和他的爱情在根本上是互相排斥的——你不可能同时留在爱人身边和沉入致命的潮汐。</p>",
+   "start": 97.669,
+   "end": 121.086,
+   "spoken": "先在致命的潮汐中迷失，才能讲述。这一行是克莱恩整组诗中最残酷的自我认知。它说的是：要成为一个有价值的诗人，你必须先被摧毁。但被摧毁意味着离开爱人。所以诗人的使命和他的爱情在根本上是互相排斥的——你不可能同时留在爱人身边和沉入致命的潮汐。"
+  },
+  {
+   "i": 10,
+   "kind": "para",
+   "html": "<p>Schenck 注意到，克莱恩用花朵的意象来表达这个两难。他呼唤花朵和羽笔来铺设恋人们的道路：</p>",
+   "start": 121.636,
+   "end": 129.694,
+   "spoken": "Schenck 注意到，克莱恩用花朵的意象来表达这个两难。他呼唤花朵和羽笔来铺设恋人们的道路："
+  },
+  {
+   "i": 11,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">Shall they not stem and close in our own steps<br>Bright staves of flowers and quills to-day as I<br>Must first be lost in fatal tides to tell?</p>",
+   "start": 130.244,
+   "end": 138.173,
+   "spoken": "Shall they not stem and close in our own steps Bright staves of flowers and quills to-day as I Must first be lost in fatal tides to tell?"
+  },
+  {
+   "i": 12,
+   "kind": "para",
+   "html": "<p>花朵同时在做两件互相矛盾的事。它们铺成婚礼的队列——恋人们沿着花瓣走向结合。它们也覆盖在灵柩上——为那个即将被致命潮汐吞没的人送葬。Schenck 称这是一个&quot;挽歌与婚歌意象的交叉修辞&quot;。一个仪式同时是婚礼和葬礼——而诗人是新郎也是死者。</p>",
+   "start": 138.723,
+   "end": 160.341,
+   "spoken": "花朵同时在做两件互相矛盾的事。它们铺成婚礼的队列——恋人们沿着花瓣走向结合。它们也覆盖在灵柩上——为那个即将被致命潮汐吞没的人送葬。Schenck 称这是一个\"挽歌与婚歌意象的交叉修辞\"。一个仪式同时是婚礼和葬礼——而诗人是新郎也是死者。"
+  },
+  {
+   "i": 13,
+   "kind": "para",
+   "html": "<p>但诗人还没有放弃。他仍然在试图寻找第三条路——一种能同时容纳爱情和诗歌使命的语法：</p>",
+   "start": 160.891,
+   "end": 168.867,
+   "spoken": "但诗人还没有放弃。他仍然在试图寻找第三条路——一种能同时容纳爱情和诗歌使命的语法："
+  },
+  {
+   "i": 14,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">No stream of greater love advancing now<br>Than, singing, this mortality alone<br>Through clay aflow immortality to you.</p>",
+   "start": 169.417,
+   "end": 178.241,
+   "spoken": "No stream of greater love advancing now Than, singing, this mortality alone Through clay aflow immortality to you."
+  },
+  {
+   "i": 15,
+   "kind": "para",
+   "html": "<p>没有比这更伟大的爱情之流了：歌唱着，让这必死性独自穿过泥土，向你流淌不朽。注意 &quot;singing&quot;（歌唱着）这个词——它悄悄地把诗歌的创造行为塞进了爱情的流淌里。如果诗歌本身就是爱情的流淌方式，那么写诗和爱一个人也许不必互相排斥。</p>",
+   "start": 178.791,
+   "end": 199.561,
+   "spoken": "没有比这更伟大的爱情之流了：歌唱着，让这必死性独自穿过泥土，向你流淌不朽。注意 \"singing\"（歌唱着）这个词——它悄悄地把诗歌的创造行为塞进了爱情的流淌里。如果诗歌本身就是爱情的流淌方式，那么写诗和爱一个人也许不必互相排斥。"
+  },
+  {
+   "i": 16,
+   "kind": "para",
+   "html": "<p>这个希望是脆弱的。最后几行仍在期待一场结合——&quot;widening noon within your breast for gathering&quot;（你胸中为聚集而扩展的正午），仍在期待接收 &quot;the secret oar and petals of all love&quot;（一切爱的秘密桨叶与花瓣）。但我们已经感觉到，这种期待更像是祈祷而不是预言。</p>",
+   "start": 200.111,
+   "end": 222.642,
+   "spoken": "这个希望是脆弱的。最后几行仍在期待一场结合——\"widening noon within your breast for gathering\"（你胸中为聚集而扩展的正午），仍在期待接收 \"the secret oar and petals of all love\"（一切爱的秘密桨叶与花瓣）。但我们已经感觉到，这种期待更像是祈祷而不是预言。"
+  },
+  {
+   "i": 17,
+   "kind": "rule",
+   "html": "<hr>",
+   "start": 223.191,
+   "end": 224.691
+  },
+  {
+   "i": 18,
+   "kind": "heading",
+   "html": "<h2>Voyages V：分离</h2>",
+   "level": 2,
+   "start": 224.691,
+   "end": 226.944,
+   "spoken": "Voyages V：分离"
+  },
+  {
+   "i": 19,
+   "kind": "para",
+   "html": "<p>第五首是这组诗中最清晰、最痛苦的一首。与前面梦幻般的模糊形成鲜明对比。</p>",
+   "start": 227.844,
+   "end": 234.705,
+   "spoken": "第五首是这组诗中最清晰、最痛苦的一首。与前面梦幻般的模糊形成鲜明对比。"
+  },
+  {
+   "i": 20,
+   "kind": "para",
+   "html": "<p>全诗的第一个词就定了基调：</p>",
+   "start": 235.255,
+   "end": 237.601,
+   "spoken": "全诗的第一个词就定了基调："
+  },
+  {
+   "i": 21,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">Meticulous</p>",
+   "start": 238.151,
+   "end": 239.428,
+   "spoken": "Meticulous"
+  },
+  {
+   "i": 22,
+   "kind": "para",
+   "html": "<p>精确的。上一章我们讲到 Voyages II 的世界像一个梦，只能通过自身的逻辑来理解。现在梦醒了。感知变得精确，而精确是残酷的。</p>",
+   "start": 239.978,
+   "end": 252.18,
+   "spoken": "精确的。上一章我们讲到 Voyages II 的世界像一个梦，只能通过自身的逻辑来理解。现在梦醒了。感知变得精确，而精确是残酷的。"
+  },
+  {
+   "i": 23,
+   "kind": "para",
+   "html": "<p>自然不再是流动的载体、无限的空间。它变硬了、变脆了。河口变得 &quot;too brittle&quot;（太脆），天空变得 &quot;hard&quot;（坚硬）。诗人愤怒地质问自然：</p>",
+   "start": 252.73,
+   "end": 265.141,
+   "spoken": "自然不再是流动的载体、无限的空间。它变硬了、变脆了。河口变得 \"too brittle\"（太脆），天空变得 \"hard\"（坚硬）。诗人愤怒地质问自然："
+  },
+  {
+   "i": 24,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">What words<br>Can strangle this deaf moonlight?</p>",
+   "start": 265.691,
+   "end": 268.71,
+   "spoken": "What words Can strangle this deaf moonlight?"
+  },
+  {
+   "i": 25,
+   "kind": "para",
+   "html": "<p>什么样的语词能扼杀这聋了的月光？注意这一句的暴力。&quot;Strangle&quot;——扼杀。诗人不是在向月光倾诉，他想勒死它。而月光是 &quot;deaf&quot;（聋的）——它根本听不见诗人的语词，不管那些词多么有力。他同时在向自然发怒，也在怀疑自己的语言是否还有任何力量。回想 Voyages I 中诗人无法向孩子们传达警告——&quot;And could they hear me I would tell them&quot;。在 Voyages V 中，连自然都聋了。沟通的失败已经从人与人之间扩展到人与宇宙之间。</p>",
+   "start": 269.26,
+   "end": 304.693,
+   "spoken": "什么样的语词能扼杀这聋了的月光？注意这一句的暴力。\"Strangle\"——扼杀。诗人不是在向月光倾诉，他想勒死它。而月光是 \"deaf\"（聋的）——它根本听不见诗人的语词，不管那些词多么有力。他同时在向自然发怒，也在怀疑自己的语言是否还有任何力量。回想 Voyages I 中诗人无法向孩子们传达警告——\"And could they hear me I would tell them\"。在 Voyages V 中，连自然都聋了。沟通的失败已经从人与人之间扩展到人与宇宙之间。"
+  },
+  {
+   "i": 26,
+   "kind": "para",
+   "html": "<p>然后是整组诗中最令人心碎的两个词。恋情的终结被压缩为一个跨行的断裂：</p>",
+   "start": 305.243,
+   "end": 312.024,
+   "spoken": "然后是整组诗中最令人心碎的两个词。恋情的终结被压缩为一个跨行的断裂："
+  },
+  {
+   "i": 27,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">For we<br>Are overtaken.</p>",
+   "start": 312.574,
+   "end": 314.536,
+   "spoken": "For we Are overtaken."
+  },
+  {
+   "i": 28,
+   "kind": "para",
+   "html": "<p>因为我们被超越了。或者说：因为我们被追上了。我们来仔细看这个断裂是如何运作的。&quot;For we&quot; 出现在一个诗节的末尾，&quot;Are overtaken&quot; 出现在下一个诗节的开头。主语和谓语之间被换行和换节切开——形式本身模仿了分离。两个词属于同一个句子，但它们被放在了两个不同的诗节中，就像两个恋人属于同一段关系，却被放进了两个不同的人生。</p>",
+   "start": 315.086,
+   "end": 344.981,
+   "spoken": "因为我们被超越了。或者说：因为我们被追上了。我们来仔细看这个断裂是如何运作的。\"For we\" 出现在一个诗节的末尾，\"Are overtaken\" 出现在下一个诗节的开头。主语和谓语之间被换行和换节切开——形式本身模仿了分离。两个词属于同一个句子，但它们被放在了两个不同的诗节中，就像两个恋人属于同一段关系，却被放进了两个不同的人生。"
+  },
+  {
+   "i": 29,
+   "kind": "para",
+   "html": "<p>一个 &quot;tidal wedge&quot;（潮汐的楔子）插进了恋人之间。楔子是劈裂的工具——它不是突然的打击，而是缓慢地、不可逆地把原本紧贴的东西劈开。这个楔子的材质是潮汐，也就是时间本身的节奏。在 Voyages II 中，潮汐是恋人们航行的载体；现在同样的潮汐成了劈开他们的力量。</p>",
+   "start": 345.531,
+   "end": 369.75,
+   "spoken": "一个 \"tidal wedge\"（潮汐的楔子）插进了恋人之间。楔子是劈裂的工具——它不是突然的打击，而是缓慢地、不可逆地把原本紧贴的东西劈开。这个楔子的材质是潮汐，也就是时间本身的节奏。在 Voyages II 中，潮汐是恋人们航行的载体；现在同样的潮汐成了劈开他们的力量。"
+  },
+  {
+   "i": 30,
+   "kind": "para",
+   "html": "<p>他们被 &quot;the tyranny of moonlight, moonlight loved / And changed&quot;（月光的暴政，被爱过、又变了的月光）慢慢压倒。注意 &quot;moonlight&quot; 出现了两次——第一次是 &quot;tyranny of moonlight&quot;（月光的暴政），暴力的；第二次是 &quot;moonlight loved / And changed&quot;（被爱过、又变了的月光），温柔的。同一个月光同时是暴君和曾经被爱过的东西。它没有变成另一个月光——它一直是同一个月光，只是被感知的方式变了。</p>",
+   "start": 370.3,
+   "end": 403.052,
+   "spoken": "他们被 \"the tyranny of moonlight, moonlight loved / And changed\"（月光的暴政，被爱过、又变了的月光）慢慢压倒。注意 \"moonlight\" 出现了两次——第一次是 \"tyranny of moonlight\"（月光的暴政），暴力的；第二次是 \"moonlight loved / And changed\"（被爱过、又变了的月光），温柔的。同一个月光同时是暴君和曾经被爱过的东西。它没有变成另一个月光——它一直是同一个月光，只是被感知的方式变了。"
+  },
+  {
+   "i": 31,
+   "kind": "para",
+   "html": "<p>接下来发生了一件意味深长的事。水手情人在整组诗中第一次开口说话。他的话以直接引语的形式出现。但他说的话是庸常的——对一个诗人来说，这也许是最不可原谅的品质。</p>",
+   "start": 403.602,
+   "end": 418.613,
+   "spoken": "接下来发生了一件意味深长的事。水手情人在整组诗中第一次开口说话。他的话以直接引语的形式出现。但他说的话是庸常的——对一个诗人来说，这也许是最不可原谅的品质。"
+  },
+  {
+   "i": 32,
+   "kind": "para",
+   "html": "<p>这一刻的真正痛苦不是情人变了。是诗人自己的感知变了。他现在看到的情人，与他之前在梦幻般的激情中看到的情人，不是同一个人——或者说，一直是同一个人，只是诗人之前看不见那个真实的人。Schenck 说，终极的 &quot;piracy&quot;（海盗行为）不是爱情的背叛，而是必死性本身的背叛——人的生命和月光一样短暂、不可靠。</p>",
+   "start": 419.163,
+   "end": 445.228,
+   "spoken": "这一刻的真正痛苦不是情人变了。是诗人自己的感知变了。他现在看到的情人，与他之前在梦幻般的激情中看到的情人，不是同一个人——或者说，一直是同一个人，只是诗人之前看不见那个真实的人。Schenck 说，终极的 \"piracy\"（海盗行为）不是爱情的背叛，而是必死性本身的背叛——人的生命和月光一样短暂、不可靠。"
+  },
+  {
+   "i": 33,
+   "kind": "para",
+   "html": "<p>诗的最后几行让诗人面对一个彻底空洞的宇宙：</p>",
+   "start": 445.778,
+   "end": 449.609,
+   "spoken": "诗的最后几行让诗人面对一个彻底空洞的宇宙："
+  },
+  {
+   "i": 34,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">Knowing I cannot touch your hand and look<br>Too, into that godless cleft of sky<br>Where nothing turns but dead sands flashing.</p>",
+   "start": 450.159,
+   "end": 458.089,
+   "spoken": "Knowing I cannot touch your hand and look Too, into that godless cleft of sky Where nothing turns but dead sands flashing."
+  },
+  {
+   "i": 35,
+   "kind": "para",
+   "html": "<p>他知道自己无法同时触摸恋人的手又仰望天空——那片无神的、裂开的天穹，里面什么都没有，只有死去的沙子在闪烁。&quot;Godless cleft&quot;（无神的裂缝）——天空不再是神圣的穹顶，它是一道裂口，里面空空如也。</p>",
+   "start": 458.639,
+   "end": 477.245,
+   "spoken": "他知道自己无法同时触摸恋人的手又仰望天空——那片无神的、裂开的天穹，里面什么都没有，只有死去的沙子在闪烁。\"Godless cleft\"（无神的裂缝）——天空不再是神圣的穹顶，它是一道裂口，里面空空如也。"
+  },
+  {
+   "i": 36,
+   "kind": "para",
+   "html": "<p>诗人不再是一对中的一半。他是一个新的自我，带着新的自由——以及新的空虚。</p>",
+   "start": 477.795,
+   "end": 484.395,
+   "spoken": "诗人不再是一对中的一半。他是一个新的自我，带着新的自由——以及新的空虚。"
+  },
+  {
+   "i": 37,
+   "kind": "rule",
+   "html": "<hr>",
+   "start": 484.945,
+   "end": 486.445
+  },
+  {
+   "i": 38,
+   "kind": "heading",
+   "html": "<h2>Voyages VI：the imaged Word</h2>",
+   "level": 2,
+   "start": 486.445,
+   "end": 489.591,
+   "spoken": "Voyages VI：the imaged Word"
+  },
+  {
+   "i": 39,
+   "kind": "para",
+   "html": "<p>最后一首。诗人独自面对海洋，独自面对他不认识的新自我。</p>",
+   "start": 490.491,
+   "end": 495.472,
+   "spoken": "最后一首。诗人独自面对海洋，独自面对他不认识的新自我。"
+  },
+  {
+   "i": 40,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">O rivers mingling toward the sky<br>And harbor of the phoenix' breast—<br>My eyes pressed black against the prow,<br>—Thy derelict and blinded guest</p>",
+   "start": 496.022,
+   "end": 505.833,
+   "spoken": "O rivers mingling toward the sky And harbor of the phoenix' breast— My eyes pressed black against the prow, —Thy derelict and blinded guest"
+  },
+  {
+   "i": 41,
+   "kind": "para",
+   "html": "<p>哦汇向天空的河流，凤凰胸膛的港湾——我的眼睛紧贴着船头，一片漆黑——你那遗弃的、失明的客人。</p>",
+   "start": 506.383,
+   "end": 516.147,
+   "spoken": "哦汇向天空的河流，凤凰胸膛的港湾——我的眼睛紧贴着船头，一片漆黑——你那遗弃的、失明的客人。"
+  },
+  {
+   "i": 42,
+   "kind": "para",
+   "html": "<p>Ramsey 注意到第一节中 &quot;phoenix&quot;（凤凰）的出现。凤凰是死而复生的传统象征，在基督教传统中尤其与基督的复活相关。港湾、大海、天空在同一个意象中被统一了。但诗人自己无法参与这种统一——他的眼睛是 &quot;pressed black&quot;（紧贴着一片漆黑的），他是 &quot;blinded&quot;（失明的）。</p>",
+   "start": 516.697,
+   "end": 541.693,
+   "spoken": "Ramsey 注意到第一节中 \"phoenix\"（凤凰）的出现。凤凰是死而复生的传统象征，在基督教传统中尤其与基督的复活相关。港湾、大海、天空在同一个意象中被统一了。但诗人自己无法参与这种统一——他的眼睛是 \"pressed black\"（紧贴着一片漆黑的），他是 \"blinded\"（失明的）。"
+  },
+  {
+   "i": 43,
+   "kind": "para",
+   "html": "<p>布鲁姆说这正是 Voyages 的核心处境。整个组诗的主导神灵是 Eros 和 Ananke——爱欲和必然性。但到了第六首，主导的是俄耳甫斯教中的 Dionysus——被泰坦之力撕裂的狂喜之神。诗人被自己的幻象撕碎了，在自己的视野中无家可归。</p>",
+   "start": 542.243,
+   "end": 561.817,
+   "spoken": "布鲁姆说这正是 Voyages 的核心处境。整个组诗的主导神灵是 Eros 和 Ananke——爱欲和必然性。但到了第六首，主导的是俄耳甫斯教中的 Dionysus——被泰坦之力撕裂的狂喜之神。诗人被自己的幻象撕碎了，在自己的视野中无家可归。"
+  },
+  {
+   "i": 44,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">Waiting, afire, what name, unspoke,<br>I cannot claim: let thy waves rear<br>More savage than the death of kings,<br>Some splintered garland for the seer.</p>",
+   "start": 562.367,
+   "end": 572.387,
+   "spoken": "Waiting, afire, what name, unspoke, I cannot claim: let thy waves rear More savage than the death of kings, Some splintered garland for the seer."
+  },
+  {
+   "i": 45,
+   "kind": "para",
+   "html": "<p>等待着，燃烧着，那个未说出的名字，他无法拥有。布鲁姆说，这个无法说出的名字就是俄耳甫斯的名字——诗人不能自称俄耳甫斯，那个名字必须由别的力量赐予。</p>",
+   "start": 572.937,
+   "end": 587.391,
+   "spoken": "等待着，燃烧着，那个未说出的名字，他无法拥有。布鲁姆说，这个无法说出的名字就是俄耳甫斯的名字——诗人不能自称俄耳甫斯，那个名字必须由别的力量赐予。"
+  },
+  {
+   "i": 46,
+   "kind": "para",
+   "html": "<p>&quot;More savage than the death of kings&quot;——比国王的死亡还要残暴。布鲁姆追溯到了出处：莎士比亚的理查二世，那个最自毁式的受虐国王。克莱恩把莎士比亚笔下王权的毁灭同化到了诗歌中——诗人请求大海为他这个先知编一个 &quot;splintered garland&quot;（碎裂的花环）。花环是桂冠诗人的荣耀，但它是碎裂的——荣耀在被授予的同一刻就已经破碎了。</p>",
+   "start": 587.941,
+   "end": 616.056,
+   "spoken": "\"More savage than the death of kings\"——比国王的死亡还要残暴。布鲁姆追溯到了出处：莎士比亚的理查二世，那个最自毁式的受虐国王。克莱恩把莎士比亚笔下王权的毁灭同化到了诗歌中——诗人请求大海为他这个先知编一个 \"splintered garland\"（碎裂的花环）。花环是桂冠诗人的荣耀，但它是碎裂的——荣耀在被授予的同一刻就已经破碎了。"
+  },
+  {
+   "i": 47,
+   "kind": "para",
+   "html": "<p>混乱的意象接踵而来。一位女神出现了，但她是 &quot;lounged goddess&quot;——慵懒的女神。布鲁姆指出她的来源：佩特在《文艺复兴》中描写的波提切利笔下的维纳斯，眼中带着 &quot;unsearchable repose&quot;（深不可测的安宁）。Ramsey 说，维纳斯是变幻莫测的——某天是仁慈的贵妇，某天是粗俗的泼妇。她微笑着，用眼神说话，却不与诗人沟通。一座岛屿出现了，也许是坚实的立足点——但它被描述为 &quot;floating dais&quot;（漂浮的讲台）和 &quot;the white echo of the oar&quot;（桨的白色回声）。它提供不了任何安慰。</p>",
+   "start": 616.606,
+   "end": 657.562,
+   "spoken": "混乱的意象接踵而来。一位女神出现了，但她是 \"lounged goddess\"——慵懒的女神。布鲁姆指出她的来源：佩特在《文艺复兴》中描写的波提切利笔下的维纳斯，眼中带着 \"unsearchable repose\"（深不可测的安宁）。Ramsey 说，维纳斯是变幻莫测的——某天是仁慈的贵妇，某天是粗俗的泼妇。她微笑着，用眼神说话，却不与诗人沟通。一座岛屿出现了，也许是坚实的立足点——但它被描述为 \"floating dais\"（漂浮的讲台）和 \"the white echo of the oar\"（桨的白色回声）。它提供不了任何安慰。"
+  },
+  {
+   "i": 48,
+   "kind": "para",
+   "html": "<p>然后，最后一节。整组诗的终点。一个新的东西被引入：</p>",
+   "start": 658.112,
+   "end": 663.743,
+   "spoken": "然后，最后一节。整组诗的终点。一个新的东西被引入："
+  },
+  {
+   "i": 49,
+   "kind": "stanza",
+   "html": "<p class=\"verse\">The imaged Word, it is, that holds<br>Hushed willows anchored in its glow.<br>It is the unbetrayable reply<br>Whose accent no farewell can know.</p>",
+   "start": 664.293,
+   "end": 672.954,
+   "spoken": "The imaged Word, it is, that holds Hushed willows anchored in its glow. It is the unbetrayable reply Whose accent no farewell can know."
+  },
+  {
+   "i": 50,
+   "kind": "para",
+   "html": "<p>成为意象的道，就是那个把静默的柳树锚定在它光辉中的力量。它是那个不可背叛的回答，它的口音是任何告别都无法知晓的。</p>",
+   "start": 673.504,
+   "end": 684.974,
+   "spoken": "成为意象的道，就是那个把静默的柳树锚定在它光辉中的力量。它是那个不可背叛的回答，它的口音是任何告别都无法知晓的。"
+  },
+  {
+   "i": 51,
+   "kind": "para",
+   "html": "<p>这四行是 Voyages 的全部重量最终落下的地方，所以我们必须慢慢读。</p>",
+   "start": 685.524,
+   "end": 692.084,
+   "spoken": "这四行是 Voyages 的全部重量最终落下的地方，所以我们必须慢慢读。"
+  },
+  {
+   "i": 52,
+   "kind": "para",
+   "html": "<p>Ramsey 说，这最后一节本身读起来像一首&quot;美丽的基督教或斯宾诺莎式的诗&quot;——一个对信实与知识之基础的庆祝。但放在整组诗的语境中，它不那么基督教。克莱恩不是基督徒。他的宗教是&quot;创造性的、丰产的多神教&quot;——维纳斯、基督、自然在诗歌行为的&quot;意象的熔合&quot;中汇为一体。Ramsey 坦率地指出这里的问题：维纳斯是不可靠的，基督是永不失信的，诗歌的隐喻逻辑把这两种完全不同的可靠性合为一体——但逻辑之外，这种合一是不成立的。</p>",
+   "start": 692.634,
+   "end": 729.74,
+   "spoken": "Ramsey 说，这最后一节本身读起来像一首\"美丽的基督教或斯宾诺莎式的诗\"——一个对信实与知识之基础的庆祝。但放在整组诗的语境中，它不那么基督教。克莱恩不是基督徒。他的宗教是\"创造性的、丰产的多神教\"——维纳斯、基督、自然在诗歌行为的\"意象的熔合\"中汇为一体。Ramsey 坦率地指出这里的问题：维纳斯是不可靠的，基督是永不失信的，诗歌的隐喻逻辑把这两种完全不同的可靠性合为一体——但逻辑之外，这种合一是不成立的。"
+  },
+  {
+   "i": 53,
+   "kind": "para",
+   "html": "<p>Hinz 提出了更尖锐的质疑。她指出，批评家们急于把这一节解读为诗歌对时间的胜利——先引用这四行，然后跳过它们，直接开始歌颂诗歌的永恒力量。Quinn 说这是&quot;他长久追寻却未能体验的纯粹拥有&quot;。Lewis 说这是&quot;人类生命在永恒观照下的辉煌与美&quot;。Butterfield 说这是&quot;克莱恩唯心主义的最后之词：有限追求无限，战败却又凯旋。&quot;</p>",
+   "start": 730.29,
+   "end": 759.415,
+   "spoken": "Hinz 提出了更尖锐的质疑。她指出，批评家们急于把这一节解读为诗歌对时间的胜利——先引用这四行，然后跳过它们，直接开始歌颂诗歌的永恒力量。Quinn 说这是\"他长久追寻却未能体验的纯粹拥有\"。Lewis 说这是\"人类生命在永恒观照下的辉煌与美\"。Butterfield 说这是\"克莱恩唯心主义的最后之词：有限追求无限，战败却又凯旋。\""
+  },
+  {
+   "i": 54,
+   "kind": "para",
+   "html": "<p>Hinz 的反驳很简单：没有人认真做过对这一节的细读。</p>",
+   "start": 759.965,
+   "end": 764.609,
+   "spoken": "Hinz 的反驳很简单：没有人认真做过对这一节的细读。"
+  },
+  {
+   "i": 55,
+   "kind": "para",
+   "html": "<p>她的问题值得我们逐行过一遍。&quot;Hushed willows anchored&quot;——柳树被&quot;锚定&quot;了，它们有选择吗？&quot;Hushed&quot;——是被安抚了，还是被噤声了？&quot;Anchored&quot; 在诗的语境中是双刃的：在经历了整组诗中大海的翻涌之后，锚定也许是安宁，也许是束缚。&quot;Glow&quot;——是温柔的光辉，还是将熄的余烬？</p>",
+   "start": 765.159,
+   "end": 789.561,
+   "spoken": "她的问题值得我们逐行过一遍。\"Hushed willows anchored\"——柳树被\"锚定\"了，它们有选择吗？\"Hushed\"——是被安抚了，还是被噤声了？\"Anchored\" 在诗的语境中是双刃的：在经历了整组诗中大海的翻涌之后，锚定也许是安宁，也许是束缚。\"Glow\"——是温柔的光辉，还是将熄的余烬？"
+  },
+  {
+   "i": 56,
+   "kind": "para",
+   "html": "<p>然后看最后两行的语法结构。&quot;Unbetrayable&quot;——一个用否定前缀构造的肯定词。不说&quot;忠实的&quot;，而说&quot;不可背叛的&quot;——这两者不是同一个意思。&quot;不可背叛的&quot;是一种通过否定来获得的肯定，它的信心来自对背叛的恐惧，而不是来自对忠诚的确认。最后一行也用了否定——&quot;no farewell can know&quot;。整个结尾弥漫着否定的语法：<em>un</em>betrayable，<em>no</em> farewell。</p>",
+   "start": 790.111,
+   "end": 818.927,
+   "spoken": "然后看最后两行的语法结构。\"Unbetrayable\"——一个用否定前缀构造的肯定词。不说\"忠实的\"，而说\"不可背叛的\"——这两者不是同一个意思。\"不可背叛的\"是一种通过否定来获得的肯定，它的信心来自对背叛的恐惧，而不是来自对忠诚的确认。最后一行也用了否定——\"no farewell can know\"。整个结尾弥漫着否定的语法：unbetrayable，no farewell。"
+  },
+  {
+   "i": 57,
+   "kind": "para",
+   "html": "<p>Hinz 的要点是：批评家的凯旋解读来自批评家自己，不来自诗歌。这些批评家把最后一节当作一个&quot;直截了当的散文陈述&quot;来引用，然后就开始自己写赞美诗了。但诗歌不是散文陈述——它的每一个词都在运动，都在产生不确定性。</p>",
+   "start": 819.477,
+   "end": 838.668,
+   "spoken": "Hinz 的要点是：批评家的凯旋解读来自批评家自己，不来自诗歌。这些批评家把最后一节当作一个\"直截了当的散文陈述\"来引用，然后就开始自己写赞美诗了。但诗歌不是散文陈述——它的每一个词都在运动，都在产生不确定性。"
+  },
+  {
+   "i": 58,
+   "kind": "para",
+   "html": "<p>布鲁姆提出了另一种理解——不是凯旋，也不是失败，而是一种他称为&quot;幻象式怀疑主义&quot;的平衡姿态。</p>",
+   "start": 839.218,
+   "end": 846.939,
+   "spoken": "布鲁姆提出了另一种理解——不是凯旋，也不是失败，而是一种他称为\"幻象式怀疑主义\"的平衡姿态。"
+  },
+  {
+   "i": 59,
+   "kind": "para",
+   "html": "<p>布鲁姆注意到 &quot;imaged Word&quot; 同时回应了两个传统。一个是艾略特的新正统基督教之道——Word 大写，就是基督，约翰福音开头的那个&quot;太初有道&quot;。另一个是惠特曼从大海中听到的那个词——death，死亡，母亲的低语，与母亲的融合。</p>",
+   "start": 847.489,
+   "end": 867.4,
+   "spoken": "布鲁姆注意到 \"imaged Word\" 同时回应了两个传统。一个是艾略特的新正统基督教之道——Word 大写，就是基督，约翰福音开头的那个\"太初有道\"。另一个是惠特曼从大海中听到的那个词——death，死亡，母亲的低语，与母亲的融合。"
+  },
+  {
+   "i": 60,
+   "kind": "para",
+   "html": "<p>克莱恩的 &quot;imaged Word&quot; 既不接受艾略特的基督，也不接受惠特曼的死亡。它是第三条路——通过 &quot;imaged&quot;（成为意象的）这个限定词实现的。Word 不再是纯粹的道（基督），也不再是纯粹的回归（死亡），而是被诗歌意象化了的道——一种只存在于诗歌中的知识形式。</p>",
+   "start": 867.95,
+   "end": 889.196,
+   "spoken": "克莱恩的 \"imaged Word\" 既不接受艾略特的基督，也不接受惠特曼的死亡。它是第三条路——通过 \"imaged\"（成为意象的）这个限定词实现的。Word 不再是纯粹的道（基督），也不再是纯粹的回归（死亡），而是被诗歌意象化了的道——一种只存在于诗歌中的知识形式。"
+  },
+  {
+   "i": 61,
+   "kind": "para",
+   "html": "<p>整首诗以 &quot;know&quot; 结尾。布鲁姆说这个选择是关键的。知识——Gnosis——而非信仰，才是克莱恩的宗教模式。基督教要求的是信仰：你不能证明上帝存在，你必须相信。惠特曼的大海要求的是臣服：你不能理解死亡，你必须拥抱它。克莱恩要求的是第三种东西：知识。不是科学知识，而是灵知——一种通过诗歌本身作为认知方式获得的、超越了信仰和臣服的知识。&quot;Whose accent no farewell can know&quot;——这个 &quot;know&quot; 是这种知识的最终标记。</p>",
+   "start": 889.746,
+   "end": 926.799,
+   "spoken": "整首诗以 \"know\" 结尾。布鲁姆说这个选择是关键的。知识——Gnosis——而非信仰，才是克莱恩的宗教模式。基督教要求的是信仰：你不能证明上帝存在，你必须相信。惠特曼的大海要求的是臣服：你不能理解死亡，你必须拥抱它。克莱恩要求的是第三种东西：知识。不是科学知识，而是灵知——一种通过诗歌本身作为认知方式获得的、超越了信仰和臣服的知识。\"Whose accent no farewell can know\"——这个 \"know\" 是这种知识的最终标记。"
+  },
+  {
+   "i": 62,
+   "kind": "para",
+   "html": "<p>但 &quot;know&quot; 在这里的位置也值得注意——它出现在一个否定句中。不是&quot;它的口音被所有人知晓&quot;，而是&quot;它的口音是任何告别都无法知晓的&quot;。知识出现了，但它以否定的形式出现。你只能知道什么不能知道它。布鲁姆称这种状态为&quot;成熟的俄耳甫斯主义的最早完整实例&quot;——一种奇特而坚定的平衡，既不宣告胜利也不承认失败。</p>",
+   "start": 927.349,
+   "end": 955.108,
+   "spoken": "但 \"know\" 在这里的位置也值得注意——它出现在一个否定句中。不是\"它的口音被所有人知晓\"，而是\"它的口音是任何告别都无法知晓的\"。知识出现了，但它以否定的形式出现。你只能知道什么不能知道它。布鲁姆称这种状态为\"成熟的俄耳甫斯主义的最早完整实例\"——一种奇特而坚定的平衡，既不宣告胜利也不承认失败。"
+  },
+  {
+   "i": 63,
+   "kind": "para",
+   "html": "<p>Irwin 的分析帮助我们理解为什么 &quot;imaged Word&quot; 恰恰在爱情消失之后出现。他在分析 Voyages II 时提出了一个贯穿整组诗的论点：诗歌的隐喻行为和性爱行为都是一种&quot;使道成为肉身&quot;的方式。诗歌让抽象的语言变成具体的意象世界——这是道成为肉身。性爱让两个人的爱变成一个有形的生命——这也是道成为肉身。克莱恩在描写爱情时反复使用诗歌创造的意象——大海的 &quot;diapason&quot; 在 &quot;scrolls of silver snowy sentences&quot; 上敲响——因为对他来说，爱一个人和写一首诗是同一种生成行为的两个面向。</p>",
+   "start": 955.658,
+   "end": 997.71,
+   "spoken": "Irwin 的分析帮助我们理解为什么 \"imaged Word\" 恰恰在爱情消失之后出现。他在分析 Voyages II 时提出了一个贯穿整组诗的论点：诗歌的隐喻行为和性爱行为都是一种\"使道成为肉身\"的方式。诗歌让抽象的语言变成具体的意象世界——这是道成为肉身。性爱让两个人的爱变成一个有形的生命——这也是道成为肉身。克莱恩在描写爱情时反复使用诗歌创造的意象——大海的 \"diapason\" 在 \"scrolls of silver snowy sentences\" 上敲响——因为对他来说，爱一个人和写一首诗是同一种生成行为的两个面向。"
+  },
+  {
+   "i": 64,
+   "kind": "para",
+   "html": "<p>这意味着什么？它意味着爱情的真正后代不是孩子，而是承载了爱情的诗歌。所以当恋人离去，爱情消退，它的后代——&quot;the imaged Word&quot;——留了下来。这不是诗人在爱情的废墟上找到了一个替代品。这是爱情自身的形式在爱情的肉身消失之后继续存在——以诗歌的形式。</p>",
+   "start": 998.26,
+   "end": 1021.282,
+   "spoken": "这意味着什么？它意味着爱情的真正后代不是孩子，而是承载了爱情的诗歌。所以当恋人离去，爱情消退，它的后代——\"the imaged Word\"——留了下来。这不是诗人在爱情的废墟上找到了一个替代品。这是爱情自身的形式在爱情的肉身消失之后继续存在——以诗歌的形式。"
+  },
+  {
+   "i": 65,
+   "kind": "rule",
+   "html": "<hr>",
+   "start": 1021.832,
+   "end": 1023.332
+  },
+  {
+   "i": 66,
+   "kind": "heading",
+   "html": "<h2>这组诗告诉了我们什么</h2>",
+   "level": 2,
+   "start": 1023.332,
+   "end": 1024.993,
+   "spoken": "这组诗告诉了我们什么"
+  },
+  {
+   "i": 67,
+   "kind": "para",
+   "html": "<p>让我们回顾一下 Voyages 的完整弧线。</p>",
+   "start": 1025.892,
+   "end": 1029.085,
+   "spoken": "让我们回顾一下 Voyages 的完整弧线。"
+  },
+  {
+   "i": 68,
+   "kind": "para",
+   "html": "<p>第一首：诗人在岸上，想要传达一个警告，却无法被听到。第二首：他进入大海，进入爱情的梦，语言达到了极致的密度和美。第三首：夜海中，爱与死纠缠，俄耳甫斯的撕碎变成了歌的超越性变形。第四首：诗人从海中上岸，发现诗歌使命和爱情在根本上互相排斥——要成为有价值的诗人，他必须先被致命的潮汐摧毁。</p>",
+   "start": 1029.635,
+   "end": 1060.27,
+   "spoken": "第一首：诗人在岸上，想要传达一个警告，却无法被听到。第二首：他进入大海，进入爱情的梦，语言达到了极致的密度和美。第三首：夜海中，爱与死纠缠，俄耳甫斯的撕碎变成了歌的超越性变形。第四首：诗人从海中上岸，发现诗歌使命和爱情在根本上互相排斥——要成为有价值的诗人，他必须先被致命的潮汐摧毁。"
+  },
+  {
+   "i": 69,
+   "kind": "para",
+   "html": "<p>第五首：爱情终结——不是因为情人变了，而是因为诗人的感知变了，精确取代了梦幻，而精确是残酷的。第六首：独自面对大海，诗人找到了 &quot;the imaged Word&quot;——不是胜利，不是失败，而是一种只能以否定语法表达的知识。</p>",
+   "start": 1060.82,
+   "end": 1080.986,
+   "spoken": "第五首：爱情终结——不是因为情人变了，而是因为诗人的感知变了，精确取代了梦幻，而精确是残酷的。第六首：独自面对大海，诗人找到了 \"the imaged Word\"——不是胜利，不是失败，而是一种只能以否定语法表达的知识。"
+  },
+  {
+   "i": 70,
+   "kind": "para",
+   "html": "<p>这条弧线也是一条关于诗歌本身的弧线。从无法沟通，到通过隐喻的逻辑创造出一种新的感知方式，到最后承认诗歌提供的&quot;回答&quot;本身也带着否定与不确定——这就是克莱恩的诚实。他不说&quot;诗歌战胜了时间&quot;。他说&quot;诗歌提供了一种不可背叛的回答&quot;——然后用否定语法把这个陈述本身也悬置在不确定中。</p>",
+   "start": 1081.536,
+   "end": 1106.916,
+   "spoken": "这条弧线也是一条关于诗歌本身的弧线。从无法沟通，到通过隐喻的逻辑创造出一种新的感知方式，到最后承认诗歌提供的\"回答\"本身也带着否定与不确定——这就是克莱恩的诚实。他不说\"诗歌战胜了时间\"。他说\"诗歌提供了一种不可背叛的回答\"——然后用否定语法把这个陈述本身也悬置在不确定中。"
+  },
+  {
+   "i": 71,
+   "kind": "para",
+   "html": "<p>下一章，我们转向《桥》的序诗 To Brooklyn Bridge。克莱恩将目光从大海转向城市，从爱人转向一座大桥——试图在钢铁与石头中找到他在海水中寻找过的同一种启示。</p>",
+   "start": 1107.466,
+   "end": 1121.281,
+   "spoken": "下一章，我们转向《桥》的序诗 To Brooklyn Bridge。克莱恩将目光从大海转向城市，从爱人转向一座大桥——试图在钢铁与石头中找到他在海水中寻找过的同一种启示。"
+  }
+ ]
+}

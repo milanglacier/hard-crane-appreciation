@@ -1,5 +1,5 @@
 #!/bin/sh
-# Vercel build: regenerate hard-crane-appreciation/site, which is gitignored build output.
+# Vercel build: regenerate hart-crane-appreciation/site, which is gitignored build output.
 # Lives in a script because vercel.json caps buildCommand at 256 characters.
 set -eu
 
@@ -12,4 +12,4 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # audiobook-build needs no ffmpeg, and uv fetches its own CPython.
 exec uv run --python 3.12 --project .agents/skills/make-audiobook \
-  audiobook-build hard-crane-appreciation
+  audiobook-build hart-crane-appreciation

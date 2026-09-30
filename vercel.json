@@ -3,7 +3,7 @@
   "framework": null,
   "buildCommand": "sh scripts/vercel-build.sh",
   "installCommand": "true",
-  "outputDirectory": "hard-crane-appreciation/site",
+  "outputDirectory": "hart-crane-appreciation/site",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [

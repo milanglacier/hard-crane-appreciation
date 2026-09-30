@@ -65,9 +65,9 @@ but it must name the real outcome, not a compressed label for it.
   ```bash
   export $(grep -v '^#' .env | xargs)
   # Nix:
-  nix-shell -p ffmpeg --run "uv run --project .claude/skills/make-audiobook audiobook-synth hard-crane-appreciation"
+  nix-shell -p ffmpeg --run "uv run --project .claude/skills/make-audiobook audiobook-synth hart-crane-appreciation"
   # Non-Nix (ffmpeg already on PATH):
-  uv run --project .claude/skills/make-audiobook audiobook-synth hard-crane-appreciation
+  uv run --project .claude/skills/make-audiobook audiobook-synth hart-crane-appreciation
   ```
 - `audiobook-build`, `audiobook-serve`, `audiobook-stats`, `audiobook-clean` and `audiobook-cache` do **not** need ffmpeg — `uv run` alone is fine.
   `build_site.py` imports `audiobook_lib.audio` only for the `AUDIO_EXTS` constant; the ffmpeg
@@ -80,9 +80,9 @@ The full rebuild sequence is:
 
 ```bash
 export $(grep -v '^#' .env | xargs)
-nix-shell -p ffmpeg --run "uv run --project .claude/skills/make-audiobook audiobook-synth hard-crane-appreciation"
-uv run --project .claude/skills/make-audiobook audiobook-build hard-crane-appreciation
-uv run --project .claude/skills/make-audiobook audiobook-serve hard-crane-appreciation/site --host 0.0.0.0 --port 8000
+nix-shell -p ffmpeg --run "uv run --project .claude/skills/make-audiobook audiobook-synth hart-crane-appreciation"
+uv run --project .claude/skills/make-audiobook audiobook-build hart-crane-appreciation
+uv run --project .claude/skills/make-audiobook audiobook-serve hart-crane-appreciation/site --host 0.0.0.0 --port 8000
 ```
 
 ## Audiobook workflow

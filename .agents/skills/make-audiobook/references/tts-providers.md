@@ -75,6 +75,8 @@ tts:
   concurrency: 4
   pause_ms: {paragraph: 550, heading: 900, stanza: 550, rule: 1500}
   extra: {}                # merged into the provider request body verbatim
+  alt_voices:              # named alt voices; see transcript-format.md → "Alt voices"
+    quote: {voice: en-US-AvaMultilingualNeural, speed: 0.9}
 ```
 
 Per-chapter overrides go in the chapter's frontmatter with the same keys

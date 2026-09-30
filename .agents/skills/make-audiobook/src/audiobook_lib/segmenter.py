@@ -15,6 +15,11 @@ Two rendering choices worth knowing about:
   breaks are kept on screen as ``<br>`` inside ``<p class="verse">``.
 * inline and display math is passed through untouched (only ``&`` / ``<`` are
   HTML-escaped) so client-side KaTeX sees the original LaTeX.
+
+A ``<!-- voice: NAME -->`` comment on its own line hands the next block (a
+paragraph, a heading, a whole blockquote or list) to the alt voice NAME; the
+segments it produces carry ``alt_voice``. Which settings NAME stands for is
+book config, resolved later by ``book.voice_tts``.
 """
 
 from __future__ import annotations
@@ -44,6 +49,7 @@ class Segment:
     spoken: str | None
     level: int | None = None
     warnings: list[str] = field(default_factory=list)
+    alt_voice: str | None = None
 
 
 def make_md() -> MarkdownIt:
@@ -281,11 +287,23 @@ _DISPLAY_MATH_RE = re.compile(r"^\$\$.*\$\$$", re.S)
 _ONLY_IMAGE_RE = re.compile(r"^(?:!\[[^\]]*\]\([^)]*\)\s*)+$")
 
 
+_VOICE_MARKER_RE = re.compile(r"^<!--\s*voice:\s*(\S+?)\s*-->$")
+
+
 class _Builder:
     def __init__(self, md: MarkdownIt, pronunciations: dict[str, str] | None):
         self.md = md
         self.pron = pronunciations
         self.segments: list[Segment] = []
+        self.alt_voice: str | None = None  # the voice of the block being walked
+        self.pending_voice: str | None = None  # a marker waiting for its block
+        # (segment index nearest the marker, warning) for markers with no spoken block
+        self.stray: list[tuple[int, str]] = []
+
+    def stray_marker(self, name: str) -> None:
+        self.stray.append(
+            (len(self.segments), f"voice marker `{name}` is not followed by a spoken block")
+        )
 
     def add(self, kind: Kind, html: str, spoken: str | None, level: int | None = None,
             warnings: list[str] | None = None) -> None:
@@ -294,7 +312,8 @@ class _Builder:
         if kind not in ("display", "rule") and not spoken:
             return  # a block that says nothing is not a segment
         self.segments.append(
-            Segment(len(self.segments), kind, html, spoken, level, list(warnings or []))
+            Segment(len(self.segments), kind, html, spoken, level, list(warnings or []),
+                    self.alt_voice if spoken else None)
         )
 
     def spoken_block(self, kind: Kind, source: str, level: int | None = None) -> None:
@@ -337,76 +356,94 @@ def _matching_close(tokens: list[Token], start: int) -> int:
 def _walk(b: _Builder, tokens: list[Token], i: int, end: int, depth: int, in_quote: bool) -> None:
     while i < end:
         t = tokens[i]
-        ty = t.type
-
-        if ty == "heading_open":
-            inline = tokens[i + 1]
-            b.spoken_block("heading", inline.content, level=int(t.tag[1:]))
-            i = _matching_close(tokens, i) + 1
-
-        elif ty == "paragraph_open":
-            inline = tokens[i + 1]
-            src = inline.content
-            stripped = src.strip()
-            if _DISPLAY_MATH_RE.match(stripped):
-                b.add("display", f'<div class="math">{_escape_math(stripped)}</div>', None)
-            elif _ONLY_IMAGE_RE.match(stripped):
-                b.add("display", f"<p>{_render_inline(b.md, stripped)}</p>", None)
-            elif in_quote:
-                b.spoken_block("stanza", src)
-            else:
-                b.spoken_block("para", src)
-            i = _matching_close(tokens, i) + 1
-
-        elif ty == "blockquote_open":
-            close = _matching_close(tokens, i)
-            _walk(b, tokens, i + 1, close, depth, True)
-            i = close + 1
-
-        elif ty in ("bullet_list_open", "ordered_list_open"):
-            close = _matching_close(tokens, i)
-            ordered = ty == "ordered_list_open"
-            n = int(t.attrGet("start") or 1) if ordered else 0
-            j = i + 1
-            while j < close:
-                if tokens[j].type == "list_item_open":
-                    item_close = _matching_close(tokens, j)
-                    marker = f"{n}." if ordered else "•"
-                    _walk_item(b, tokens, j + 1, item_close, depth + 1, marker)
-                    n += 1
-                    j = item_close + 1
-                else:
-                    j += 1
-            i = close + 1
-
-        elif ty in ("fence", "code_block"):
-            b.add("display", _render_tokens(b.md, [t]), None)
-            i += 1
-
-        elif ty == "html_block":
+        if t.type == "html_block":
             body = t.content.strip()
+            if m := _VOICE_MARKER_RE.match(body):
+                if b.pending_voice:
+                    b.stray_marker(b.pending_voice)
+                b.pending_voice = m.group(1)
+                i += 1
+                continue
             if not _HTML_COMMENT_RE.sub("", body).strip():
                 i += 1  # a pure comment block: neither shown nor spoken
                 continue
-            b.add("display", _render_tokens(b.md, [t]), None)
-            i += 1
+        voice, b.pending_voice = b.pending_voice, None
+        if voice is None:
+            i = _block(b, tokens, i, depth, in_quote)
+            continue
+        outer, b.alt_voice = b.alt_voice, voice
+        spoken_before = sum(1 for s in b.segments if s.spoken)
+        i = _block(b, tokens, i, depth, in_quote)
+        b.alt_voice = outer
+        if sum(1 for s in b.segments if s.spoken) == spoken_before:
+            b.stray_marker(voice)
+    if b.pending_voice:  # a marker at the end of a blockquote or of the chapter
+        b.stray_marker(b.pending_voice)
+        b.pending_voice = None
 
-        elif ty == "table_open":
-            close = _matching_close(tokens, i)
-            b.add("display", _render_tokens(b.md, tokens[i : close + 1]), None)
-            i = close + 1
 
-        elif ty == "hr":
-            b.add("rule", "<hr>", None)
-            i += 1
+def _block(b: _Builder, tokens: list[Token], i: int, depth: int, in_quote: bool) -> int:
+    """Walk the one block that starts at `i`; return the index just past it."""
+    t = tokens[i]
+    ty = t.type
 
-        elif t.nesting == 1:
-            close = _matching_close(tokens, i)
-            _walk(b, tokens, i + 1, close, depth, in_quote)
-            i = close + 1
+    if ty == "heading_open":
+        b.spoken_block("heading", tokens[i + 1].content, level=int(t.tag[1:]))
+        return _matching_close(tokens, i) + 1
 
+    if ty == "paragraph_open":
+        src = tokens[i + 1].content
+        stripped = src.strip()
+        if _DISPLAY_MATH_RE.match(stripped):
+            b.add("display", f'<div class="math">{_escape_math(stripped)}</div>', None)
+        elif _ONLY_IMAGE_RE.match(stripped):
+            b.add("display", f"<p>{_render_inline(b.md, stripped)}</p>", None)
+        elif in_quote:
+            b.spoken_block("stanza", src)
         else:
-            i += 1
+            b.spoken_block("para", src)
+        return _matching_close(tokens, i) + 1
+
+    if ty == "blockquote_open":
+        close = _matching_close(tokens, i)
+        _walk(b, tokens, i + 1, close, depth, True)
+        return close + 1
+
+    if ty in ("bullet_list_open", "ordered_list_open"):
+        close = _matching_close(tokens, i)
+        ordered = ty == "ordered_list_open"
+        n = int(t.attrGet("start") or 1) if ordered else 0
+        j = i + 1
+        while j < close:
+            if tokens[j].type == "list_item_open":
+                item_close = _matching_close(tokens, j)
+                marker = f"{n}." if ordered else "•"
+                _walk_item(b, tokens, j + 1, item_close, depth + 1, marker)
+                n += 1
+                j = item_close + 1
+            else:
+                j += 1
+        return close + 1
+
+    if ty in ("fence", "code_block", "html_block"):
+        b.add("display", _render_tokens(b.md, [t]), None)
+        return i + 1
+
+    if ty == "table_open":
+        close = _matching_close(tokens, i)
+        b.add("display", _render_tokens(b.md, tokens[i : close + 1]), None)
+        return close + 1
+
+    if ty == "hr":
+        b.add("rule", "<hr>", None)
+        return i + 1
+
+    if t.nesting == 1:
+        close = _matching_close(tokens, i)
+        _walk(b, tokens, i + 1, close, depth, in_quote)
+        return close + 1
+
+    return i + 1
 
 
 def _walk_item(b: _Builder, tokens: list[Token], i: int, end: int, depth: int, marker: str) -> None:
@@ -442,6 +479,9 @@ def segment_markdown(
     _walk(b, tokens, 0, len(tokens), 0, False)
     for n, seg in enumerate(b.segments):
         seg.i = n
+    if b.segments:
+        for at, warning in b.stray:
+            b.segments[min(at, len(b.segments) - 1)].warnings.append(warning)
     return b.segments
 
 

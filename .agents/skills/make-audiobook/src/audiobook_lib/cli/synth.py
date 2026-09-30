@@ -9,6 +9,7 @@
     audiobook-synth BOOK_DIR --verbose             # print every ffmpeg command
     audiobook-synth BOOK_DIR --preview [--segments 3]
     audiobook-synth BOOK_DIR --preview-text "任意一段文字"
+    audiobook-synth BOOK_DIR --preview-text "Some verse" --alt-voice verse
     audiobook-synth BOOK_DIR --list-voices
 
 Needs ffmpeg and ffprobe on PATH (or `$FFMPEG` / `$FFPROBE`): every clip is
@@ -37,12 +38,12 @@ from pathlib import Path
 from typing import Any
 
 from audiobook_lib import audio as A
-from audiobook_lib.book import Book, Chapter, effective_tts, load_book, pause_for
-from audiobook_lib.cache import Cache, cache_key
-from audiobook_lib.housekeeping import orphan_hint, plan_chunks
-from audiobook_lib.segmenter import Segment, chunk_text, estimate_seconds
+from audiobook_lib.book import Book, Chapter, effective_tts, load_book, pause_for, voice_tts
+from audiobook_lib.cache import Cache
+from audiobook_lib.housekeeping import Piece, orphan_hint, plan_pieces
+from audiobook_lib.segmenter import Segment, estimate_seconds
 from audiobook_lib.tts import KNOWN, TTSError, get_provider, price_per_1m
-from audiobook_lib.tts.base import Provider, SynthResult
+from audiobook_lib.tts.base import SynthResult
 
 CHUNK_GAP_MS = 120  # a breath between the pieces of a chunked segment
 
@@ -51,10 +52,11 @@ def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
-def source_hash(cfg: dict[str, Any], spoken: list[str]) -> str:
+def source_hash(cfg: dict[str, Any], spoken: list[tuple[str | None, str]]) -> str:
     """Everything that can change the rendered chapter, `format` and `loudnorm`
     included — those are not in the clip cache key, so this is what forces a
-    re-render when the encoder settings change."""
+    re-render when the encoder settings change. `spoken` pairs each spoken text
+    with the alt voice that reads it (None for the main voice)."""
     material = {k: v for k, v in sorted(cfg.items()) if k != "concurrency"}
     blob = json.dumps({"cfg": material, "spoken": spoken}, sort_keys=True, ensure_ascii=False, default=str)
     return hashlib.sha256(blob.encode("utf-8")).hexdigest()
@@ -63,39 +65,40 @@ def source_hash(cfg: dict[str, Any], spoken: list[str]) -> str:
 # --------------------------------------------------------------------------
 
 
-def synth_texts(
-    texts: list[str], provider: Provider, cfg: dict[str, Any], cache: Cache, workers: int
+def synth_pieces(
+    pieces: list[Piece], cache: Cache, workers: int
 ) -> tuple[dict[str, A.Clip], int, int]:
-    """Synthesize the distinct texts, cache-first. Returns (by_text, n_cached, chars_sent).
+    """Synthesize the distinct pieces, cache-first. Returns (by_key, n_cached, chars_sent).
 
     Every result is normalized to canonical FLAC by `Cache.store`, so the
-    returned clips all share the configured rate, channel count and format.
+    returned clips all share the configured rate, channel count and format,
+    whichever voice or provider read them.
     """
     out: dict[str, A.Clip] = {}
-    todo: list[str] = []
+    todo: list[Piece] = []
     n_cached = 0
-    sr = int(cfg["sample_rate"])
-    for text in dict.fromkeys(texts):
-        hit = cache.load(cache_key(cfg, text))
+    for piece in {p.key: p for p in pieces}.values():
+        hit = cache.load(piece.key)
         if hit is not None:
-            out[text] = hit
+            out[piece.key] = hit
             n_cached += 1
         else:
-            todo.append(text)
+            todo.append(piece)
 
-    def work(text: str) -> tuple[str, SynthResult]:
-        return text, provider.synthesize(text, cfg)
+    def work(piece: Piece) -> tuple[Piece, SynthResult]:
+        provider = get_provider(str(piece.cfg["provider"]))
+        return piece, provider.synthesize(piece.text, piece.cfg)
 
     if todo:
         with ThreadPoolExecutor(max_workers=workers) as pool:
-            for text, result in pool.map(work, todo):
-                out[text] = cache.store(cache_key(cfg, text), result, sr)
-    return out, n_cached, sum(len(t) for t in todo)
+            for piece, result in pool.map(work, todo):
+                out[piece.key] = cache.store(piece.key, result, int(piece.cfg["sample_rate"]))
+    return out, n_cached, sum(len(p.text) for p in todo)
 
 
 def assemble(
     segments: list[Segment],
-    chunks: list[list[str]],
+    chunks: list[list[Piece]],
     clips: dict[str, A.Clip],
     cfg: dict[str, Any],
     silence_dir: Path,
@@ -142,7 +145,7 @@ def assemble(
         start = at(frames)
         words: list[list[Any]] = []
         for n, piece in enumerate(pieces):
-            clip = clips[piece]
+            clip = clips[piece.key]
             if n:
                 pause(CHUNK_GAP_MS)
             if clip.words:
@@ -154,6 +157,8 @@ def assemble(
         entry["start"] = start
         entry["end"] = at(frames)
         entry["spoken"] = seg.spoken
+        if seg.alt_voice:
+            entry["alt_voice"] = seg.alt_voice
         if words:
             entry["words"] = words
         entries.append(entry)
@@ -170,10 +175,10 @@ def assemble(
 
 
 def render_chapter(
-    book: Book, ch: Chapter, cfg: dict[str, Any], provider: Provider, cache: Cache, force: bool
+    book: Book, ch: Chapter, cfg: dict[str, Any], cache: Cache, force: bool
 ) -> str:
     segments = ch.segments(book.pronunciations)
-    spoken = [s.spoken or "" for s in segments if s.spoken]
+    spoken = [(s.alt_voice, s.spoken) for s in segments if s.spoken]
     shash = source_hash(cfg, spoken)
     sr = int(cfg["sample_rate"])
     ext = A.format_spec(cfg["format"])["ext"]
@@ -190,12 +195,9 @@ def render_chapter(
             return ""
 
     t0 = time.time()
-    limit = provider.chunk_limit(cfg)
-    chunks = plan_chunks(segments, limit)
-    texts = [piece for pieces in chunks for piece in pieces]
-    clips, n_cached, chars_sent = synth_texts(
-        texts, provider, cfg, cache, int(cfg["concurrency"])
-    )
+    chunks = plan_pieces(segments, cfg)
+    pieces = [piece for per_segment in chunks for piece in per_segment]
+    clips, n_cached, chars_sent = synth_pieces(pieces, cache, int(cfg["concurrency"]))
     parts, entries, frames = assemble(segments, chunks, clips, cfg, book.silence_dir)
     duration = frames / float(sr)
 
@@ -227,7 +229,7 @@ def render_chapter(
     }
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    n_requests = len(dict.fromkeys(texts))
+    n_requests = len({p.key for p in pieces})
     print(
         f"  {ch.id}: {len(segments)} segments, {n_cached}/{n_requests} cached, "
         f"{n_requests - n_cached} synthesized, {duration:6.1f}s audio, "
@@ -242,16 +244,29 @@ def render_chapter(
 def do_dry_run(book: Book, chapters: list[Chapter], cli: dict[str, Any]) -> int:
     total_chars = total_min = 0.0
     total_uncached = 0
+    cost_all = cost_uncached = 0.0
+    prices: dict[str, float | None] = {}
+    by_voice: dict[str, int] = {}
+    cache = Cache(book.cache_dir)
     print(f"{book.title}  —  dry run, no network\n")
     for ch in chapters:
         cfg = effective_tts(book, ch, cli)
-        provider = get_provider(str(cfg["provider"]))
-        cache = Cache(book.cache_dir)
         segments = ch.segments(book.pronunciations)
-        chunks = plan_chunks(segments, provider.chunk_limit(cfg))
-        texts = [p for pieces in chunks for p in pieces]
-        chars = sum(len(t) for t in texts)
-        cached = sum(len(t) for t in dict.fromkeys(texts) if cache.path(cache_key(cfg, t)).exists())
+        chars = cached = 0
+        for seg, per_segment in zip(segments, plan_pieces(segments, cfg)):
+            for piece in per_segment:
+                n = len(piece.text)
+                is_cached = cache.path(piece.key).exists()
+                chars += n
+                cached += n if is_cached else 0
+                voice = seg.alt_voice or "main"
+                by_voice[voice] = by_voice.get(voice, 0) + n
+                provider = get_provider(str(piece.cfg["provider"]))
+                price = prices[provider.name] = price_per_1m(provider, piece.cfg)
+                if price is None:
+                    continue
+                cost_all += n * price / 1e6
+                cost_uncached += 0 if is_cached else n * price / 1e6
         seconds = sum(
             estimate_seconds(s.spoken or "", pause_for(s.kind, cfg.get("pause_ms", {})))
             for s in segments
@@ -265,54 +280,45 @@ def do_dry_run(book: Book, chapters: list[Chapter], cli: dict[str, Any]) -> int:
             f"≈{seconds / 60:.1f} min"
         )
     cfg = effective_tts(book, chapters[0] if chapters else None, cli)
-    provider = get_provider(str(cfg["provider"]))
-    price = price_per_1m(provider, cfg)
     print(f"\n  totals: {int(total_chars)} chars, ≈{total_min:.1f} min of audio")
+    if len(by_voice) > 1:
+        print("  by voice: " + ", ".join(f"{v} {n} chars" for v, n in sorted(by_voice.items())))
     print(
         f"  output: {cfg['format']} @ {cfg['bitrate_kbps']} kbps, {cfg['sample_rate']} Hz mono, "
         f"loudnorm {'on' if cfg['loudnorm'] else 'off'}"
     )
-    if price is None:
-        print(f"  provider {provider.name}: no price on record")
-    else:
-        print(
-            f"  provider {provider.name} ≈ ${price:.2f}/1M chars  →  "
-            f"${total_uncached * price / 1e6:.2f} for the {total_uncached} uncached chars "
-            f"(${total_chars * price / 1e6:.2f} if nothing were cached) — approximate"
-        )
+    for name, price in sorted(prices.items()):
+        rate = "no price on record" if price is None else f"≈ ${price:.2f}/1M chars"
+        print(f"  provider {name}: {rate}")
+    print(
+        f"  cost ≈ ${cost_uncached:.2f} for the {total_uncached} uncached chars "
+        f"(${cost_all:.2f} if nothing were cached) — approximate"
+        + (", providers with no price not counted" if None in prices.values() else "")
+    )
     return 0
 
 
-def do_preview(book: Book, chapters: list[Chapter], cli: dict[str, Any], n: int, text: str | None) -> int:
+def do_preview(
+    book: Book, chapters: list[Chapter], cli: dict[str, Any], n: int, text: str | None,
+    alt_voice: str | None,
+) -> int:
     ch = chapters[0] if chapters else None
     cfg = effective_tts(book, ch, cli)
-    provider = get_provider(str(cfg["provider"]))
     cache = Cache(book.cache_dir)
     if text:
-        pieces = chunk_text(text, provider.chunk_limit(cfg))
-        kinds = ["para"] * len(pieces)
+        segs = [Segment(0, "para", "", text, alt_voice=alt_voice)]
     else:
         if ch is None:
             raise SystemExit("no chapters to preview; pass --preview-text instead")
         segs = [s for s in ch.segments(book.pronunciations) if s.spoken][:n]
-        pieces = [s.spoken or "" for s in segs]
-        kinds = [s.kind for s in segs]
-    if not pieces:
+    if not segs:
         raise SystemExit("nothing to preview")
 
-    clips, n_cached, chars = synth_texts(pieces, provider, cfg, cache, int(cfg["concurrency"]))
+    chunks = plan_pieces(segs, cfg)
+    pieces = [piece for per_segment in chunks for piece in per_segment]
+    clips, n_cached, chars = synth_pieces(pieces, cache, int(cfg["concurrency"]))
     sr = int(cfg["sample_rate"])
-    parts: list[Path] = []
-    frames = 0
-    for piece, kind in zip(pieces, kinds):
-        clip = clips[piece]
-        parts.append(clip.path)
-        frames += clip.frames
-        gap = pause_for(kind, cfg.get("pause_ms", {}))
-        if gap > 0:
-            sil = A.silence_clip(gap, sr, book.silence_dir)
-            parts.append(sil.path)
-            frames += sil.frames
+    parts, _, frames = assemble(segs, chunks, clips, cfg, book.silence_dir)
 
     ext = A.format_spec(cfg["format"])["ext"]
     out = book.audio_dir / f"preview.{ext}"
@@ -323,10 +329,15 @@ def do_preview(book: Book, chapters: list[Chapter], cli: dict[str, Any], n: int,
         bitrate_kbps=int(cfg["bitrate_kbps"]), loudnorm=bool(cfg["loudnorm"]),
     )
     print(
-        f"preview: {len(pieces)} segments, {n_cached} cached, {chars} chars sent, "
+        f"preview: {len(segs)} segments, {n_cached} cached, {chars} chars sent, "
         f"{frames / float(sr):.1f}s → {out}"
     )
-    print(f"  provider={cfg['provider']} voice={cfg.get('voice')} model={cfg.get('model')} speed={cfg['speed']}")
+    for name in dict.fromkeys(s.alt_voice for s in segs):
+        vcfg = voice_tts(cfg, name)
+        print(
+            f"  {name or 'main'}: provider={vcfg['provider']} voice={vcfg.get('voice')} "
+            f"model={vcfg.get('model')} speed={vcfg['speed']}"
+        )
     return 0
 
 
@@ -356,6 +367,7 @@ def main() -> int:
     ap.add_argument("--preview", action="store_true", help="first N spoken segments -> audio/preview.<ext>")
     ap.add_argument("--preview-text", help="synthesize this text -> audio/preview.<ext>")
     ap.add_argument("--segments", type=int, default=3, help="segments for --preview (default 3)")
+    ap.add_argument("--alt-voice", metavar="NAME", help="read --preview-text with this tts.alt_voices entry")
     ap.add_argument("--list-voices", action="store_true")
     ap.add_argument("--provider", choices=KNOWN)
     ap.add_argument("--model")
@@ -404,22 +416,25 @@ def main() -> int:
             print(exc, file=sys.stderr)
             return 1
     if args.preview or args.preview_text:
-        return do_preview(book, chapters, cli, args.segments, args.preview_text)
+        return do_preview(book, chapters, cli, args.segments, args.preview_text, args.alt_voice)
     if not chapters:
         print(f"no chapters found in {book.chapters_dir}")
         return 0
     if args.dry_run:
         return do_dry_run(book, chapters, cli)
 
+    # an unknown alt voice fails here, before a single character is paid for
+    for ch in chapters:
+        plan_pieces(ch.segments(book.pronunciations), effective_tts(book, ch, cli))
+
     print(f"{book.title}  —  {len(chapters)} chapter(s)")
     t0 = time.time()
     total_chars = 0
+    cache = Cache(book.cache_dir)
     for ch in chapters:
         cfg = effective_tts(book, ch, cli)
-        provider = get_provider(str(cfg["provider"]))
-        cache = Cache(book.cache_dir)
         try:
-            sent = render_chapter(book, ch, cfg, provider, cache, args.force)
+            sent = render_chapter(book, ch, cfg, cache, args.force)
         except (TTSError, A.AudioError) as exc:
             print(f"  {ch.id}: FAILED: {exc}")
             return 1

@@ -131,8 +131,9 @@ Output: `audio/<chapter>.mp3` (or `.opus` / `.m4a` via `tts.format`) and
 `audio/<chapter>.json` (segment timings). Chapters are loudness-normalized to
 -16 LUFS by default so different voices and providers sit at the same level.
 Per-paragraph results are cached in `.cache/tts/` as lossless FLAC, keyed by
-provider, voice, speed and text, so a re-run after editing one paragraph
-synthesizes only that paragraph.
+the text and the voice settings, so a re-run after editing one paragraph
+synthesizes only that paragraph. Individual blocks can be read by an alt voice;
+see `references/transcript-format.md` → "Alt voices".
 
 ## Phase 4 — Build and serve the player
 

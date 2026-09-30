@@ -59,6 +59,8 @@ tts:
     heading: 900
     stanza: 550             # after a blockquote paragraph; defaults to `paragraph`
     rule: 1500              # at a --- horizontal rule
+  alt_voices:               # optional, see "Alt voices"
+    quote: {voice: nova, speed: 0.9}
 pronunciations:             # optional: spoken replacements applied to every chapter
   "$\\bar\\alpha_t$": "alpha bar t"
   "SQL": "S Q L"
@@ -108,6 +110,7 @@ segment to seek to it.
 | fenced code, `$$…$$`, table, image, raw HTML | `display` | no | none (attached to the previous spoken segment) |
 | `---`                          | `rule`       | no       | `pause_ms.rule`     |
 | `<!-- … -->`                   | —            | no       | not shown either    |
+| `<!-- voice: NAME -->`         | —            | no       | not shown; the next block is read by alt voice NAME |
 
 Why paragraphs are the unit: paragraph-level sync needs no timing data from the
 TTS provider at all (every provider works), it survives edits (only changed
@@ -124,6 +127,30 @@ screen. A bare `>` line starts a new paragraph, so put one between stanzas, and
 between quotes that should be read as separate utterances. The whole stanza is
 highlighted while it plays; keep quoted stanzas short for the same reasons as
 paragraphs.
+
+## Alt voices
+
+Besides the main voice, a book can define named alt voices under
+`tts.alt_voices`. Each one lists only the tts settings that differ from the
+main ones:
+
+```yaml
+tts:
+  provider: openai
+  voice: alloy
+  alt_voices:
+    quote:
+      voice: nova
+      speed: 0.9
+```
+
+A `<!-- voice: NAME -->` comment on its own line hands the next block (a
+paragraph, a heading, or a whole blockquote or list) to that voice:
+
+```markdown
+<!-- voice: quote -->
+> The quoted passage.
+```
 
 ## Shown-vs-spoken overrides
 
@@ -197,12 +224,14 @@ reference (`audio` carries the real extension — `.mp3`, `.opus` or `.m4a`):
     {"i": 0, "kind": "heading", "start": 0.0,  "end": 3.1,  "html": "<h1>…</h1>", "spoken": "第三章 借用检查器在想什么"},
     {"i": 1, "kind": "para",    "start": 4.0,  "end": 21.7, "html": "<p>…</p>",   "spoken": "…"},
     {"i": 2, "kind": "display", "start": 21.7, "end": 21.7, "html": "<pre>…</pre>"},
-    {"i": 3, "kind": "para",    "start": 22.3, "end": 40.0, "html": "<p>…</p>",   "spoken": "…",
-     "words": [[22.3, 22.6, "所以"], [22.6, 23.0, "编译器"]]}
+    {"i": 3, "kind": "stanza",  "start": 22.3, "end": 30.1, "html": "<p class=\"verse\">…</p>", "spoken": "…", "alt_voice": "quote"},
+    {"i": 4, "kind": "para",    "start": 30.7, "end": 40.0, "html": "<p>…</p>",   "spoken": "…",
+     "words": [[30.7, 31.0, "所以"], [31.0, 31.4, "编译器"]]}
   ]
 }
 ```
 
+`alt_voice` is present only on segments read by an alt voice.
 `words` is optional and only present when the provider returns word-level
 timing; the page uses it for word-level highlighting when available and falls
 back to segment-level highlighting otherwise. `display` segments carry the end

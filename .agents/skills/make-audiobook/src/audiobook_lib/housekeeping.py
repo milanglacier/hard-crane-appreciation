@@ -9,18 +9,36 @@ anything; the commands do.
 from __future__ import annotations
 
 import json
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any
 
-from .book import Book, Chapter, effective_tts
+from .book import Book, Chapter, effective_tts, voice_tts
 from .cache import cache_key
 from .segmenter import Segment, chunk_text
 from .tts import get_provider
 
 
-def plan_chunks(segments: list[Segment], limit: int) -> list[list[str]]:
-    """Per segment, the list of request-sized pieces of its spoken text."""
-    return [chunk_text(s.spoken, limit) if s.spoken else [] for s in segments]
+@dataclass
+class Piece:
+    """One request's worth of spoken text, with the settings of the voice that reads it."""
+
+    key: str
+    text: str
+    cfg: dict[str, Any]
+
+
+def plan_pieces(segments: list[Segment], cfg: dict[str, Any]) -> list[list[Piece]]:
+    """Per segment, the request-sized pieces of its spoken text."""
+    out: list[list[Piece]] = []
+    for seg in segments:
+        if not seg.spoken:
+            out.append([])
+            continue
+        scfg = voice_tts(cfg, seg.alt_voice)
+        limit = get_provider(str(scfg["provider"])).chunk_limit(scfg)
+        out.append([Piece(cache_key(scfg, t), t, scfg) for t in chunk_text(seg.spoken, limit)])
+    return out
 
 
 def load_manifest(path: Path) -> dict[str, Any] | None:
@@ -70,15 +88,19 @@ def orphan_hint(book: Book) -> str | None:
 
 
 def stale_chapters(book: Book) -> list[str]:
-    """Chapters whose manifest was rendered from different spoken text than the
-    transcript now says — edited but not re-synthesized."""
+    """Chapters whose manifest was rendered from different spoken text, or with
+    different voice markers, than the transcript now has — edited but not
+    re-synthesized."""
     stale: list[str] = []
     for ch in book.chapters:
         manifest = load_manifest(book.audio_dir / f"{ch.id}.json")
         if manifest is None:
             continue
-        now = [s.spoken for s in ch.segments(book.pronunciations) if s.spoken]
-        then = [e.get("spoken") for e in manifest.get("segments", []) if e.get("spoken")]
+        now = [(s.spoken, s.alt_voice) for s in ch.segments(book.pronunciations) if s.spoken]
+        then = [
+            (e.get("spoken"), e.get("alt_voice"))
+            for e in manifest.get("segments", []) if e.get("spoken")
+        ]
         if now != then:
             stale.append(ch.id)
     return stale
@@ -87,29 +109,30 @@ def stale_chapters(book: Book) -> list[str]:
 # -- the TTS cache ----------------------------------------------------------
 
 
-def _keys(cfg: dict[str, Any], spoken: Iterable[str]) -> set[str]:
-    limit = get_provider(str(cfg["provider"])).chunk_limit(cfg)
-    return {cache_key(cfg, piece) for text in spoken for piece in chunk_text(text, limit)}
+def _keys(cfg: dict[str, Any], segments: list[Segment]) -> set[str]:
+    return {p.key for pieces in plan_pieces(segments, cfg) for p in pieces}
 
 
 def chapter_keys(book: Book, ch: Chapter) -> set[str]:
     """The clips the next `audiobook-synth` of this chapter would use."""
-    cfg = effective_tts(book, ch, {})
-    return _keys(cfg, [s.spoken for s in ch.segments(book.pronunciations) if s.spoken])
+    return _keys(effective_tts(book, ch, {}), ch.segments(book.pronunciations))
 
 
 def manifest_keys(book: Book, manifest: dict[str, Any], chapters: dict[str, Chapter]) -> set[str]:
     """The clips a rendered chapter was assembled from, recomputed from its
     spoken text. The manifest records provider and voice; the rest of the
-    config (model, speed, …) is taken as it is now, so a clip rendered under
-    a since-changed setting or a one-off CLI flag is not matched — the gc age
-    threshold is what protects those."""
+    config (model, speed, alt voice settings, …) is taken as it is now, so a
+    clip rendered under a since-changed setting or a one-off CLI flag is not
+    matched — the gc age threshold is what protects those."""
     ch = chapters.get(str(manifest.get("id")))
     cli = {k: manifest[k] for k in ("provider", "voice") if manifest.get(k)}
+    segments = [
+        Segment(n, e.get("kind", "para"), "", str(e["spoken"]), alt_voice=e.get("alt_voice"))
+        for n, e in enumerate(manifest.get("segments", [])) if e.get("spoken")
+    ]
     try:
-        cfg = effective_tts(book, ch, cli)
-        return _keys(cfg, [str(e["spoken"]) for e in manifest.get("segments", []) if e.get("spoken")])
-    except SystemExit:  # a provider this version no longer knows
+        return _keys(effective_tts(book, ch, cli), segments)
+    except SystemExit:  # a provider or alt voice this version no longer knows
         return set()
 
 

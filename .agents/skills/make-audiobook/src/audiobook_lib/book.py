@@ -1,6 +1,8 @@
 """book.yaml + chapters/*.md loading, and the three-level TTS config merge.
 
 Config precedence: defaults < book.yaml `tts:` < chapter frontmatter < CLI flags.
+A segment marked for an alt voice then takes that voice's settings from
+`tts.alt_voices` on top of the result.
 """
 
 from __future__ import annotations
@@ -29,6 +31,14 @@ DEFAULT_TTS: dict[str, Any] = {
     "sample_rate": 24000,
     "pause_ms": dict(DEFAULT_PAUSE_MS),
 }
+
+# Settings that shape how a chapter is assembled or encoded, not how one clip
+# sounds. They stay out of the clip cache key, and an alt voice cannot set them.
+CHAPTER_KEYS = frozenset(
+    {"format", "loudnorm", "bitrate_kbps", "concurrency", "pause_ms", "max_chars", "alt_voices"}
+)
+# an alt voice cannot set these either: every clip in a chapter must share them
+_FIXED_FOR_ALT_VOICES = CHAPTER_KEYS | {"sample_rate"}
 
 # keys the CLI may pass as None meaning "not overridden"
 _TTS_SCALARS = (
@@ -160,7 +170,7 @@ def load_book(book_dir: str | Path) -> Book:
     )
 
 
-_CHAPTER_TTS_KEYS = set(_TTS_SCALARS) | {"pause_ms", "extra"}
+_CHAPTER_TTS_KEYS = set(_TTS_SCALARS) | {"pause_ms", "extra", "alt_voices"}
 
 
 def effective_tts(
@@ -204,7 +214,44 @@ def effective_tts(
     # the sensible bitrate depends on the codec (opus says the same at half of it)
     cfg["bitrate_kbps"] = int(cfg.get("bitrate_kbps") or A.FORMATS[cfg["format"]]["bitrate"])
     cfg["concurrency"] = max(1, int(cfg.get("concurrency", 4)))
+    cfg["alt_voices"] = _check_alt_voices(cfg.get("alt_voices"))
     return cfg
+
+
+def _check_alt_voices(alts: Any) -> dict[str, dict[str, Any]]:
+    if not alts:
+        return {}
+    if not isinstance(alts, dict):
+        raise SystemExit("`tts.alt_voices` must map a name to a set of tts settings")
+    for name, profile in alts.items():
+        if not isinstance(profile, dict):
+            raise SystemExit(f"tts.alt_voices.{name}: expected a mapping of tts settings")
+        fixed = sorted(k for k in profile if k in _FIXED_FOR_ALT_VOICES)
+        if fixed:
+            raise SystemExit(
+                f"tts.alt_voices.{name}: {', '.join(fixed)} apply to the whole chapter "
+                f"and cannot be set per voice"
+            )
+    return {str(k): v for k, v in alts.items()}
+
+
+def voice_tts(cfg: dict[str, Any], alt_voice: str | None) -> dict[str, Any]:
+    """The settings for a segment: `cfg` itself for the main voice, or `cfg`
+    with the named `tts.alt_voices` entry laid on top."""
+    if not alt_voice:
+        return cfg
+    alts = cfg.get("alt_voices") or {}
+    if alt_voice not in alts:
+        known = ", ".join(sorted(alts)) or "(none)"
+        raise SystemExit(f"unknown alt voice {alt_voice!r}; tts.alt_voices defines: {known}")
+    out = dict(cfg)
+    for k, v in alts[alt_voice].items():
+        if k == "extra" and isinstance(v, dict):
+            out["extra"] = {**(cfg.get("extra") or {}), **v}
+        else:
+            out[k] = v
+    out["speed"] = float(out.get("speed", 1.0))
+    return out
 
 
 def pause_for(kind: str, pause_ms: dict[str, int]) -> int:

@@ -279,3 +279,82 @@ def test_gc_removes_only_old_unreferenced_clips(monkeypatch, book_dir):
     left = {p.stem for p in cache_dir.glob("*.flac")}
     assert not (left & dropped)
     assert referenced <= left
+
+
+# -- alt voices -----------------------------------------------------------------
+
+ALT_VOICES = """\
+  alt_voices:
+    verse:
+      voice: mock-b
+      speed: 0.9
+"""
+
+VERSE_CHAPTER = """\
+# 第三章  引诗
+
+诗人这样写道：
+
+<!-- voice: verse -->
+> And onward, as bells off San Salvador
+> Salute the crocus lustres of the stars,
+
+这两行的节奏很慢。
+"""
+
+
+@pytest.fixture
+def verse_book(book_dir: Path) -> Path:
+    yaml_path = book_dir / "book.yaml"
+    yaml_path.write_text(yaml_path.read_text("utf-8") + ALT_VOICES, encoding="utf-8")
+    (book_dir / "chapters" / "03-verse.md").write_text(VERSE_CHAPTER, encoding="utf-8")
+    return book_dir
+
+
+def test_stats_counts_alt_voice_text_and_flags_unknown_names(monkeypatch, verse_book, capsys):
+    path = verse_book / "chapters" / "03-verse.md"
+    path.write_text(path.read_text("utf-8") + "\n<!-- voice: poem -->\n\n尾声。\n", encoding="utf-8")
+    assert run(monkeypatch, transcript_stats.main, str(verse_book), "--json") == 0
+    chapter = json.loads(capsys.readouterr().out)["chapters"][2]
+    assert chapter["alt_voices"]["verse"]["segments"] == 1
+    assert chapter["alt_voices"]["poem"]["segments"] == 1
+    messages = [w["message"] for w in chapter["warnings"] if w["segment"] >= 0]
+    assert messages == ["voice `poem` is not in tts.alt_voices"]
+
+
+def test_synth_refuses_an_unknown_alt_voice_before_any_work(monkeypatch, verse_book):
+    path = verse_book / "chapters" / "03-verse.md"
+    path.write_text(path.read_text("utf-8").replace("voice: verse", "voice: poem"), encoding="utf-8")
+    with pytest.raises(SystemExit, match="unknown alt voice 'poem'"):
+        run(monkeypatch, synth.main, str(verse_book))
+    assert not (verse_book / "audio").exists()
+
+
+def test_dry_run_splits_characters_by_voice(monkeypatch, verse_book, capsys):
+    assert run(monkeypatch, synth.main, str(verse_book), "--dry-run") == 0
+    assert "by voice: main" in capsys.readouterr().out
+
+
+@needs_ffmpeg
+def test_synth_reads_marked_blocks_with_the_alt_voice(monkeypatch, verse_book):
+    assert run(monkeypatch, synth.main, str(verse_book)) == 0
+    manifest = json.loads((verse_book / "audio" / "03-verse.json").read_text("utf-8"))
+    spoken = [s for s in manifest["segments"] if s.get("spoken")]
+    assert [s.get("alt_voice") for s in spoken] == [None, None, "verse", None]
+
+    # the alt voice's clips count as referenced, so gc keeps them
+    book = load_book(verse_book)
+    cache_dir = verse_book / ".cache" / "tts"
+    assert {p.stem for p in cache_dir.glob("*.flac")} == referenced_keys(book)
+
+
+@needs_ffmpeg
+def test_moving_a_marker_re_renders_the_chapter(monkeypatch, verse_book, capsys):
+    assert run(monkeypatch, synth.main, str(verse_book)) == 0
+    path = verse_book / "chapters" / "03-verse.md"
+    path.write_text(path.read_text("utf-8").replace("<!-- voice: verse -->\n", ""), encoding="utf-8")
+    capsys.readouterr()
+    assert run(monkeypatch, build_site.main, str(verse_book)) == 0
+    assert "03-verse" in capsys.readouterr().out  # flagged as not re-synthesized
+    assert run(monkeypatch, synth.main, str(verse_book)) == 0
+    assert "03-verse: unchanged" not in capsys.readouterr().out

@@ -11,7 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import unicodedata
-from pathlib import Path
+from typing import Iterable
 
 from audiobook_lib.book import DEFAULT_PAUSE_MS, effective_tts, load_book, pause_for
 from audiobook_lib.segmenter import (
@@ -40,8 +40,11 @@ def _trunc(s: str, n: int = 40) -> str:
     return s if len(s) <= n else s[: n - 1] + "…"
 
 
-def lint(segments: list[Segment], has_h1: bool, minutes: float) -> list[tuple[int, str, str]]:
+def lint(
+    segments: list[Segment], has_h1: bool, minutes: float, alt_voices: Iterable[str] = ()
+) -> list[tuple[int, str, str]]:
     """(segment index, message, excerpt). Index -1 = whole chapter."""
+    known = set(alt_voices)
     out: list[tuple[int, str, str]] = []
     if not has_h1:
         out.append((-1, "chapter has no H1 heading", ""))
@@ -54,6 +57,8 @@ def lint(segments: list[Segment], has_h1: bool, minutes: float) -> list[tuple[in
         excerpt = _trunc(seg.spoken or seg.html)
         for w in seg.warnings:
             out.append((seg.i, w, excerpt))
+        if seg.alt_voice and seg.alt_voice not in known:
+            out.append((seg.i, f"voice `{seg.alt_voice}` is not in tts.alt_voices", excerpt))
         if seg.kind in ("para", "item") and seg.spoken:
             cjk, words = count_cjk(seg.spoken), count_latin_words(seg.spoken)
             if cjk > MAX_CJK_PER_PARA:
@@ -91,6 +96,12 @@ def main() -> int:
         seconds = sum(estimate_seconds(s.spoken or "", pause_for(s.kind, pauses)) for s in segs)
         minutes = seconds / 60.0
         has_h1 = any(s.kind == "heading" and s.level == 1 for s in segs)
+        alt: dict[str, dict[str, int]] = {}
+        for s in spoken:
+            if s.alt_voice:
+                tally = alt.setdefault(s.alt_voice, {"segments": 0, "chars": 0})
+                tally["segments"] += 1
+                tally["chars"] += len(s.spoken or "")
         rows.append(
             {
                 "id": ch.id,
@@ -100,9 +111,10 @@ def main() -> int:
                 "cjk": cjk,
                 "words": words,
                 "est_minutes": round(minutes, 1),
+                "alt_voices": alt,
                 "warnings": [
                     {"segment": i, "message": m, "excerpt": e}
-                    for i, m, e in lint(segs, has_h1, minutes)
+                    for i, m, e in lint(segs, has_h1, minutes, cfg["alt_voices"])
                 ],
             }
         )
@@ -141,6 +153,14 @@ def main() -> int:
         _pad(str(sum(len(r["warnings"]) for r in rows)), widths[6]),
     ]))
     print(f"\ntotal ≈ {total_min:.1f} min ({total_min / 60:.1f} h) at the default pace")
+    alt_totals: dict[str, dict[str, int]] = {}
+    for r in rows:
+        for name, tally in r["alt_voices"].items():
+            total = alt_totals.setdefault(name, {"segments": 0, "chars": 0})
+            total["segments"] += tally["segments"]
+            total["chars"] += tally["chars"]
+    for name, total in sorted(alt_totals.items()):
+        print(f"alt voice `{name}`: {total['segments']} segments, {total['chars']} chars")
 
     flagged = [r for r in rows if r["warnings"]]
     if not flagged:

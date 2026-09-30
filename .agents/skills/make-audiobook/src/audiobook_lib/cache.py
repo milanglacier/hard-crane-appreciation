@@ -6,9 +6,10 @@ single normalization point: whatever a provider returns is passed through
 ffmpeg once on the way in and stored as canonical FLAC (mono, 16-bit, the
 configured sample rate), so assembly only ever sees identical formats.
 
-Chapter-level settings (`format`, `loudnorm`, `bitrate_kbps`) are deliberately
-*not* in the key — they change how a chapter is encoded, not how a clip
-sounds, and they are covered by the chapter's `source_hash` instead.
+Chapter-level settings (`book.CHAPTER_KEYS`: `format`, `loudnorm`, `pause_ms`,
+…) are deliberately *not* in the key — they change how a chapter is assembled
+or encoded, not how a clip sounds, and they are covered by the chapter's
+`source_hash` instead.
 """
 
 from __future__ import annotations
@@ -20,20 +21,20 @@ from pathlib import Path
 from typing import Any
 
 from . import audio as A
+from .book import CHAPTER_KEYS
 from .tts.base import SynthResult
 
 
 def cache_key(cfg: dict[str, Any], text: str) -> str:
-    payload = {
-        "provider": cfg.get("provider"),
-        "model": cfg.get("model"),
-        "voice": cfg.get("voice"),
-        "speed": cfg.get("speed"),
-        "instructions": cfg.get("instructions"),
-        "sample_rate": cfg.get("sample_rate"),
-        "text": text,
-    }
-    blob = json.dumps(payload, sort_keys=True, ensure_ascii=False)
+    """Hash of the text and every setting that can change how it sounds.
+
+    Any setting not in `CHAPTER_KEYS` counts, so a provider-specific one
+    (`language_boost`, `emotion`, `extra`, …) re-synthesizes when it changes.
+    """
+    settings = {k: v for k, v in cfg.items() if k not in CHAPTER_KEYS and v is not None}
+    blob = json.dumps(
+        {"settings": settings, "text": text}, sort_keys=True, ensure_ascii=False, default=str
+    )
     return hashlib.sha256(blob.encode("utf-8")).hexdigest()
 
 

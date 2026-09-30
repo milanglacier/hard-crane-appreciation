@@ -1,6 +1,6 @@
 # Hart Crane Appreciation
 
-This repository contains the setup for a Chinese-language audiobook about Hart Crane's poetry. The book has no outline or chapters yet.
+This repository contains a Chinese-language audiobook about Hart Crane's poetry. It has six chapters: an introduction to Crane, two chapters on the *Voyages* sequence, "To Brooklyn Bridge", "Atlantis", and "The Broken Tower". Crane's lines are quoted in English and read by an English voice, while the commentary is narrated in Mandarin.
 
 The source notes are kept locally in `references/` and are excluded from Git. The player is built from `hart-crane-appreciation/book.yaml`, chapter transcripts, and audio files. Vercel runs `scripts/vercel-build.sh` on Git deploys and serves the generated `hart-crane-appreciation/site/` directory.
 

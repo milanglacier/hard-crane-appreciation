@@ -2,12 +2,12 @@
  "id": "05-atlantis",
  "title": "第五章 Atlantis：一座火的桥",
  "audio": "05-atlantis.mp3",
- "duration": 1465.853,
+ "duration": 1478.763,
  "language": "zh-Hans",
  "provider": "minimax",
  "voice": "Chinese (Mandarin)_Warm_Bestie",
- "source_hash": "24c8f0488c720399b86c09f5057235d05418b5c5a0e49e2b670d32e2279f463f",
- "generated_at": "2026-09-29T04:27:42+00:00",
+ "source_hash": "20245451f274ab4053c2fc2d450bbf288ab824a19c007003eb505c650957ad4c",
+ "generated_at": "2026-09-30T04:30:09+00:00",
  "segments": [
   {
    "i": 0,
@@ -31,631 +31,639 @@
    "kind": "stanza",
    "html": "<p class=\"verse\">Music is then the knowledge of that which relates to love in harmony and system.</p>",
    "start": 11.168,
-   "end": 15.765,
-   "spoken": "Music is then the knowledge of that which relates to love in harmony and system."
+   "end": 16.798,
+   "spoken": "Music is then the knowledge of that which relates to love in harmony and system.",
+   "alt_voice": "verse"
   },
   {
    "i": 3,
    "kind": "para",
    "html": "<p>音乐是关于爱在和谐与系统中的知识。注意这句话的结构——音乐不只是美的体验，它是一种知识，它的对象是爱，它的方法是和谐与系统。克莱恩选择这句话作为题词，是在宣告 Atlantis 的根本野心：诗歌不是情感的宣泄，而是一种认知方式。大桥不是被赞美的对象，而是认知本身。</p>",
-   "start": 16.315,
-   "end": 41.311,
+   "start": 17.348,
+   "end": 42.345,
    "spoken": "音乐是关于爱在和谐与系统中的知识。注意这句话的结构——音乐不只是美的体验，它是一种知识，它的对象是爱，它的方法是和谐与系统。克莱恩选择这句话作为题词，是在宣告 Atlantis 的根本野心：诗歌不是情感的宣泄，而是一种认知方式。大桥不是被赞美的对象，而是认知本身。"
   },
   {
    "i": 4,
    "kind": "para",
    "html": "<p>这一章我们来细读 Atlantis，《桥》这部长诗的终章。我们会花较长的时间停留在几个关键的诗节上，因为这些诗节的密度要求我们这样做——它们不是一遍就能读透的。</p>",
-   "start": 41.861,
-   "end": 55.166,
+   "start": 42.895,
+   "end": 56.2,
    "spoken": "这一章我们来细读 Atlantis，《桥》这部长诗的终章。我们会花较长的时间停留在几个关键的诗节上，因为这些诗节的密度要求我们这样做——它们不是一遍就能读透的。"
   },
   {
    "i": 5,
    "kind": "rule",
    "html": "<hr>",
-   "start": 55.717,
-   "end": 57.217
+   "start": 56.75,
+   "end": 58.25
   },
   {
    "i": 6,
    "kind": "heading",
    "html": "<h2>先写出终点，再建造道路</h2>",
    "level": 2,
-   "start": 57.217,
-   "end": 59.98,
+   "start": 58.25,
+   "end": 61.013,
    "spoken": "先写出终点，再建造道路"
   },
   {
    "i": 7,
    "kind": "para",
    "html": "<p>理解 Atlantis 有一个不可跳过的前提：它是《桥》最早被写下的段落。克莱恩先拥有了狂喜的终点，然后花了七年时间回头建造通向它的道路——序诗、哥伦布的祈祷、密西西比河的旅程、地铁中的地狱——所有这些都是为了让 Atlantis 中已经存在的那种高度变得可以被抵达。</p>",
-   "start": 60.88,
-   "end": 83.793,
+   "start": 61.913,
+   "end": 84.827,
    "spoken": "理解 Atlantis 有一个不可跳过的前提：它是《桥》最早被写下的段落。克莱恩先拥有了狂喜的终点，然后花了七年时间回头建造通向它的道路——序诗、哥伦布的祈祷、密西西比河的旅程、地铁中的地狱——所有这些都是为了让 Atlantis 中已经存在的那种高度变得可以被抵达。"
   },
   {
    "i": 8,
    "kind": "para",
    "html": "<p>批评家 Weber 发现了一个能说明这种关系的文本事实。《隧道》——紧接在 Atlantis 之前的段落，也是全诗最黑暗的部分——其中有一段关于拉撒路复活的意象：</p>",
-   "start": 84.343,
-   "end": 97.138,
+   "start": 85.377,
+   "end": 98.171,
    "spoken": "批评家 Weber 发现了一个能说明这种关系的文本事实。《隧道》——紧接在 Atlantis 之前的段落，也是全诗最黑暗的部分——其中有一段关于拉撒路复活的意象："
   },
   {
    "i": 9,
    "kind": "stanza",
    "html": "<p class=\"verse\">like Lazarus, to feel the slope,<br>The sod and billow breaking,—lifting ground</p>",
-   "start": 97.688,
-   "end": 104.421,
-   "spoken": "like Lazarus, to feel the slope, The sod and billow breaking,—lifting ground"
+   "start": 98.721,
+   "end": 105.826,
+   "spoken": "like Lazarus, to feel the slope, The sod and billow breaking,—lifting ground",
+   "alt_voice": "verse"
   },
   {
    "i": 10,
    "kind": "para",
    "html": "<p>这几行诗是从更早版本的 Atlantis 中移植过来的。换句话说，当克莱恩后来写《隧道》、发现自己已经坠入了太深的绝望，他回到 Atlantis 的草稿中，借出了一小块希望来支撑即将崩塌的黑暗。Weber 对这个操作持怀疑态度——他认为一首后来的诗不能靠事后插入几行希望来抵消它前面呈现的绝望的全部力量。这个怀疑是有道理的，但它也恰恰说明了 Atlantis 在整部长诗中的功能：它是一个储存希望的容器，是克莱恩在诗歌中为自己保留的最后一块高地。</p>",
-   "start": 104.971,
-   "end": 143.064,
+   "start": 106.376,
+   "end": 144.469,
    "spoken": "这几行诗是从更早版本的 Atlantis 中移植过来的。换句话说，当克莱恩后来写《隧道》、发现自己已经坠入了太深的绝望，他回到 Atlantis 的草稿中，借出了一小块希望来支撑即将崩塌的黑暗。Weber 对这个操作持怀疑态度——他认为一首后来的诗不能靠事后插入几行希望来抵消它前面呈现的绝望的全部力量。这个怀疑是有道理的，但它也恰恰说明了 Atlantis 在整部长诗中的功能：它是一个储存希望的容器，是克莱恩在诗歌中为自己保留的最后一块高地。"
   },
   {
    "i": 11,
    "kind": "rule",
    "html": "<hr>",
-   "start": 143.614,
-   "end": 145.114
+   "start": 145.019,
+   "end": 146.519
   },
   {
    "i": 12,
    "kind": "heading",
    "html": "<h2>钢索如何变成音乐</h2>",
    "level": 2,
-   "start": 145.114,
-   "end": 147.238,
+   "start": 146.519,
+   "end": 148.643,
    "spoken": "钢索如何变成音乐"
   },
   {
    "i": 13,
    "kind": "para",
    "html": "<p>现在来看 Atlantis 的开篇。它做了一件在概念上极其大胆的事：把一座钢铁大桥变成一架乐器。</p>",
-   "start": 148.138,
-   "end": 156.672,
+   "start": 149.543,
+   "end": 158.077,
    "spoken": "现在来看 Atlantis 的开篇。它做了一件在概念上极其大胆的事：把一座钢铁大桥变成一架乐器。"
   },
   {
    "i": 14,
    "kind": "para",
    "html": "<p>浪漫主义诗歌有一个深植于传统的意象——Aeolian harp，风神竖琴。这是一种放在窗户上让风自己演奏的弦乐器。柯勒律治在他的《风琴》一诗中用它来比喻诗人的心灵：诗人不是音乐的创造者，而是不可见的精神力量流过他时发出声音的那个乐器。雪莱也深爱这个意象——灵感不是诗人主动寻找的东西，而是降临在他身上的风。</p>",
-   "start": 157.222,
-   "end": 185.07,
+   "start": 158.627,
+   "end": 186.475,
    "spoken": "浪漫主义诗歌有一个深植于传统的意象——Aeolian harp，风神竖琴。这是一种放在窗户上让风自己演奏的弦乐器。柯勒律治在他的《风琴》一诗中用它来比喻诗人的心灵：诗人不是音乐的创造者，而是不可见的精神力量流过他时发出声音的那个乐器。雪莱也深爱这个意象——灵感不是诗人主动寻找的东西，而是降临在他身上的风。"
   },
   {
    "i": 15,
    "kind": "para",
    "html": "<p>克莱恩把这个浪漫主义传统中最核心的隐喻锚定在了一个二十世纪的工业结构上。布鲁克林大桥的悬索钢缆在风中确实会震动。这不是比喻——它是物理事实。克莱恩的天才在于他从这个物理事实出发，一路攀升到了宇宙论的高度。来听开篇八行：</p>",
-   "start": 185.62,
-   "end": 206.773,
+   "start": 187.024,
+   "end": 208.178,
    "spoken": "克莱恩把这个浪漫主义传统中最核心的隐喻锚定在了一个二十世纪的工业结构上。布鲁克林大桥的悬索钢缆在风中确实会震动。这不是比喻——它是物理事实。克莱恩的天才在于他从这个物理事实出发，一路攀升到了宇宙论的高度。来听开篇八行："
   },
   {
    "i": 16,
    "kind": "stanza",
    "html": "<p class=\"verse\">Through the bound cable strands, the arching path<br>Upward, veering with light, the flight of strings,—<br>Taut miles of shuttling moonlight syncopate<br>The whispered rush, telepathy of wires.<br>Up the index of night, granite and steel—<br>Transparent meshes—fleckless the gleaming staves—<br>Sibylline voices flicker, waveringly stream<br>As though a god were issue of the strings....</p>",
-   "start": 207.323,
-   "end": 229.15,
-   "spoken": "Through the bound cable strands, the arching path Upward, veering with light, the flight of strings,— Taut miles of shuttling moonlight syncopate The whispered rush, telepathy of wires. Up the index of night, granite and steel— Transparent meshes—fleckless the gleaming staves— Sibylline voices flicker, waveringly stream As though a god were issue of the strings...."
+   "start": 208.728,
+   "end": 234.699,
+   "spoken": "Through the bound cable strands, the arching path Upward, veering with light, the flight of strings,— Taut miles of shuttling moonlight syncopate The whispered rush, telepathy of wires. Up the index of night, granite and steel— Transparent meshes—fleckless the gleaming staves— Sibylline voices flicker, waveringly stream As though a god were issue of the strings....",
+   "alt_voice": "verse"
   },
   {
    "i": 17,
    "kind": "para",
    "html": "<p>这八行的运动方式值得仔细体会。注意它没有主语。没有&quot;我看到了……&quot;或&quot;大桥是……&quot;这样的句式。第一个词 &quot;Through&quot; 就把我们抛进了运动本身——穿过钢索束，沿着拱形的路径，向上。语法本身在模仿上升。</p>",
-   "start": 229.7,
-   "end": 247.475,
+   "start": 235.249,
+   "end": 253.024,
    "spoken": "这八行的运动方式值得仔细体会。注意它没有主语。没有\"我看到了……\"或\"大桥是……\"这样的句式。第一个词 \"Through\" 就把我们抛进了运动本身——穿过钢索束，沿着拱形的路径，向上。语法本身在模仿上升。"
   },
   {
    "i": 18,
    "kind": "para",
    "html": "<p>&quot;The flight of strings&quot; 是一个关键短语。Flight 既是飞翔也是一段楼梯——琴弦的飞翔，也是一级级向上攀升的琴弦阶梯。然后月光加入了。 &quot;Taut miles of shuttling moonlight syncopate / The whispered rush&quot;——紧绷的数英里月光像织布机上的梭子一样穿行，给钢索的低语制造出切分节奏。Syncopate 是一个音乐术语，指的是在弱拍上加重音，制造出打破预期的节奏感。月光的穿梭不是匀速的，它有切分，有出人意料的停顿与加速。</p>",
-   "start": 248.025,
-   "end": 285.374,
+   "start": 253.574,
+   "end": 290.924,
    "spoken": "\"The flight of strings\" 是一个关键短语。Flight 既是飞翔也是一段楼梯——琴弦的飞翔，也是一级级向上攀升的琴弦阶梯。然后月光加入了。 \"Taut miles of shuttling moonlight syncopate / The whispered rush\"——紧绷的数英里月光像织布机上的梭子一样穿行，给钢索的低语制造出切分节奏。Syncopate 是一个音乐术语，指的是在弱拍上加重音，制造出打破预期的节奏感。月光的穿梭不是匀速的，它有切分，有出人意料的停顿与加速。"
   },
   {
    "i": 19,
    "kind": "para",
    "html": "<p>然后是 &quot;telepathy of wires&quot;——电线的心灵感应。这个短语跨越了巨大的距离：工业时代的电报线（wires）承载着人类的思想传递（telepathy），而桥上的钢索（也是 wires）承载着来自宇宙的信息。一个词同时激活了两个完全不同的语境——通信技术和神秘主义——然后让它们在意义中碰撞。</p>",
-   "start": 285.924,
-   "end": 309.968,
+   "start": 291.474,
+   "end": 315.518,
    "spoken": "然后是 \"telepathy of wires\"——电线的心灵感应。这个短语跨越了巨大的距离：工业时代的电报线（wires）承载着人类的思想传递（telepathy），而桥上的钢索（也是 wires）承载着来自宇宙的信息。一个词同时激活了两个完全不同的语境——通信技术和神秘主义——然后让它们在意义中碰撞。"
   },
   {
    "i": 20,
    "kind": "para",
    "html": "<p>上升在继续。&quot;Up the index of night, granite and steel&quot;——沿着夜的目录/指针向上，花岗岩与钢。Index 既是书籍的索引，也是日晷上的指针——夜晚的指针指向天空，而大桥沿着这根指针攀升。然后突然，钢索变得透明了。&quot;Transparent meshes—fleckless the gleaming staves&quot;——透明的网格——无瑕的、闪亮的五线谱。钢铁在这一刻消失了，物质让位给了音乐。Staves 是这八行中最重要的双关之一：它既是五线谱上的那五根线，也是琴弦，也是支撑拱顶的柱子。大桥同时是乐器、乐谱和建筑。</p>",
-   "start": 310.518,
-   "end": 355.781,
+   "start": 316.068,
+   "end": 361.331,
    "spoken": "上升在继续。\"Up the index of night, granite and steel\"——沿着夜的目录/指针向上，花岗岩与钢。Index 既是书籍的索引，也是日晷上的指针——夜晚的指针指向天空，而大桥沿着这根指针攀升。然后突然，钢索变得透明了。\"Transparent meshes—fleckless the gleaming staves\"——透明的网格——无瑕的、闪亮的五线谱。钢铁在这一刻消失了，物质让位给了音乐。Staves 是这八行中最重要的双关之一：它既是五线谱上的那五根线，也是琴弦，也是支撑拱顶的柱子。大桥同时是乐器、乐谱和建筑。"
   },
   {
    "i": 21,
    "kind": "para",
    "html": "<p>到了倒数第二行，Sibylline voices（女先知的声音）出现了。她们 &quot;flicker, waveringly stream&quot;——闪烁、摇曳地流淌。注意这些动词的视觉性——声音在这里是被看见的，不是被听见的。克莱恩在整个开篇中持续制造通感：月光在切分节奏，钢索在耳语，声音在闪烁。感官之间的界限被有系统地拆除了，因为 Atlantis 追求的正是一种感官合一的认知状态。</p>",
-   "start": 356.331,
-   "end": 388.108,
+   "start": 361.881,
+   "end": 393.657,
    "spoken": "到了倒数第二行，Sibylline voices（女先知的声音）出现了。她们 \"flicker, waveringly stream\"——闪烁、摇曳地流淌。注意这些动词的视觉性——声音在这里是被看见的，不是被听见的。克莱恩在整个开篇中持续制造通感：月光在切分节奏，钢索在耳语，声音在闪烁。感官之间的界限被有系统地拆除了，因为 Atlantis 追求的正是一种感官合一的认知状态。"
   },
   {
    "i": 22,
    "kind": "para",
    "html": "<p>最后一行——&quot;As though a god were issue of the strings&quot;——仿佛一位神从琴弦中诞生。Issue 在这里既是&quot;从……出来&quot;也是&quot;后代&quot;。神是琴弦的产物，是音乐的后代。整个八行的运动到这里完成了它的弧线：钢索→月光→切分→心灵感应→透明→音乐→神。从物质世界一路攀升到神的诞生，而且每一步都有对应的感官体验——不是抽象的推论，而是通过视觉、听觉、触觉一级一级实现的。</p>",
-   "start": 388.658,
-   "end": 422.195,
+   "start": 394.207,
+   "end": 427.744,
    "spoken": "最后一行——\"As though a god were issue of the strings\"——仿佛一位神从琴弦中诞生。Issue 在这里既是\"从……出来\"也是\"后代\"。神是琴弦的产物，是音乐的后代。整个八行的运动到这里完成了它的弧线：钢索→月光→切分→心灵感应→透明→音乐→神。从物质世界一路攀升到神的诞生，而且每一步都有对应的感官体验——不是抽象的推论，而是通过视觉、听觉、触觉一级一级实现的。"
   },
   {
    "i": 23,
    "kind": "para",
    "html": "<p>批评家 Slote 为克莱恩在《桥》中使用的这种手法取了一个名字：transmutation，嬗变。同样的意象——钢索、月光、声音——在《桥》的不同段落中反复出现，但每次出现都发生了微妙的化学变化。到了 Atlantis，所有这些经过嬗变的意象汇聚在一起，形成了一种交响乐的总奏效果。它们不是被拼接在一起的，而是通过整部长诗的旅程被内在地连接在了一起。</p>",
-   "start": 422.745,
-   "end": 454.993,
+   "start": 428.294,
+   "end": 460.542,
    "spoken": "批评家 Slote 为克莱恩在《桥》中使用的这种手法取了一个名字：transmutation，嬗变。同样的意象——钢索、月光、声音——在《桥》的不同段落中反复出现，但每次出现都发生了微妙的化学变化。到了 Atlantis，所有这些经过嬗变的意象汇聚在一起，形成了一种交响乐的总奏效果。它们不是被拼接在一起的，而是通过整部长诗的旅程被内在地连接在了一起。"
   },
   {
    "i": 24,
    "kind": "rule",
    "html": "<hr>",
-   "start": 455.543,
-   "end": 457.043
+   "start": 461.092,
+   "end": 462.592
   },
   {
    "i": 25,
    "kind": "heading",
    "html": "<h2>两种幻象术</h2>",
    "level": 2,
-   "start": 457.043,
-   "end": 458.575,
+   "start": 462.592,
+   "end": 464.125,
    "spoken": "两种幻象术"
   },
   {
    "i": 26,
    "kind": "para",
    "html": "<p>布鲁姆在讨论 Atlantis 时做了一个惊人的并置。他把克莱恩的开篇八行直接放在艾略特《荒原》第五部分的一段文字旁边。</p>",
-   "start": 459.475,
-   "end": 469.175,
+   "start": 465.025,
+   "end": 474.725,
    "spoken": "布鲁姆在讨论 Atlantis 时做了一个惊人的并置。他把克莱恩的开篇八行直接放在艾略特《荒原》第五部分的一段文字旁边。"
   },
   {
    "i": 27,
    "kind": "para",
    "html": "<p>艾略特那段写的是什么？一个女人拉紧自己的黑色长发，在发丝上奏出低语的音乐；长着婴儿面孔的蝙蝠在紫色光线中拍打翅膀，头朝下爬过一面黑墙；塔楼倒悬在空中敲响忆旧的钟声；声音从空的蓄水池和枯竭的水井中传来。</p>",
-   "start": 469.725,
-   "end": 489.481,
+   "start": 475.275,
+   "end": 495.031,
    "spoken": "艾略特那段写的是什么？一个女人拉紧自己的黑色长发，在发丝上奏出低语的音乐；长着婴儿面孔的蝙蝠在紫色光线中拍打翅膀，头朝下爬过一面黑墙；塔楼倒悬在空中敲响忆旧的钟声；声音从空的蓄水池和枯竭的水井中传来。"
   },
   {
    "i": 28,
    "kind": "para",
    "html": "<p>两段文字共享了惊人数量的元素。都有琴弦上的音乐。都有闪烁的声音。都有超自然的幻象。但运动的方向完全相反——克莱恩的一切向上流淌，艾略特的一切向下坠落。克莱恩的琴弦诞生出一位神，艾略特的琴弦上坐着一个吸血鬼般的女人。克莱恩的塔楼（大桥的花岗岩桥塔）指向天空，艾略特的塔楼倒悬在空中。</p>",
-   "start": 490.031,
-   "end": 517.024,
+   "start": 495.581,
+   "end": 522.574,
    "spoken": "两段文字共享了惊人数量的元素。都有琴弦上的音乐。都有闪烁的声音。都有超自然的幻象。但运动的方向完全相反——克莱恩的一切向上流淌，艾略特的一切向下坠落。克莱恩的琴弦诞生出一位神，艾略特的琴弦上坐着一个吸血鬼般的女人。克莱恩的塔楼（大桥的花岗岩桥塔）指向天空，艾略特的塔楼倒悬在空中。"
   },
   {
    "i": 29,
    "kind": "para",
    "html": "<p>布鲁姆认为这不是巧合。克莱恩最终修改定稿的 Atlantis 删去了大部分与艾略特直接对抗的痕迹，但那场战斗的深层逻辑仍然是可以被追溯的。两种幻象术的冲突定义了二十世纪二十年代美国诗歌的核心张力：克莱恩的桥通向亚特兰蒂斯——柏拉图的理想国的隐喻版本；艾略特的桥通向地狱——基督教传统对一切灵知主义探索的审判。</p>",
-   "start": 517.574,
-   "end": 546.065,
+   "start": 523.124,
+   "end": 551.615,
    "spoken": "布鲁姆认为这不是巧合。克莱恩最终修改定稿的 Atlantis 删去了大部分与艾略特直接对抗的痕迹，但那场战斗的深层逻辑仍然是可以被追溯的。两种幻象术的冲突定义了二十世纪二十年代美国诗歌的核心张力：克莱恩的桥通向亚特兰蒂斯——柏拉图的理想国的隐喻版本；艾略特的桥通向地狱——基督教传统对一切灵知主义探索的审判。"
   },
   {
    "i": 30,
    "kind": "para",
    "html": "<p>但这场战争不是对等的。布鲁姆冷静地指出：克莱恩的渴望&quot;必然向艾略特让出日常世界的大部分领地。&quot; Atlantis 追求的是一种纯粹的、超越性的知识——灵知——而不是对世界的全面描述。它的力量恰恰来自它放弃了对世界之全貌的主张。这是一个重要的让步：克莱恩没有说世界不是荒原，他只是说即使世界是荒原，诗歌仍然能够从中升起一种知识。</p>",
-   "start": 546.615,
-   "end": 575.617,
+   "start": 552.165,
+   "end": 581.167,
    "spoken": "但这场战争不是对等的。布鲁姆冷静地指出：克莱恩的渴望\"必然向艾略特让出日常世界的大部分领地。\" Atlantis 追求的是一种纯粹的、超越性的知识——灵知——而不是对世界的全面描述。它的力量恰恰来自它放弃了对世界之全貌的主张。这是一个重要的让步：克莱恩没有说世界不是荒原，他只是说即使世界是荒原，诗歌仍然能够从中升起一种知识。"
   },
   {
    "i": 31,
    "kind": "para",
    "html": "<p>Lensing 从另一个角度解释了为什么这个让步反而增强了 Atlantis 的说服力。Atlantis 的狂喜之所以有分量，正是因为紧接在它之前的《隧道》没有回避艾略特式的黑暗。只有在地铁的地狱中充分经历了现代世界的道德景观——熄灭的爱情、碎裂的交谈、被羞辱的诗人的幽灵——之后，诗人才有资格站在水边说出 Atlantis 的第一个词。如果你跳过《隧道》直接读 Atlantis，你得到的只是空洞的修辞。先读过《隧道》，你才能感受到 Atlantis 中每一个向上的意象背后压着多大的重量。</p>",
-   "start": 576.167,
-   "end": 615.731,
+   "start": 581.716,
+   "end": 621.281,
    "spoken": "Lensing 从另一个角度解释了为什么这个让步反而增强了 Atlantis 的说服力。Atlantis 的狂喜之所以有分量，正是因为紧接在它之前的《隧道》没有回避艾略特式的黑暗。只有在地铁的地狱中充分经历了现代世界的道德景观——熄灭的爱情、碎裂的交谈、被羞辱的诗人的幽灵——之后，诗人才有资格站在水边说出 Atlantis 的第一个词。如果你跳过《隧道》直接读 Atlantis，你得到的只是空洞的修辞。先读过《隧道》，你才能感受到 Atlantis 中每一个向上的意象背后压着多大的重量。"
   },
   {
    "i": 32,
    "kind": "rule",
    "html": "<hr>",
-   "start": 616.281,
-   "end": 617.781
+   "start": 621.831,
+   "end": 623.331
   },
   {
    "i": 33,
    "kind": "heading",
    "html": "<h2>环形结构：从哥伦布到诗人</h2>",
    "level": 2,
-   "start": 617.781,
-   "end": 620.417,
+   "start": 623.331,
+   "end": 625.966,
    "spoken": "环形结构：从哥伦布到诗人"
   },
   {
    "i": 34,
    "kind": "para",
    "html": "<p>《桥》的结构有一个深层的对称，Atlantis 的意义有一部分就存在于这个对称之中。</p>",
-   "start": 621.317,
-   "end": 628.217,
+   "start": 626.866,
+   "end": 633.766,
    "spoken": "《桥》的结构有一个深层的对称，Atlantis 的意义有一部分就存在于这个对称之中。"
   },
   {
    "i": 35,
    "kind": "para",
    "html": "<p>第一段 Ave Maria 是哥伦布在归途中的戏剧性独白。他赞美上帝和圣母引导他发现了新大陆，高呼 &quot;I bring you back Cathay!&quot;——我给你们带回了迦太。当然，哥伦布以为自己到了中国，他到的其实是美洲。这是一个高贵的幻觉——他真正发现的比他以为自己发现的还要大，但他至死没有意识到这一点。</p>",
-   "start": 628.767,
-   "end": 653.387,
+   "start": 634.316,
+   "end": 658.937,
    "spoken": "第一段 Ave Maria 是哥伦布在归途中的戏剧性独白。他赞美上帝和圣母引导他发现了新大陆，高呼 \"I bring you back Cathay!\"——我给你们带回了迦太。当然，哥伦布以为自己到了中国，他到的其实是美洲。这是一个高贵的幻觉——他真正发现的比他以为自己发现的还要大，但他至死没有意识到这一点。"
   },
   {
    "i": 36,
    "kind": "para",
    "html": "<p>Atlantis 作为最后一段回应 Ave Maria。同一次大西洋航行从地理发现变成了精神探索。哥伦布向圣母的祈祷——&quot;O Mater Maria&quot;——调变为诗人向大桥的祈祷——&quot;O Thou steeled Cognizance&quot;。这种对称不仅是结构上的呼应，更是一种辩证的提升：哥伦布的 Word 是基督，克莱恩的 Word 是大桥——是诗歌本身。</p>",
-   "start": 653.937,
-   "end": 681.88,
+   "start": 659.487,
+   "end": 687.43,
    "spoken": "Atlantis 作为最后一段回应 Ave Maria。同一次大西洋航行从地理发现变成了精神探索。哥伦布向圣母的祈祷——\"O Mater Maria\"——调变为诗人向大桥的祈祷——\"O Thou steeled Cognizance\"。这种对称不仅是结构上的呼应，更是一种辩证的提升：哥伦布的 Word 是基督，克莱恩的 Word 是大桥——是诗歌本身。"
   },
   {
    "i": 37,
    "kind": "para",
    "html": "<p>Dembo 将这种结构置于但丁的框架中理解。《神曲》的叙述者必须下降到地狱最深处，然后才能攀升到天堂。《桥》的叙述者在《隧道》中经历了纽约地铁的地狱——那里爱情是便池中的烧尽火柴，爱伦·坡的幽灵被拖过街道——然后从水边上升进入 Atlantis。但 Dembo 注意到一个值得玩味的细节：诗人不是在黎明中浮现的。他浮现在被大桥照亮的午夜里——与整部长诗开始时的同一个午夜。旅程是环形的。</p>",
-   "start": 682.43,
-   "end": 717.487,
+   "start": 687.98,
+   "end": 723.036,
    "spoken": "Dembo 将这种结构置于但丁的框架中理解。《神曲》的叙述者必须下降到地狱最深处，然后才能攀升到天堂。《桥》的叙述者在《隧道》中经历了纽约地铁的地狱——那里爱情是便池中的烧尽火柴，爱伦·坡的幽灵被拖过街道——然后从水边上升进入 Atlantis。但 Dembo 注意到一个值得玩味的细节：诗人不是在黎明中浮现的。他浮现在被大桥照亮的午夜里——与整部长诗开始时的同一个午夜。旅程是环形的。"
   },
   {
    "i": 38,
    "kind": "para",
    "html": "<p>批评家 Vogler 从这个环形结构中读出了一种更审慎的意义。他说，贯穿《桥》的那个 &quot;the Word that will not die&quot;（不会死的道）不是一个找到的答案，而是一种不断重生的渴望——寻找幻象的渴望本身。Atlantis 不是一个已达成的启示，而是这种渴望最壮丽的一次喷发。它注定要消退，也注定要再次升起。</p>",
-   "start": 718.037,
-   "end": 742.812,
+   "start": 723.586,
+   "end": 748.362,
    "spoken": "批评家 Vogler 从这个环形结构中读出了一种更审慎的意义。他说，贯穿《桥》的那个 \"the Word that will not die\"（不会死的道）不是一个找到的答案，而是一种不断重生的渴望——寻找幻象的渴望本身。Atlantis 不是一个已达成的启示，而是这种渴望最壮丽的一次喷发。它注定要消退，也注定要再次升起。"
   },
   {
    "i": 39,
    "kind": "rule",
    "html": "<hr>",
-   "start": 743.362,
-   "end": 744.862
+   "start": 748.912,
+   "end": 750.412
   },
   {
    "i": 40,
    "kind": "heading",
    "html": "<h2>&quot;Steeled Cognizance&quot;：诗与死</h2>",
    "level": 2,
-   "start": 744.862,
-   "end": 748.276,
+   "start": 750.412,
+   "end": 753.825,
    "spoken": "\"Steeled Cognizance\"：诗与死"
   },
   {
    "i": 41,
    "kind": "para",
    "html": "<p>现在来看布鲁姆所说的克莱恩&quot;一生一作的中心节&quot;。这个诗节值得我们花较长时间，因为它的每一行都在完成一种概念上的跳跃，而这些跳跃叠加在一起，构成了克莱恩诗学中最深层的悖论。</p>",
-   "start": 749.176,
-   "end": 764.663,
+   "start": 754.725,
+   "end": 770.213,
    "spoken": "现在来看布鲁姆所说的克莱恩\"一生一作的中心节\"。这个诗节值得我们花较长时间，因为它的每一行都在完成一种概念上的跳跃，而这些跳跃叠加在一起，构成了克莱恩诗学中最深层的悖论。"
   },
   {
    "i": 42,
    "kind": "stanza",
    "html": "<p class=\"verse\">O Thou steeled Cognizance whose leap commits<br>The agile precincts of the lark's return;<br>Within whose lariat sweep encinctured sing<br>In single chrysalis the many twain,—<br>Of stars Thou art the stitch and stallion glow<br>And like an organ, Thou, with sound of doom—<br>Sight, sound and flesh Thou leadest from time's realm<br>As love strikes clear direction for the helm.</p>",
-   "start": 765.213,
-   "end": 789.404,
-   "spoken": "O Thou steeled Cognizance whose leap commits The agile precincts of the lark's return; Within whose lariat sweep encinctured sing In single chrysalis the many twain,— Of stars Thou art the stitch and stallion glow And like an organ, Thou, with sound of doom— Sight, sound and flesh Thou leadest from time's realm As love strikes clear direction for the helm."
+   "start": 770.763,
+   "end": 799.992,
+   "spoken": "O Thou steeled Cognizance whose leap commits The agile precincts of the lark's return; Within whose lariat sweep encinctured sing In single chrysalis the many twain,— Of stars Thou art the stitch and stallion glow And like an organ, Thou, with sound of doom— Sight, sound and flesh Thou leadest from time's realm As love strikes clear direction for the helm.",
+   "alt_voice": "verse"
   },
   {
    "i": 43,
    "kind": "para",
    "html": "<p>&quot;Steeled Cognizance&quot;——这不是&quot;钢铁般坚定的认知&quot;这种普通的比喻。它是说大桥本身就是一种认知行为。Cognizance 不是形容大桥的品质，它就是大桥的本体。钢铁的物质性和认知的精神性在这个短语中被熔铸成了一个不可分割的东西——这正是克莱恩在第一章讨论过的&quot;隐喻的逻辑&quot;在最高强度上的运作。</p>",
-   "start": 789.954,
-   "end": 815.067,
+   "start": 800.542,
+   "end": 825.655,
    "spoken": "\"Steeled Cognizance\"——这不是\"钢铁般坚定的认知\"这种普通的比喻。它是说大桥本身就是一种认知行为。Cognizance 不是形容大桥的品质，它就是大桥的本体。钢铁的物质性和认知的精神性在这个短语中被熔铸成了一个不可分割的东西——这正是克莱恩在第一章讨论过的\"隐喻的逻辑\"在最高强度上的运作。"
   },
   {
    "i": 44,
    "kind": "para",
    "html": "<p>这个认知的&quot;leap&quot;（飞跃）做了什么？它 &quot;commits / The agile precincts of the lark's return&quot;——划定了云雀归来的敏捷疆界。视觉上，这是大桥的抛物线弧度在天空中切出的形状。概念上，这是说认知的每一次跳跃都同时划定了灵感能够返回的空间。灵感——那只云雀——不是无限自由的，它只能在认知为它划定的疆界内飞翔和归来。大桥的弧度就是这个疆界的物质形态。</p>",
-   "start": 815.616,
-   "end": 846.07,
+   "start": 826.205,
+   "end": 856.658,
    "spoken": "这个认知的\"leap\"（飞跃）做了什么？它 \"commits / The agile precincts of the lark's return\"——划定了云雀归来的敏捷疆界。视觉上，这是大桥的抛物线弧度在天空中切出的形状。概念上，这是说认知的每一次跳跃都同时划定了灵感能够返回的空间。灵感——那只云雀——不是无限自由的，它只能在认知为它划定的疆界内飞翔和归来。大桥的弧度就是这个疆界的物质形态。"
   },
   {
    "i": 45,
    "kind": "para",
    "html": "<p>然后是美国式的意象。 &quot;Lariat sweep&quot;——套索的挥舞。大桥的钢缆像牛仔的套索一样旋转，把 &quot;the many twain&quot;（众多的两两对立之物）圈入 &quot;single chrysalis&quot;（单一的蛹）。注意&quot;蛹&quot;这个词的选择——不是&quot;一&quot;，不是&quot;合一&quot;，而是&quot;蛹&quot;。蛹意味着变态尚未完成。众多并非被消灭了，它们被包裹在一个等待蜕变的容器中。统一是一个过程，不是一个结果。</p>",
-   "start": 846.62,
-   "end": 876.388,
+   "start": 857.208,
+   "end": 886.976,
    "spoken": "然后是美国式的意象。 \"Lariat sweep\"——套索的挥舞。大桥的钢缆像牛仔的套索一样旋转，把 \"the many twain\"（众多的两两对立之物）圈入 \"single chrysalis\"（单一的蛹）。注意\"蛹\"这个词的选择——不是\"一\"，不是\"合一\"，而是\"蛹\"。蛹意味着变态尚未完成。众多并非被消灭了，它们被包裹在一个等待蜕变的容器中。统一是一个过程，不是一个结果。"
   },
   {
    "i": 46,
    "kind": "para",
    "html": "<p>然后克莱恩写出了可能是他最大胆的一行诗：</p>",
-   "start": 876.938,
-   "end": 880.386,
+   "start": 887.526,
+   "end": 890.974,
    "spoken": "然后克莱恩写出了可能是他最大胆的一行诗："
   },
   {
    "i": 47,
    "kind": "stanza",
    "html": "<p class=\"verse\">Of stars Thou art the stitch and stallion glow</p>",
-   "start": 880.936,
-   "end": 885.15,
-   "spoken": "Of stars Thou art the stitch and stallion glow"
+   "start": 891.524,
+   "end": 895.123,
+   "spoken": "Of stars Thou art the stitch and stallion glow",
+   "alt_voice": "verse"
   },
   {
    "i": 48,
    "kind": "para",
    "html": "<p>布鲁姆说马洛本人也会嫉妒这一行。 &quot;Stitch&quot; 是缝线——星星像缝线一样把天幕缝合在一起，而大桥是那根针。 &quot;Stallion glow&quot; 是骏马般的光芒——既有动物性的力量，也有一种猛烈的发光。把缝线的精细和骏马的暴烈放在一起，你得到一种同时是精确的和狂野的光。</p>",
-   "start": 885.7,
-   "end": 908.258,
+   "start": 895.673,
+   "end": 918.231,
    "spoken": "布鲁姆说马洛本人也会嫉妒这一行。 \"Stitch\" 是缝线——星星像缝线一样把天幕缝合在一起，而大桥是那根针。 \"Stallion glow\" 是骏马般的光芒——既有动物性的力量，也有一种猛烈的发光。把缝线的精细和骏马的暴烈放在一起，你得到一种同时是精确的和狂野的光。"
   },
   {
    "i": 49,
    "kind": "para",
    "html": "<p>但布鲁姆紧接着指出了一个令人不安的事实：这个比喻的两端——大桥和星辰——都排除了人类。钢铁和星光之间的对话中没有留给肉身的位置。所以下一行是 &quot;sound of doom&quot;（末日之声）——这种统一之乐对一切活在时间中的生命而言就是末日的宣判。</p>",
-   "start": 908.808,
-   "end": 929.962,
+   "start": 918.781,
+   "end": 939.935,
    "spoken": "但布鲁姆紧接着指出了一个令人不安的事实：这个比喻的两端——大桥和星辰——都排除了人类。钢铁和星光之间的对话中没有留给肉身的位置。所以下一行是 \"sound of doom\"（末日之声）——这种统一之乐对一切活在时间中的生命而言就是末日的宣判。"
   },
   {
    "i": 50,
    "kind": "para",
    "html": "<p>最后两行把这个悖论推到了顶点：&quot;Sight, sound and flesh Thou leadest from time's realm / As love strikes clear direction for the helm.&quot; 视觉、听觉和肉体都被引离了时间的领域。爱的 &quot;clear direction&quot;（清晰方向）指引着航向——但指向哪里？</p>",
-   "start": 930.512,
-   "end": 950.086,
+   "start": 940.485,
+   "end": 960.059,
    "spoken": "最后两行把这个悖论推到了顶点：\"Sight, sound and flesh Thou leadest from time's realm / As love strikes clear direction for the helm.\" 视觉、听觉和肉体都被引离了时间的领域。爱的 \"clear direction\"（清晰方向）指引着航向——但指向哪里？"
   },
   {
    "i": 51,
    "kind": "para",
    "html": "<p>布鲁姆在这里做了一个非同寻常的比较。他引用了雪莱《阿多奈斯》第五十二节，那个同样著名的&quot;一永存，众多变化消逝&quot;的诗节，指出两者表面上一个是凯旋一个是绝望，但&quot;两者的自然负担都是自杀性的。&quot;爱的清晰方向，在雪莱那里和在克莱恩这里，都指向死亡。认知的最高形式要求你离开时间，而离开时间就是死亡。</p>",
-   "start": 950.636,
-   "end": 978.349,
+   "start": 960.609,
+   "end": 988.322,
    "spoken": "布鲁姆在这里做了一个非同寻常的比较。他引用了雪莱《阿多奈斯》第五十二节，那个同样著名的\"一永存，众多变化消逝\"的诗节，指出两者表面上一个是凯旋一个是绝望，但\"两者的自然负担都是自杀性的。\"爱的清晰方向，在雪莱那里和在克莱恩这里，都指向死亡。认知的最高形式要求你离开时间，而离开时间就是死亡。"
   },
   {
    "i": 52,
    "kind": "para",
    "html": "<p>但两位诗人的姿态有一个决定性的区别。雪莱始终关注的是他自己作为诗人与自己幻象的关系——&quot;我&quot;如何面对&quot;我看到的东西&quot;。克莱恩做了一件雪莱没有做的事：他放弃了诗人与幻象之间的那种自我反思的关系。他不再是观看大桥的诗人——他成为了&quot;被大桥的认知者所认知的对象&quot;。主体与客体倒转了。布鲁姆说，这个放弃换来的回报是&quot;一种令人恐惧的、自由的、对诗歌幻象内容的集中&quot;——不再有诗人的焦虑挡在幻象与读者之间。</p>",
-   "start": 978.899,
-   "end": 1015.146,
+   "start": 988.872,
+   "end": 1025.119,
    "spoken": "但两位诗人的姿态有一个决定性的区别。雪莱始终关注的是他自己作为诗人与自己幻象的关系——\"我\"如何面对\"我看到的东西\"。克莱恩做了一件雪莱没有做的事：他放弃了诗人与幻象之间的那种自我反思的关系。他不再是观看大桥的诗人——他成为了\"被大桥的认知者所认知的对象\"。主体与客体倒转了。布鲁姆说，这个放弃换来的回报是\"一种令人恐惧的、自由的、对诗歌幻象内容的集中\"——不再有诗人的焦虑挡在幻象与读者之间。"
   },
   {
    "i": 53,
    "kind": "para",
    "html": "<p>这就是克莱恩在 Atlantis 中达到的独特姿态。它不同于惠特曼式的拥抱一切，不同于艾略特式的在传统中寻求庇护，也不同于雪莱式的在绝望中向外跳跃。它是一种取消了自我的认知——通过成为被认知的对象来实现对认知内容的纯粹集中。代价是你自己的消失。</p>",
-   "start": 1015.696,
-   "end": 1037.36,
+   "start": 1025.669,
+   "end": 1047.333,
    "spoken": "这就是克莱恩在 Atlantis 中达到的独特姿态。它不同于惠特曼式的拥抱一切，不同于艾略特式的在传统中寻求庇护，也不同于雪莱式的在绝望中向外跳跃。它是一种取消了自我的认知——通过成为被认知的对象来实现对认知内容的纯粹集中。代价是你自己的消失。"
   },
   {
    "i": 54,
    "kind": "rule",
    "html": "<hr>",
-   "start": 1037.91,
-   "end": 1039.41
+   "start": 1047.883,
+   "end": 1049.383
   },
   {
    "i": 55,
    "kind": "heading",
    "html": "<h2>灵知的代价与俄耳甫斯的祈祷</h2>",
    "level": 2,
-   "start": 1039.41,
-   "end": 1042.347,
+   "start": 1049.383,
+   "end": 1052.32,
    "spoken": "灵知的代价与俄耳甫斯的祈祷"
   },
   {
    "i": 56,
    "kind": "para",
    "html": "<p>克莱恩比任何批评家都更清楚地知道这个代价意味着什么。在倒数第二个八行节中，他预见了一切反对意见，并且把它们写进了诗里：</p>",
-   "start": 1043.247,
-   "end": 1054.335,
+   "start": 1053.22,
+   "end": 1064.308,
    "spoken": "克莱恩比任何批评家都更清楚地知道这个代价意味着什么。在倒数第二个八行节中，他预见了一切反对意见，并且把它们写进了诗里："
   },
   {
    "i": 57,
    "kind": "stanza",
    "html": "<p class=\"verse\">Migrations that must needs void memory,<br>Inventions that cobblestone the heart,—<br>Unspeakable Thou Bridge to Thee, O Love.</p>",
-   "start": 1054.885,
-   "end": 1063.755,
-   "spoken": "Migrations that must needs void memory, Inventions that cobblestone the heart,— Unspeakable Thou Bridge to Thee, O Love."
+   "start": 1064.858,
+   "end": 1074.239,
+   "spoken": "Migrations that must needs void memory, Inventions that cobblestone the heart,— Unspeakable Thou Bridge to Thee, O Love.",
+   "alt_voice": "verse"
   },
   {
    "i": 58,
    "kind": "para",
    "html": "<p>为了获得灵知——这种超越性的知识——你必须 &quot;void memory&quot;，清空记忆。灵知不是积累，而是遗忘。你到过的地方、你爱过的人、你受过的伤——这些都必须被清空，因为它们属于时间，而灵知要求你离开时间。你的心被 &quot;cobblestone&quot;——变成鹅卵石路面。这不只是&quot;变硬&quot;的意思。鹅卵石路面是被无数脚步踏过、被磨得光滑、永远向公共世界敞开的东西。你的心不再是你私密的器官，它变成了一条路——任何人都可以踩过去。这是诗人为灵知付出的代价：他的个人性被磨平了。</p>",
-   "start": 1064.305,
-   "end": 1106.631,
+   "start": 1074.789,
+   "end": 1117.114,
    "spoken": "为了获得灵知——这种超越性的知识——你必须 \"void memory\"，清空记忆。灵知不是积累，而是遗忘。你到过的地方、你爱过的人、你受过的伤——这些都必须被清空，因为它们属于时间，而灵知要求你离开时间。你的心被 \"cobblestone\"——变成鹅卵石路面。这不只是\"变硬\"的意思。鹅卵石路面是被无数脚步踏过、被磨得光滑、永远向公共世界敞开的东西。你的心不再是你私密的器官，它变成了一条路——任何人都可以踩过去。这是诗人为灵知付出的代价：他的个人性被磨平了。"
   },
   {
    "i": 59,
    "kind": "para",
    "html": "<p>然后是全诗中最动人的一个祈祷：</p>",
-   "start": 1107.181,
-   "end": 1110.164,
+   "start": 1117.664,
+   "end": 1120.648,
    "spoken": "然后是全诗中最动人的一个祈祷："
   },
   {
    "i": 60,
    "kind": "stanza",
    "html": "<p class=\"verse\">Now while thy petals spend the suns about us, hold—<br>(O Thou whose radiance doth inherit me)<br>Atlantis,—hold thy floating singer late!</p>",
-   "start": 1110.714,
-   "end": 1121.082,
-   "spoken": "Now while thy petals spend the suns about us, hold— (O Thou whose radiance doth inherit me) Atlantis,—hold thy floating singer late!"
+   "start": 1121.198,
+   "end": 1131.903,
+   "spoken": "Now while thy petals spend the suns about us, hold— (O Thou whose radiance doth inherit me) Atlantis,—hold thy floating singer late!",
+   "alt_voice": "verse"
   },
   {
    "i": 61,
    "kind": "para",
    "html": "<p>&quot;Floating singer&quot;——漂浮的歌者。在希腊神话中，俄耳甫斯被酒神的信徒撕碎之后，他的头颅漂流在河中，仍然在歌唱。头与身体分离了，歌者与自己的肉身分离了，但歌声没有停。克莱恩请求亚特兰蒂斯再多留住这位漂浮的歌者一会儿。这个祈祷的痛切之处在于：诗人知道自己正在被撕碎——灵知的代价就是 sparagmos，就是俄耳甫斯式的肢解——但他请求在被彻底撕碎之前，再多唱一会儿。</p>",
-   "start": 1121.632,
-   "end": 1156.418,
+   "start": 1132.453,
+   "end": 1167.239,
    "spoken": "\"Floating singer\"——漂浮的歌者。在希腊神话中，俄耳甫斯被酒神的信徒撕碎之后，他的头颅漂流在河中，仍然在歌唱。头与身体分离了，歌者与自己的肉身分离了，但歌声没有停。克莱恩请求亚特兰蒂斯再多留住这位漂浮的歌者一会儿。这个祈祷的痛切之处在于：诗人知道自己正在被撕碎——灵知的代价就是 sparagmos，就是俄耳甫斯式的肢解——但他请求在被彻底撕碎之前，再多唱一会儿。"
   },
   {
    "i": 62,
    "kind": "para",
    "html": "<p>布鲁姆说这个时刻是&quot;一个新熔铸的柏拉图式神话——与更高形式世界的和解&quot;。柏拉图的亚特兰蒂斯是一个沉没的理想城邦。俄耳甫斯是一个被撕碎的歌者。克莱恩把这两个神话融合在一起：亚特兰蒂斯是那个能够收留被撕碎的歌者的地方——不是让他复原，而是让他的歌声在沉没之后继续回荡。</p>",
-   "start": 1156.968,
-   "end": 1180.595,
+   "start": 1167.789,
+   "end": 1191.415,
    "spoken": "布鲁姆说这个时刻是\"一个新熔铸的柏拉图式神话——与更高形式世界的和解\"。柏拉图的亚特兰蒂斯是一个沉没的理想城邦。俄耳甫斯是一个被撕碎的歌者。克莱恩把这两个神话融合在一起：亚特兰蒂斯是那个能够收留被撕碎的歌者的地方——不是让他复原，而是让他的歌声在沉没之后继续回荡。"
   },
   {
    "i": 63,
    "kind": "para",
    "html": "<p>这里必须提到 Allen Tate 的反对意见，因为它是对《桥》最具破坏力的批评，而 Atlantis 正是它最直接的靶子。Tate 是克莱恩的朋友，也是一位杰出的批评家。他说大桥作为象征是&quot;空洞而静止的&quot;，&quot;没有内在内容&quot;——克莱恩赋予它的道德品质是&quot;任意的&quot;。如果大桥象征是空心的，那么 Atlantis 的交响终章就只是在空中回响——声音很大，但没有任何东西在震动。</p>",
-   "start": 1181.145,
-   "end": 1210.831,
+   "start": 1191.965,
+   "end": 1221.652,
    "spoken": "这里必须提到 Allen Tate 的反对意见，因为它是对《桥》最具破坏力的批评，而 Atlantis 正是它最直接的靶子。Tate 是克莱恩的朋友，也是一位杰出的批评家。他说大桥作为象征是\"空洞而静止的\"，\"没有内在内容\"——克莱恩赋予它的道德品质是\"任意的\"。如果大桥象征是空心的，那么 Atlantis 的交响终章就只是在空中回响——声音很大，但没有任何东西在震动。"
   },
   {
    "i": 64,
    "kind": "para",
    "html": "<p>这个批评的力量不容低估。但 Tate 自己也不得不承认，《桥》&quot;是一种与济慈《许珀里翁》同类的失败——具有同等的壮丽。&quot;同类的失败、同等的壮丽——这本身就是一种辩证的判断。</p>",
-   "start": 1211.381,
-   "end": 1226.44,
+   "start": 1222.202,
+   "end": 1237.26,
    "spoken": "这个批评的力量不容低估。但 Tate 自己也不得不承认，《桥》\"是一种与济慈《许珀里翁》同类的失败——具有同等的壮丽。\"同类的失败、同等的壮丽——这本身就是一种辩证的判断。"
   },
   {
    "i": 65,
    "kind": "rule",
    "html": "<hr>",
-   "start": 1226.99,
-   "end": 1228.49
+   "start": 1237.81,
+   "end": 1239.31
   },
   {
    "i": 66,
    "kind": "heading",
    "html": "<h2>终问：一个问句如何成为回答</h2>",
    "level": 2,
-   "start": 1228.49,
-   "end": 1231.601,
+   "start": 1239.31,
+   "end": 1242.422,
    "spoken": "终问：一个问句如何成为回答"
   },
   {
    "i": 67,
    "kind": "stanza",
    "html": "<p class=\"verse\">—One Song, one Bridge of Fire! Is it Atlantis,<br>Now pity steeps the grass and rainbows ring<br>The serpent with the eagle in the leaves...?</p>",
-   "start": 1232.501,
-   "end": 1241.116,
-   "spoken": "—One Song, one Bridge of Fire! Is it Atlantis, Now pity steeps the grass and rainbows ring The serpent with the eagle in the leaves...?"
+   "start": 1243.322,
+   "end": 1254.026,
+   "spoken": "—One Song, one Bridge of Fire! Is it Atlantis, Now pity steeps the grass and rainbows ring The serpent with the eagle in the leaves...?",
+   "alt_voice": "verse"
   },
   {
    "i": 68,
    "kind": "para",
    "html": "<p>全诗的最后三行。诗与大桥在一个感叹号的爆裂中熔合为一——&quot;One Song, one Bridge of Fire!&quot;（一首歌，一座火的桥！）。这是 Atlantis 中最接近纯粹狂喜的时刻。诗不再是关于大桥的诗，大桥不再是诗歌的题材——两者短暂地成为了同一个东西。</p>",
-   "start": 1241.666,
-   "end": 1262.134,
+   "start": 1254.576,
+   "end": 1275.044,
    "spoken": "全诗的最后三行。诗与大桥在一个感叹号的爆裂中熔合为一——\"One Song, one Bridge of Fire!\"（一首歌，一座火的桥！）。这是 Atlantis 中最接近纯粹狂喜的时刻。诗不再是关于大桥的诗，大桥不再是诗歌的题材——两者短暂地成为了同一个东西。"
   },
   {
    "i": 69,
    "kind": "para",
    "html": "<p>但紧接着就是一个问句——&quot;Is it Atlantis&quot;。这真的是亚特兰蒂斯吗？</p>",
-   "start": 1262.684,
-   "end": 1269.72,
+   "start": 1275.594,
+   "end": 1282.63,
    "spoken": "但紧接着就是一个问句——\"Is it Atlantis\"。这真的是亚特兰蒂斯吗？"
   },
   {
    "i": 70,
    "kind": "para",
    "html": "<p>这个问句回应了全诗第一段 Ave Maria 中哥伦布的高呼。哥伦布以为自己到了迦太——中国。他到的是美洲。他的发现比他以为的更大，但方向完全不同。克莱恩以问句的方式重复了这个高贵的幻觉。他不说&quot;这就是亚特兰蒂斯&quot;，他问&quot;这是亚特兰蒂斯吗？&quot;——把判断权交给了读者，也交给了时间。</p>",
-   "start": 1270.27,
-   "end": 1295.294,
+   "start": 1283.18,
+   "end": 1308.204,
    "spoken": "这个问句回应了全诗第一段 Ave Maria 中哥伦布的高呼。哥伦布以为自己到了迦太——中国。他到的是美洲。他的发现比他以为的更大，但方向完全不同。克莱恩以问句的方式重复了这个高贵的幻觉。他不说\"这就是亚特兰蒂斯\"，他问\"这是亚特兰蒂斯吗？\"——把判断权交给了读者，也交给了时间。"
   },
   {
    "i": 71,
    "kind": "para",
    "html": "<p>最后两行的意象值得单独讨论。&quot;Rainbows ring / The serpent with the eagle in the leaves&quot;——彩虹围绕着树叶中的蛇与鹰形成一个圆环。蛇与鹰是对立的力量——一个属于地面，一个属于天空。在尼采那里，鹰与蛇是查拉图斯特拉的伙伴，代表骄傲与智慧的统一。但布鲁姆认为克莱恩的这个意象更可能来自雪莱——在雪莱的《伊斯兰的起义》中，蛇与鹰搏斗，但它们的搏斗本身就是一种宇宙秩序的体现。</p>",
-   "start": 1295.844,
-   "end": 1328.224,
+   "start": 1308.754,
+   "end": 1341.135,
    "spoken": "最后两行的意象值得单独讨论。\"Rainbows ring / The serpent with the eagle in the leaves\"——彩虹围绕着树叶中的蛇与鹰形成一个圆环。蛇与鹰是对立的力量——一个属于地面，一个属于天空。在尼采那里，鹰与蛇是查拉图斯特拉的伙伴，代表骄傲与智慧的统一。但布鲁姆认为克莱恩的这个意象更可能来自雪莱——在雪莱的《伊斯兰的起义》中，蛇与鹰搏斗，但它们的搏斗本身就是一种宇宙秩序的体现。"
   },
   {
    "i": 72,
    "kind": "para",
    "html": "<p>关键是彩虹构成的那个圆环。蛇与鹰不是融合为一，也不是一方消灭另一方。它们在盟约的边界内保持争斗。彩虹的圆环是契约，是界限，也是框架。对立面在这个框架内共存，保持着各自的力量和各自的差异。这不是黑格尔式的正反合——没有第三个东西从对立中诞生。对立面只是在彩虹的环绕下继续存在。</p>",
-   "start": 1328.774,
-   "end": 1355.86,
+   "start": 1341.685,
+   "end": 1368.771,
    "spoken": "关键是彩虹构成的那个圆环。蛇与鹰不是融合为一，也不是一方消灭另一方。它们在盟约的边界内保持争斗。彩虹的圆环是契约，是界限，也是框架。对立面在这个框架内共存，保持着各自的力量和各自的差异。这不是黑格尔式的正反合——没有第三个东西从对立中诞生。对立面只是在彩虹的环绕下继续存在。"
   },
   {
    "i": 73,
    "kind": "para",
    "html": "<p>布鲁姆坚持说，&quot;Is it Atlantis&quot; 不是暗示失败的问句，而是&quot;预感胜利的问句&quot;。但他立即加了一个至关重要的限定：俄耳甫斯的胜利总是辩证的。</p>",
-   "start": 1356.41,
-   "end": 1367.753,
+   "start": 1369.321,
+   "end": 1380.664,
    "spoken": "布鲁姆坚持说，\"Is it Atlantis\" 不是暗示失败的问句，而是\"预感胜利的问句\"。但他立即加了一个至关重要的限定：俄耳甫斯的胜利总是辩证的。"
   },
   {
    "i": 74,
    "kind": "para",
    "html": "<p>什么叫辩证的胜利？克莱恩深刻地知道最伟大的诗人总是知道的事：诗歌中的修辞意图是意志对时间之 &quot;it was&quot;——过去如此——的报复。诗人想要把流逝的东西挽留住，想要用语言的力量抵抗时间的单向性。但修辞实际达成的，不是对时间的胜利，而是意志本身极限的展示——在比喻的深渊与比喻本身的困惑之中。</p>",
-   "start": 1368.303,
-   "end": 1395.652,
+   "start": 1381.214,
+   "end": 1408.562,
    "spoken": "什么叫辩证的胜利？克莱恩深刻地知道最伟大的诗人总是知道的事：诗歌中的修辞意图是意志对时间之 \"it was\"——过去如此——的报复。诗人想要把流逝的东西挽留住，想要用语言的力量抵抗时间的单向性。但修辞实际达成的，不是对时间的胜利，而是意志本身极限的展示——在比喻的深渊与比喻本身的困惑之中。"
   },
   {
    "i": 75,
    "kind": "para",
    "html": "<p>换句话说：一首诗能做到的最好的事情，不是真正抵达亚特兰蒂斯，而是以足够的力量和美发出这个问句——&quot;这是亚特兰蒂斯吗？&quot;——以至于问句本身的回响就成为了某种形式的回答。不是&quot;是&quot;，也不是&quot;不是&quot;，而是问句持续回荡的事实本身。</p>",
-   "start": 1396.202,
-   "end": 1416.067,
+   "start": 1409.112,
+   "end": 1428.977,
    "spoken": "换句话说：一首诗能做到的最好的事情，不是真正抵达亚特兰蒂斯，而是以足够的力量和美发出这个问句——\"这是亚特兰蒂斯吗？\"——以至于问句本身的回响就成为了某种形式的回答。不是\"是\"，也不是\"不是\"，而是问句持续回荡的事实本身。"
   },
   {
    "i": 76,
    "kind": "rule",
    "html": "<hr>",
-   "start": 1416.617,
-   "end": 1418.117
+   "start": 1429.527,
+   "end": 1431.027
   },
   {
    "i": 77,
    "kind": "heading",
    "html": "<h2>通往最后一首诗</h2>",
    "level": 2,
-   "start": 1418.117,
-   "end": 1419.603,
+   "start": 1431.027,
+   "end": 1432.513,
    "spoken": "通往最后一首诗"
   },
   {
    "i": 78,
    "kind": "para",
    "html": "<p>Atlantis 以一个问句结尾——开放的、悬而未决的、在回响中寻求意义的。</p>",
-   "start": 1420.503,
-   "end": 1428.003,
+   "start": 1433.413,
+   "end": 1440.913,
    "spoken": "Atlantis 以一个问句结尾——开放的、悬而未决的、在回响中寻求意义的。"
   },
   {
    "i": 79,
    "kind": "para",
    "html": "<p>克莱恩写完《桥》之后又活了大约六年。《桥》出版后评价褒贬不一，酗酒越来越深，写作越来越少。1931 年他获得古根海姆奖学金前往墨西哥，几乎什么都写不出来。</p>",
-   "start": 1428.553,
-   "end": 1443.692,
+   "start": 1441.463,
+   "end": 1456.603,
    "spoken": "克莱恩写完《桥》之后又活了大约六年。《桥》出版后评价褒贬不一，酗酒越来越深，写作越来越少。1931 年他获得古根海姆奖学金前往墨西哥，几乎什么都写不出来。"
   },
   {
    "i": 80,
    "kind": "para",
    "html": "<p>但在生命的最后几个月，他写出了 The Broken Tower。下一章我们来读这首遗嘱之诗。Atlantis 的问题是：在最高的狂喜中，诗人能不能抵达一种超越时间的知识？The Broken Tower 的问题不同：当狂喜碎裂之后，诗人能不能在碎片中重新建造？</p>",
-   "start": 1444.242,
-   "end": 1465.303,
+   "start": 1457.153,
+   "end": 1478.213,
    "spoken": "但在生命的最后几个月，他写出了 The Broken Tower。下一章我们来读这首遗嘱之诗。Atlantis 的问题是：在最高的狂喜中，诗人能不能抵达一种超越时间的知识？The Broken Tower 的问题不同：当狂喜碎裂之后，诗人能不能在碎片中重新建造？"
   }
  ]

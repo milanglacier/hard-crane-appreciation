@@ -20,6 +20,7 @@
 
 诗人看着他们，想要告诉他们一些事情：
 
+<!-- voice: verse -->
 > And could they hear me I would tell them
 
 如果他们能听到我，我会告诉他们。但他们听不到。
@@ -32,6 +33,7 @@ Hinz 的论证值得展开。如果我们按照克莱恩自己说的，把这首
 
 诗以那句冰冷的断言收尾：
 
+<!-- voice: verse -->
 > The bottom of the sea is cruel.
 
 对孩子们来说，这只是一句他们听不见的话。对读者来说，它是一个预言——Voyages 接下来五首诗将要证实的预言。
@@ -46,6 +48,7 @@ Richman 对这首诗的本质做了最准确的描述：它是一个梦，一次
 
 现在让我们沉入这首诗的开篇，一个意象一个意象地走。
 
+<!-- voice: verse -->
 > —And yet this great wink of eternity,
 > Of rimless floods, unfettered leewardings,
 
@@ -57,12 +60,14 @@ Richman 对这首诗的本质做了最准确的描述：它是一个梦，一次
 
 克莱恩加上了 "unfettered"（不受束缚的），让 "leewardings" 承载双重含义：大海上不受约束的风向，同时也是血液中不受约束的涌动。
 
+<!-- voice: verse -->
 > Samite sheeted and processioned where
 > Her undinal vast belly moonward bends,
 > Laughing the wrapt inflections of our love;
 
 大海穿着 samite（中世纪的丝缎）做的床单，以行列的方式行进。她——大海在这里是女性的——弯曲着巨大的水精般的腹部朝向月亮。"Undinal"（水精的）来自水精灵 Undine——德国浪漫主义文学中一个为了获得人类灵魂而爱上凡人的水中精灵。大海笑着，把我们爱情的弯曲的语调包裹起来。
 
+<!-- voice: verse -->
 > Take this Sea, whose diapason knells
 > On scrolls of silver snowy sentences,
 
@@ -76,6 +81,7 @@ Richman 对这首诗的本质做了最准确的描述：它是一个梦，一次
 
 上一章我们讲过 Irwin 对这个短语的分析。现在让我们看看它在诗中的位置，体会隐喻如何在上下文中层层叠加。
 
+<!-- voice: verse -->
 > And onward, as bells off San Salvador
 > Salute the crocus lustres of the stars,
 > In these poinsettia meadows of her tides,—
@@ -98,14 +104,17 @@ Richman 对这首诗的本质做了最准确的描述：它是一个梦，一次
 
 全诗的最后一节是克莱恩写过的最伟大的段落之一，值得我们逐行停留。
 
+<!-- voice: verse -->
 > Bind us in time, O Seasons clear, and awe.
 
 把我们束缚在时间中吧，清澈而庄严的季节。这一行有一个惊人的悖论：恋人们不是请求逃离时间，而是请求被束缚在时间之中。"Bind"（束缚）是一个限制性的动词——恋人们请求的不是自由，而是被允许留在此刻。"Seasons clear" 不只是"清澈的季节"——clear 意味着透明，意味着这些季节是可以被看穿的，它们的本质是敞开的。最后一个词 "awe"（庄严/敬畏）既是形容季节的品质，也独立地悬挂在行尾——一种无法归类的情感。
 
+<!-- voice: verse -->
 > O minstrel galleons of Carib fire,
 
 哦，加勒比火焰的吟游诗人般的大帆船。这个短语的密度是典型的克莱恩。"Galleons"（大帆船）是十六世纪西班牙探险时代的船只——哥伦布的船队，载着黄金和香料穿越大西洋。"Minstrel"（吟游诗人）——这些船不只运载货物，它们在歌唱。它们是诗人化的船，是带着音乐穿越加勒比海的存在。"Carib fire"（加勒比的火焰）——热带的火，肉体的火，也是落日把海面烧成金红色的那种火。一个短语同时唤起了历史（大航海时代）、音乐（吟游诗人）和肉身（火焰）。
 
+<!-- voice: verse -->
 > Bequeath us to no earthly shore until
 > Is answered in the vortex of our grave
 > The seal's wide spindrift gaze toward paradise.
@@ -132,6 +141,7 @@ Richman 对这首诗的本质做了最准确的描述：它是一个梦，一次
 
 然后恋人们被允许穿过大海的门——
 
+<!-- voice: verse -->
 > admitted through black swollen gates
 
 黑色膨胀的门。在夜景中，这些门就是黑色的、膨胀的浪头——同时也是通往死亡的入口。Unterecker 追问：那些 "whirling pillars"（旋转的柱子）是不是不应该被读成水龙卷——向上的——而是漩涡——向下的？因为漩涡是旋转着向下沉的柱子，把一切拖入深处。回头看 Voyages II 的结尾就有了验证："the vortex of our grave"——我们坟墓的漩涡。如果第二首已经把坟墓描述为漩涡，第三首的旋转柱子就应该指向同一个方向——向下，向着死亡。
@@ -140,6 +150,7 @@ Richman 对这首诗的本质做了最准确的描述：它是一个梦，一次
 
 混乱达到顶点后，突然放慢。死亡如果被接纳——"if shed"——产生的不是屠杀（"carnage"），而是奇迹般的转化：
 
+<!-- voice: verse -->
 > The silken skilled transmemberment of song.
 
 歌的丝滑而精巧的超越性变形。"Transmemberment" 是克莱恩的造词。它暗示 dismemberment（肢解）的反面——俄耳甫斯被撕碎后，通过歌声重新获得完整。不是修复，而是变形。不是回到原来的样子，而是成为一种新的、更高的存在。"Silken"（丝滑的）和 "skilled"（精巧的）——这种变形不是暴力的，而是柔软的、技艺精湛的。肢解是粗暴的，但超越性变形是丝绸般的。

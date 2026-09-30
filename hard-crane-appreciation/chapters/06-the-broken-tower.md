@@ -10,6 +10,7 @@
 
 我们先完整地读一遍开篇的第一节：
 
+<!-- voice: verse -->
 > The bell-rope that gathers God at dawn
 > Dispatches me as though I dropped down the knell
 > Of a spent day—to wander the cathedral lawn
@@ -27,6 +28,7 @@
 
 第二节引入了钟楼里的一群存在：
 
+<!-- voice: verse -->
 > Have you not heard, have you not seen that corps
 > Of shadows in the tower, whose shoulders sway
 > Antiphonal carillons launched before
@@ -44,6 +46,7 @@
 
 第三节是全诗最直接、最有力的时刻之一：
 
+<!-- voice: verse -->
 > The bells, I say, the bells break down their tower;
 > And swing I know not where.
 
@@ -55,6 +58,7 @@ Williamson 提醒我们记住写这首诗的那个人的处境。三十岁头发
 
 诗人接着说：
 
+<!-- voice: verse -->
 > Their tongues engrave
 > Membrane through marrow, my long-scattered score
 > Of broken intervals... And I, their sexton slave!
@@ -77,6 +81,7 @@ Bewley 则认为诗人在这里认清了自己的局限。钟声和塔代表对�
 
 第四节将钟声的力量推到更远。Williamson 热爱这一节的纯粹音乐性——内韵、溢出的长词、回声在钟楼峡壁之间撞击：
 
+<!-- voice: verse -->
 > Oval encyclicals in canyons heaping
 > The impasse high with choir. Banked voices slain!
 > Pagodas, campaniles with reveilles outleaping—
@@ -86,6 +91,7 @@ Bewley 则认为诗人在这里认清了自己的局限。钟声和塔代表对�
 
 然后，第五节突然转为散文般的清晰：
 
+<!-- voice: verse -->
 > And so it was I entered the broken world
 > To trace the visionary company of love, its voice
 > An instant in the wind (I know not whither hurled)
@@ -99,12 +105,14 @@ Bewley 则认为诗人在这里认清了自己的局限。钟声和塔代表对�
 
 第六节的开头是全诗最安静的三个词：
 
+<!-- voice: verse -->
 > My word I poured.
 
 "我倾注了我的词语。"注意 "word" 是小写的。诗人的词如液体流出，谦卑、柔软、不确定。Knox 捕捉到 "poured" 的双关：它同时是浪费——酗酒中的倾倒——和铸造——灵感的灼热物质被注入模具，就像铸钟。克莱恩认识雕塑家拉谢兹，熟悉铸铜术语，他珍爱拉谢兹铸造的青铜海鸥。所以 "poured" 同时指向最低的堕落和最高的技艺。
 
 但紧接着，诗人开始怀疑：
 
+<!-- voice: verse -->
 > But was it cognate, scored
 > Of that tribunal monarch of the air
 > Whose thigh embronzes earth, strikes crystal Word
@@ -120,6 +128,7 @@ Bewley 则认为诗人在这里认清了自己的局限。钟声和塔代表对�
 
 第七节是全诗的转折点：
 
+<!-- voice: verse -->
 > The steep encroachments of my blood left me
 > No answer (could blood hold such a lofty tower
 > As flings the question true?)—or is it she
@@ -137,6 +146,7 @@ Knox 还发现了另一条文学线索。"Whose sweet mortality stirs latent pow
 
 第八节，诗人倾听 "she" 和自己体内的血液脉动：
 
+<!-- voice: verse -->
 > And through whose pulse I hear, counting the strokes
 > My veins recall and add, revived and sure
 > The angelus of wars my chest evokes;
@@ -152,6 +162,7 @@ Knox 还发现了另一条文学线索。"Whose sweet mortality stirs latent pow
 
 旧塔被钟声打碎了。现在诗人在内心建造一座新的：
 
+<!-- voice: verse -->
 > And builds, within, a tower that is not stone
 > (Not stone can jacket heaven)—but slip
 > Of pebbles,—visible wings of silence sown
@@ -179,6 +190,7 @@ Bewley 注意到，这些盘旋的翅膀令人想起《桥》序诗开头的那�
 
 最后一节是全诗的终点，也是克莱恩诗歌生涯的终点：
 
+<!-- voice: verse -->
 > The matrix of the heart, lift down the eye
 > That shrines the quiet lake and swells a tower...
 > The commodious, tall decorum of that sky
@@ -218,6 +230,7 @@ Bewley 说这是克莱恩一生中"更深刻、更敏感的直觉"。他补充�
 
 布鲁姆说，克莱恩也许比惠特曼、狄金森、弗罗斯特、斯蒂文斯中的任何一位都更有天赋，只是时间太短了。但我们拥有的已经足够压倒一切。正如 Atlantis 的最后一行所问的那样：
 
+<!-- voice: verse -->
 > —One Song, one Bridge of Fire! Is it Atlantis...?
 
 这不是暗示失败的问句。这是预感胜利的问句。

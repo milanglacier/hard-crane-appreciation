@@ -14,12 +14,14 @@
 
 诗人面对一个结构性的矛盾——不是情感的犹豫，而是一个逻辑上无法解决的两难。他知道，如果自然中的一切都必须 "close"（凋谢），爱情不可能是例外。同时他又知道——
 
+<!-- voice: verse -->
 > first be lost in fatal tides to tell
 
 先在致命的潮汐中迷失，才能讲述。这一行是克莱恩整组诗中最残酷的自我认知。它说的是：要成为一个有价值的诗人，你必须先被摧毁。但被摧毁意味着离开爱人。所以诗人的使命和他的爱情在根本上是互相排斥的——你不可能同时留在爱人身边和沉入致命的潮汐。
 
 Schenck 注意到，克莱恩用花朵的意象来表达这个两难。他呼唤花朵和羽笔来铺设恋人们的道路：
 
+<!-- voice: verse -->
 > Shall they not stem and close in our own steps
 > Bright staves of flowers and quills to-day as I
 > Must first be lost in fatal tides to tell?
@@ -28,6 +30,7 @@ Schenck 注意到，克莱恩用花朵的意象来表达这个两难。他呼唤
 
 但诗人还没有放弃。他仍然在试图寻找第三条路——一种能同时容纳爱情和诗歌使命的语法：
 
+<!-- voice: verse -->
 > No stream of greater love advancing now
 > Than, singing, this mortality alone
 > Through clay aflow immortality to you.
@@ -44,12 +47,14 @@ Schenck 注意到，克莱恩用花朵的意象来表达这个两难。他呼唤
 
 全诗的第一个词就定了基调：
 
+<!-- voice: verse -->
 > Meticulous
 
 精确的。上一章我们讲到 Voyages II 的世界像一个梦，只能通过自身的逻辑来理解。现在梦醒了。感知变得精确，而精确是残酷的。
 
 自然不再是流动的载体、无限的空间。它变硬了、变脆了。河口变得 "too brittle"（太脆），天空变得 "hard"（坚硬）。诗人愤怒地质问自然：
 
+<!-- voice: verse -->
 > What words
 > Can strangle this deaf moonlight?
 
@@ -57,6 +62,7 @@ Schenck 注意到，克莱恩用花朵的意象来表达这个两难。他呼唤
 
 然后是整组诗中最令人心碎的两个词。恋情的终结被压缩为一个跨行的断裂：
 
+<!-- voice: verse -->
 > For we
 > Are overtaken.
 
@@ -72,6 +78,7 @@ Schenck 注意到，克莱恩用花朵的意象来表达这个两难。他呼唤
 
 诗的最后几行让诗人面对一个彻底空洞的宇宙：
 
+<!-- voice: verse -->
 > Knowing I cannot touch your hand and look
 > Too, into that godless cleft of sky
 > Where nothing turns but dead sands flashing.
@@ -86,6 +93,7 @@ Schenck 注意到，克莱恩用花朵的意象来表达这个两难。他呼唤
 
 最后一首。诗人独自面对海洋，独自面对他不认识的新自我。
 
+<!-- voice: verse -->
 > O rivers mingling toward the sky
 > And harbor of the phoenix' breast—
 > My eyes pressed black against the prow,
@@ -97,6 +105,7 @@ Ramsey 注意到第一节中 "phoenix"（凤凰）的出现。凤凰是死而复
 
 布鲁姆说这正是 Voyages 的核心处境。整个组诗的主导神灵是 Eros 和 Ananke——爱欲和必然性。但到了第六首，主导的是俄耳甫斯教中的 Dionysus——被泰坦之力撕裂的狂喜之神。诗人被自己的幻象撕碎了，在自己的视野中无家可归。
 
+<!-- voice: verse -->
 > Waiting, afire, what name, unspoke,
 > I cannot claim: let thy waves rear
 > More savage than the death of kings,
@@ -110,6 +119,7 @@ Ramsey 注意到第一节中 "phoenix"（凤凰）的出现。凤凰是死而复
 
 然后，最后一节。整组诗的终点。一个新的东西被引入：
 
+<!-- voice: verse -->
 > The imaged Word, it is, that holds
 > Hushed willows anchored in its glow.
 > It is the unbetrayable reply

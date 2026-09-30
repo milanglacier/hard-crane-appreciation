@@ -12,3 +12,8 @@ tts:
     paragraph: 550
     heading: 900
     rule: 1500
+  alt_voices:
+    verse:
+      voice: English_expressive_narrator
+      speed: 0.9
+      language_boost: English

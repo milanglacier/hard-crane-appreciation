@@ -2,6 +2,7 @@
 
 柏拉图在《理想国》里写过一句话，克莱恩把它放在 Atlantis 的题词位置：
 
+<!-- voice: verse -->
 > Music is then the knowledge of that which relates to love in harmony and system.
 
 音乐是关于爱在和谐与系统中的知识。注意这句话的结构——音乐不只是美的体验，它是一种知识，它的对象是爱，它的方法是和谐与系统。克莱恩选择这句话作为题词，是在宣告 Atlantis 的根本野心：诗歌不是情感的宣泄，而是一种认知方式。大桥不是被赞美的对象，而是认知本身。
@@ -16,6 +17,7 @@
 
 批评家 Weber 发现了一个能说明这种关系的文本事实。《隧道》——紧接在 Atlantis 之前的段落，也是全诗最黑暗的部分——其中有一段关于拉撒路复活的意象：
 
+<!-- voice: verse -->
 > like Lazarus, to feel the slope,
 > The sod and billow breaking,—lifting ground
 
@@ -31,6 +33,7 @@
 
 克莱恩把这个浪漫主义传统中最核心的隐喻锚定在了一个二十世纪的工业结构上。布鲁克林大桥的悬索钢缆在风中确实会震动。这不是比喻——它是物理事实。克莱恩的天才在于他从这个物理事实出发，一路攀升到了宇宙论的高度。来听开篇八行：
 
+<!-- voice: verse -->
 > Through the bound cable strands, the arching path
 > Upward, veering with light, the flight of strings,—
 > Taut miles of shuttling moonlight syncopate
@@ -90,6 +93,7 @@ Dembo 将这种结构置于但丁的框架中理解。《神曲》的叙述者�
 
 现在来看布鲁姆所说的克莱恩"一生一作的中心节"。这个诗节值得我们花较长时间，因为它的每一行都在完成一种概念上的跳跃，而这些跳跃叠加在一起，构成了克莱恩诗学中最深层的悖论。
 
+<!-- voice: verse -->
 > O Thou steeled Cognizance whose leap commits
 > The agile precincts of the lark's return;
 > Within whose lariat sweep encinctured sing
@@ -107,6 +111,7 @@ Dembo 将这种结构置于但丁的框架中理解。《神曲》的叙述者�
 
 然后克莱恩写出了可能是他最大胆的一行诗：
 
+<!-- voice: verse -->
 > Of stars Thou art the stitch and stallion glow
 
 布鲁姆说马洛本人也会嫉妒这一行。 "Stitch" 是缝线——星星像缝线一样把天幕缝合在一起，而大桥是那根针。 "Stallion glow" 是骏马般的光芒——既有动物性的力量，也有一种猛烈的发光。把缝线的精细和骏马的暴烈放在一起，你得到一种同时是精确的和狂野的光。
@@ -127,6 +132,7 @@ Dembo 将这种结构置于但丁的框架中理解。《神曲》的叙述者�
 
 克莱恩比任何批评家都更清楚地知道这个代价意味着什么。在倒数第二个八行节中，他预见了一切反对意见，并且把它们写进了诗里：
 
+<!-- voice: verse -->
 > Migrations that must needs void memory,
 > Inventions that cobblestone the heart,—
 > Unspeakable Thou Bridge to Thee, O Love.
@@ -135,6 +141,7 @@ Dembo 将这种结构置于但丁的框架中理解。《神曲》的叙述者�
 
 然后是全诗中最动人的一个祈祷：
 
+<!-- voice: verse -->
 > Now while thy petals spend the suns about us, hold—
 > (O Thou whose radiance doth inherit me)
 > Atlantis,—hold thy floating singer late!
@@ -151,6 +158,7 @@ Dembo 将这种结构置于但丁的框架中理解。《神曲》的叙述者�
 
 ## 终问：一个问句如何成为回答
 
+<!-- voice: verse -->
 > —One Song, one Bridge of Fire! Is it Atlantis,
 > Now pity steeps the grass and rainbows ring
 > The serpent with the eagle in the leaves...?

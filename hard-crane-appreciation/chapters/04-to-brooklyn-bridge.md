@@ -22,6 +22,7 @@ Waggoner 说过一句极有洞察力的话：如果克莱恩只写了这一首�
 
 诗歌不是从大桥开始的。它从一只海鸥开始。这个选择值得我们慢慢体会，因为这只海鸥定义了整首诗的运动方式。
 
+<!-- voice: verse -->
 > How many dawns, chill from his rippling rest,
 > The seagull's wings shall dip and pivot him,
 > Shedding white rings of tumult, building high
@@ -71,6 +72,7 @@ Waggoner 说，大桥的象征从具象到抽象、从物质到精神的转化�
 
 第五节，有人从大桥上跳下自杀。这是整首诗中最令人不安的一节，也是被解读得最丰富的一节。
 
+<!-- voice: verse -->
 > Out of some subway scuttle, cell or loft
 > A bedlamite speeds to thy parapets,
 > Tilting there momently, shrill shirt ballooning,
@@ -98,6 +100,7 @@ Sugg 深入挖掘了这个词根级别的双关。如果 "bedlamite" 连接着�
 
 这一节的最后两行把大桥提升为三重门槛：
 
+<!-- voice: verse -->
 > Terrific threshold of the prophet's pledge,
 > Prayer of pariah, and the lover's cry,—
 
@@ -111,6 +114,7 @@ Sugg 深入挖掘了这个词根级别的双关。如果 "bedlamite" 连接着�
 
 第九节，入夜了。这是整首诗中意象最密集的一节，值得我们逐行停留。
 
+<!-- voice: verse -->
 > Again the traffic lights that skim thy swift
 > Unfractioned idiom, immaculate sigh of stars,
 > Beading thy path—condense eternity:
@@ -144,6 +148,7 @@ Sugg 深入挖掘了这个词根级别的双关。如果 "bedlamite" 连接着�
 
 然后是最后一节——全诗的高潮——也是我认为英语诗歌中最伟大的结尾之一。它值得我们一行一行地读。
 
+<!-- voice: verse -->
 > O Sleepless as the river under thee,
 > Vaulting the sea, the prairies' dreaming sod,
 > Unto us lowliest sometime sweep, descend

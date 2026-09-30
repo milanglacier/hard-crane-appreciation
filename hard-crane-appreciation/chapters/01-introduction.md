@@ -2,6 +2,7 @@
 
 哈罗德·布鲁姆十岁那年，蜷缩在布朗克斯区的一间图书馆里，读到了这样两行诗：
 
+<!-- voice: verse -->
 > O Thou steeled Cognizance whose leap commits
 > The agile precincts of the lark's return...
 
@@ -59,6 +60,7 @@
 
 在克莱恩的 Atlantis 中，大桥的钢索成为透明的乐谱，女先知的声音——Sibylline voices——沿着弦线向上流淌：
 
+<!-- voice: verse -->
 > As though a god were issue of the strings....
 
 仿佛一位神从琴弦中诞生。艾略特的 Sibyl 渴望死亡，她的女性对应者用自己的头发演奏出一曲吸血鬼式的乐曲。克莱恩的 Sibylline voices 向上飞升，直到俄耳甫斯从琴弦中诞生。两种幻象术共享了惊人数量的元素——琴弦、声音、幻影般的景象——但它们的运动方向和精神归宿完全相反。
@@ -91,12 +93,14 @@
 
 让我们用一个例子来看看这种逻辑的运作。在 Voyages II 中，克莱恩写道：
 
+<!-- voice: verse -->
 > adagios of islands
 
 "Adagios"（慢板）是音乐术语，指的是音乐中缓慢的乐章，带有与前后较快乐章形成对比的含义。"Islands"（岛屿）是地理实体。表面上看，这个隐喻的深层结构是"岛屿是慢板"——从摇晃的船上看去，岛屿缓慢移动，视觉上的节奏确实像一段慢板。克莱恩自己在《总体目标与理论》一文中也这样解释过。
 
 但 Irwin 提醒我们，深层结构的"岛屿是慢板"只是表面形式 "adagios of islands" 中嵌套的多重关系之一。这个短语出现在整首诗的第三节：
 
+<!-- voice: verse -->
 > And onward, as bells off San Salvador
 > Salute the crocus lustres of the stars,
 > In these poinsettia meadows of her tides,—
